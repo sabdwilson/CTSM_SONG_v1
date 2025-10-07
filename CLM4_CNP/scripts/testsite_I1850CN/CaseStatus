@@ -1,0 +1,2 @@
+create_newcase --case testsite_I1850CN --mach generic_linux_pgi --compset I1850CN --res CLM_USRDAT --skip_rundb --max_tasks_per_node 8 --scratchroot /home/ysa/clm4_ornl_cnp/run --din_loc_root /home/ysa/newdata_ysa
+case created 2016-06-08 23:25:47

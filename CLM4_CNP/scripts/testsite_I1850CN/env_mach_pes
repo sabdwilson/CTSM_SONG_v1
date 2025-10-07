@@ -1,0 +1,52 @@
+
+
+
+setenv NTASKS_ATM  16     # number of atmosphere tasks
+setenv NTHRDS_ATM  1     # number of atmosphere threads
+setenv ROOTPE_ATM  0     # root atm mpi task
+setenv NINST_ATM  1     # Number of atmosphere instances
+setenv NINST_ATM_LAYOUT  concurrent     # sequential,concurrent
+
+setenv NTASKS_LND  16     # number of land mpi tasks
+setenv NTHRDS_LND  1     # number of land mpi threads
+setenv ROOTPE_LND  0     # root lnd mpi task
+setenv NINST_LND  1     # Number of land instances
+setenv NINST_LND_LAYOUT  concurrent     # sequential,concurrent
+
+setenv NTASKS_ICE  16     # number of ice mpi tasks
+setenv NTHRDS_ICE  1     # number of ice mpi threads
+setenv ROOTPE_ICE  0     # root ice mpi task
+setenv NINST_ICE  1     # Number of sea ice instances
+setenv NINST_ICE_LAYOUT  concurrent     # sequential,concurrent
+
+setenv NTASKS_OCN  16     # number of ocean mpi tasks
+setenv NTHRDS_OCN  1     # number of ocean mpi threads
+setenv ROOTPE_OCN  0     # root ocn mpi task
+setenv NINST_OCN  1     # Number of ocean instances
+setenv NINST_OCN_LAYOUT  concurrent     # sequential,concurrent
+
+setenv NTASKS_CPL  16     # number of coupler mpi tasks
+setenv NTHRDS_CPL  1     # number of coupler mpi threads
+setenv ROOTPE_CPL  0     # root cpl mpi task
+
+setenv NTASKS_GLC  16     # number of glc mpi tasks
+setenv NTHRDS_GLC  1     # number of glc mpi threads
+setenv ROOTPE_GLC  0     # root glc mpi task
+setenv NINST_GLC  1     # Number of glacier instances
+setenv NINST_GLC_LAYOUT  concurrent     # sequential,concurrent
+
+setenv PSTRID_ATM  1     # 1
+setenv PSTRID_LND  1     # 1
+setenv PSTRID_ICE  1     # 1
+setenv PSTRID_OCN  1     # 1
+setenv PSTRID_CPL  1     # 1
+setenv PSTRID_GLC  1     # 1
+
+setenv TOTALPES  0     # total number of pes (derived automatically - DO NOT EDIT)
+setenv PES_LEVEL  0     # pes level determined by automated initialization (DO NOT EDIT)
+setenv MAX_TASKS_PER_NODE  8     # maximum number of mpi tasks per node
+setenv PES_PER_NODE  $MAX_TASKS_PER_NODE     # pes per node for cost scaling
+setenv BATCH_PES  0     # pes requested at batch runtime
+setenv CCSM_PCOST  0     # cost relative to 64 pes (DO NOT EDIT)
+setenv CCSM_TCOST  0     # relative cost of test where ERS is 1 (DO NOT EDIT)
+setenv CCSM_ESTCOST  0     # relative total cost of case (DO NOT EDIT)

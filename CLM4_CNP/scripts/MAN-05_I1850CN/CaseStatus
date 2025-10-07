@@ -1,0 +1,5 @@
+create_newcase --case MAN-05_I1850CN --mach generic_linux_pgi --compset I1850CN --res CLM_USRDAT --skip_rundb --max_tasks_per_node 8 --scratchroot /home/ysa/clm4_ornl_cnp/run --din_loc_root /home/ysa/ccsm_inputdata
+case created 2016-06-19 22:30:32
+configure -case 2016-06-19 22:30:33
+build complete 2016-06-19 22:40:34
+run started 2016-06-20 02:41:47

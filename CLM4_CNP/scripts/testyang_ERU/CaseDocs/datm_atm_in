@@ -1,0 +1,17 @@
+ &shr_strdata_nml
+   dataMode       = 'CLMNCEP'
+   domainFile     = '/home/ysa/ccsm_inputdata//share/domains/domain.lnd.fv0.9x1.25_gx1v6.090309.nc'
+   streams        = 'clm_qian.T62.stream.Solar.txt 1 1948 1972 ',
+                    'clm_qian.T62.stream.Precip.txt 1 1948 1972 ',
+                    'clm_qian.T62.stream.TPQW.txt 1 1948 1972 ',
+                    'presaero.stream.txt 1 1 1'
+   vectors        = 'null'
+   mapmask        = 'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask'
+   tintalgo       = 'coszen',
+                    'nearest',
+                    'linear',
+                    'linear'
+  /

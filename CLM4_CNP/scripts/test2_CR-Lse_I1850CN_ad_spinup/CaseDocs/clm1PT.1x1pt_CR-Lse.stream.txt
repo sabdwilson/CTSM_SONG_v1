@@ -1,0 +1,88 @@
+<streamstemplate>
+      <general_comment>
+         streams template for datm in CCSM4
+      </general_comment>
+<stream>
+      <comment>
+         Stream description file for atmospheric forcing from single point datasets
+      </comment>
+      <dataSource>
+         CLMNCEP
+      </dataSource>
+      <domainInfo>
+         <variableNames>
+            time    time
+            xc      lon
+            yc      lat
+            area    area
+            mask    mask
+         </variableNames>
+         <filePath>
+            /home/xyk/DownloadedCCSMData/ccsm_inputdata/share/domains/domain.clm
+         </filePath>
+         <fileNames>
+            domain.lnd.1x1pt_CR-Lse_navy.nc
+         </fileNames>
+      </domainInfo>
+      <fieldInfo>
+         <variableNames>
+            ZBOT     z
+            TBOT     tbot
+            RH       rh
+            WIND     wind
+            PRECTmms precn
+            FSDS     swdn
+            PSRF     pbot
+            FLDS     lwdn
+         </variableNames>
+         <filePath>
+            /home/xyk/DownloadedCCSMData/ccsm_inputdata/atm/datm7/CLM1PT_data/1x1pt_CR-Lse
+         </filePath>
+         <fileNames>
+            1998-01.nc
+            1998-02.nc
+            1998-03.nc
+            1998-04.nc
+            1998-05.nc
+            1998-06.nc
+            1998-07.nc
+            1998-08.nc
+            1998-09.nc
+            1998-10.nc
+            1998-11.nc
+            1998-12.nc
+            1999-01.nc
+            1999-02.nc
+            1999-03.nc
+            1999-04.nc
+            1999-05.nc
+            1999-06.nc
+            1999-07.nc
+            1999-08.nc
+            1999-09.nc
+            1999-10.nc
+            1999-11.nc
+            1999-12.nc
+            2000-01.nc
+            2000-02.nc
+            2000-03.nc
+            2000-04.nc
+            2000-05.nc
+            2000-06.nc
+            2000-07.nc
+            2000-08.nc
+            2000-09.nc
+            2000-10.nc
+            2000-11.nc
+            2000-12.nc
+         </fileNames>
+      </fieldInfo>
+      <!-- Information on the program that created this file -->
+      <build_streams_documentation>
+         This CCSM stream text file was created by build_streams using the command line:
+               /home/xyk/TropicalWarming/clm4_ornl_cnp/scripts/ccsm_utils/Tools/build_streams -t datm.template.streams.xml -s CLM1PT -b 1998 -e 2000 -res 1x1pt_CR-Lse -do domain.lnd.1x1pt_CR-Lse_navy.nc -dp /home/xyk/DownloadedCCSMData/ccsm_inputdata/share/domains/domain.clm -c 1x1pt_CR-Lse   
+         For more information on build_streams:  
+             /home/xyk/TropicalWarming/clm4_ornl_cnp/scripts/ccsm_utils/Tools/build_streams -help          
+      </build_streams_documentation>
+</stream>
+</streamstemplate>

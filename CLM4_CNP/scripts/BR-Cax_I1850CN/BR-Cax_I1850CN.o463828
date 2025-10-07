@@ -1,0 +1,66 @@
+Prologue Initiated
+Creating global temporary directory /globalscratch/463828.b15l01.oic.ornl.gov
+Creating local temporary directory /scratch/463828.b15l01.oic.ornl.gov
+Running on node(s): b15n028
+Prologue Complete
+
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+PBS_MOMPORT=15003
+CCSM_COMPSET=I_1850_CN (I1850CN)
+COMP_ATM=datm
+COMP_LND=clm
+COMP_ICE=sice
+COMP_GLC=sglc
+COMP_OCN=socn
+COMP_CPL=cpl
+CCSM_LCOMPSET=I_1850_CN
+CCSM_SCOMPSET=I1850CN
+COMP_RUN_BARRIERS=FALSE
+CPL_DECOMP=0
+COMP_INTERFACE=MCT
+BUILD_COMPLETE=TRUE
+SMP_BUILD=a0l0i0o0g0c0
+SMP_VALUE=a0l0i0o0g0c0
+-------------------------------------------------------------------------
+ CCSM BUILDNML SCRIPT STARTING
+ - To prestage restarts, untar a restart.tar file into /home/ysa/clm4_ornl_cnp/run/BR-Cax_I1850CN/run
+ - Create modelio namelist input files
+ CCSM BUILDNML SCRIPT HAS FINISHED SUCCESSFULLY
+-------------------------------------------------------------------------
+ CCSM PRESTAGE SCRIPT STARTING
+ - CCSM input data directory, DIN_LOC_ROOT_CSMDATA, is /home/ysa/ccsm_inputdata
+ - Case input data directory, DIN_LOC_ROOT, is /home/ysa/ccsm_inputdata
+ - Checking the existence of input datasets in DIN_LOC_ROOT
+ CCSM PRESTAGE SCRIPT HAS FINISHED SUCCESSFULLY
+-------------------------------------------------------------------------
+ CCSM BUILDNML SCRIPT STARTING
+ - To prestage restarts, untar a restart.tar file into /home/ysa/clm4_ornl_cnp/run/BR-Cax_I1850CN/run
+ - Create modelio namelist input files
+ CCSM BUILDNML SCRIPT HAS FINISHED SUCCESSFULLY
+Fri Jun 17 15:11:15 EDT 2016 -- CSM EXECUTION BEGINS HERE
+Fri Jun 17 15:14:53 EDT 2016 -- CSM EXECUTION HAS FINISHED
+(seq_mct_drv): ===============       SUCCESSFUL TERMINATION OF CPL7-CCSM ===============
+cp: No match.
+Archiving ccsm output to /home/ysa/clm4_ornl_cnp/run/BR-Cax_I1850CN/../archive/BR-Cax_I1850CN
+Calling the short-term archiving script st_archive.sh
+
+st_archive.sh: start of short-term archiving
+st_archive.sh: restart files from end of run will be saved, 
+               interim restart files will be deleted
+get_inst_suffixa 1 1 
+get_inst_suffixb 1 1 
+get_inst_suffixa 1 1 
+get_inst_suffixb 1 1 
+get_inst_suffixa 1 1 
+get_inst_suffixb 1 1 
+get_inst_suffixa 1 1 
+get_inst_suffixb 1 1 
+get_inst_suffixa 1 1 
+get_inst_suffixb 1 1 
+st_archive.sh: short-term archiving completed successfully
+mv: cannot stat `/home/ysa/clm4_ornl_cnp/scripts/BR-Cax_I1850CN/timing/ccsm_timing.BR-Cax_I1850CN.160617-151109': No such file or directory
+Epilogue Initiated
+Removing global temporary directory /globalscratch/463828.b15l01.oic.ornl.gov
+Removing local temporary directory /scratch/463828.b15l01.oic.ornl.gov
+Epilogue Complete

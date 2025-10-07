@@ -1,0 +1,1 @@
+create_newcase --case testpara_P4_MAN-05_I1850CN --mach generic_linux_pgi --compset I1850CN --res CLM_USRDAT --skip_rundb --max_tasks_per_node 8 --scratchroot /home/xyk/LDRD2013/clm4_ornl_cnp/run --din_loc_root /home/xyk/DownloadedCCSMData/ccsm_inputdata

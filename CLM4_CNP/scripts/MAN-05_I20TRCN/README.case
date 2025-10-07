@@ -1,0 +1,1 @@
+create_newcase --case MAN-05_I20TRCN --mach generic_linux_pgi --compset I20TRCN --res CLM_USRDAT --skip_rundb --max_tasks_per_node 8 --scratchroot /home/ysa/clm4_ornl_cnp/run --din_loc_root /home/ysa/ccsm_inputdata

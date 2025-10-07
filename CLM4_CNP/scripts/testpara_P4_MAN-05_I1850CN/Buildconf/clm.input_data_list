@@ -1,0 +1,10 @@
+domainfile = /home/xyk/DownloadedCCSMData/ccsm_inputdata/atm/datm7/domain.clm/domain.lnd.1x1pt_MAN-05_navy.nc
+fpftcon = /home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/pftdata/pft-physiology.c110425.testpara_P4_MAN-05_I1850CN.nc
+fsnowaging = $DIN_LOC_ROOT/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+fsoilordercon = /home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/pftdata/CNP_parameters_c121029testpara_P4_MAN-05_I1850CN.nc
+fsnowoptics = $DIN_LOC_ROOT/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc
+fsurdat = /home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/surfdata/surfdata_1x1pt_testpara_P4_MAN-05_I1850CN_simyr1850_c130404.nc
+fatmgrid = /home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/griddata/griddata_1x1pt_MAN-05.nc
+fatmlndfrc = /home/xyk/DownloadedCCSMData/ccsm_inputdata/share/domains/domain.clm/domain.lnd.1x1pt_MAN-05_navy.nc
+finidat = /home/xyk/LDRD2013/clm4_ornl_cnp/run/testpara_P4_MAN-05_I1850CN_exit_spinup/run/testpara_P4_MAN-05_I1850CN_exit_spinup.clm2.r.0602-01-01-00000.nc
+stream_fldfilename_ndep = /home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/ndepdata/fndep_clm_hist_simyr1849-2006_1.9x2.5_c100428.nc

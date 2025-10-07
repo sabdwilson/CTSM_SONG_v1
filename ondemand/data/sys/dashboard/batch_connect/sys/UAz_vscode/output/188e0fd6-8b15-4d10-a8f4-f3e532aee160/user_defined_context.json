@@ -1,0 +1,11 @@
+{
+  "cluster": "ocelote",
+  "bc_email_on_started": "0",
+  "version": "default",
+  "bc_num_hours": "1",
+  "bc_num_slots": "1",
+  "ua_mem_per_core": "4",
+  "gpucount": "0",
+  "bc_account": "bh_class",
+  "ua_queue": "standard"
+}

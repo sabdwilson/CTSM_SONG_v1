@@ -1,0 +1,6 @@
+&clm_inparm
+ fsurdat = '/home/ysa/ccsm_inputdata/lnd/clm2/surfdata/surfdata_1x1pt_BR-Cax_I1850CN_simyr1850_c130404.nc'
+ fpftcon = '/home/ysa/ccsm_inputdata/lnd/clm2/pftdata/pft-physiology.c110425.BR-Cax_I1850CN.nc'
+ fsoilordercon = '/home/ysa/ccsm_inputdata/lnd/clm2/pftdata/CNP_parameters_c121029BR-Cax_I1850CN.nc'
+ stream_fldfilename_ndep = '/home/ysa/ccsm_inputdata/lnd/clm2/ndepdata/fndep_clm_hist_simyr1849-2006_1.9x2.5_c100428.nc'
+/

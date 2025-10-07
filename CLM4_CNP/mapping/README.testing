@@ -1,0 +1,43 @@
+mapping/README.testing				Jan/16/2012
+
+There is automated testing for this program in the CLM standalone test scripts
+in models/lnd/clm/test/system. There are several assumptions made in order for the 
+testing to work.
+
+
+1.) Build works the same for other CLM Fortran tools
+
+The build for any Fortran tools should work the same way, with the same options
+and required files for it. The files: Makefile, and Filepath are expected to exist
+in the tool "src" sub-directory. The other CLM tools additionally have the files:
+Srcfiles, MkDepends, and Macros.custom. The Makefile and Mkdepends files for the
+other CLM tools are intended to be kept identical other than the default settings 
+for OPT and SMP and the output executable name. The Makefile for gen_domain MUST
+remain similar as well. The options for them MUST be identical as follows.
+
+Options to the Makefile:
+
+ LIB_NETCDF --- Library directory location of NetCDF. (defaults to /usr/local/lib)
+ INC_NETCDF --- Include directory location of NetCDF. (defaults to /usr/local/include)
+ MOD_NETCDF --- Module directory location of NetCDF.  (defaults to $LIB_NETCDF)
+ USER_FC ------ Allow user to override the default Fortran compiler specified in Makefile.
+ USER_FCTYP --- Allow user to override the default type of Fortran compiler 
+                (Linux and USER_FC=ftn only).
+ USER_CC ------ Allow user to override the default C compiler specified in Makefile
+                (Linux only).
+ USER_LINKER -- Allow user to override the default linker specified in Makefile.
+ SMP ---------- Shared memory Multi-processing (TRUE or FALSE) [default is FALSE]
+ OPT ---------- Use optimized options. (TRUE or FALSE)
+
+2.) Successful completion of the tool ends with "Successfully created ..."
+
+After the tool completes it should have an unique string telling of the 
+successful completion of the file that is searchable in the log file starting
+with "Successfully created ". If this string isn't found in the log file, it
+will be assumed by the test setup that the test failed.
+
+3.) NetCDF files are created or modified
+
+It is assumed that NetCDF files are created and/or modified by the process. And if
+NetCDF files are NOT created -- something went wrong.
+

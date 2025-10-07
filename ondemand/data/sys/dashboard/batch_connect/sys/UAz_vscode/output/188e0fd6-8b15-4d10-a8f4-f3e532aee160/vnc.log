@@ -1,0 +1,25 @@
+TurboVNC Server (Xvnc) 64-bit v3.0.3 (build 20230227)
+Copyright (C) 1999-2022 The VirtualGL Project and many others (see README.txt)
+Visit http://www.TurboVNC.org for more information on TurboVNC
+
+10/01/2024 14:15:31 Using security configuration file /etc/turbovncserver-security.conf
+10/01/2024 14:15:31 Enabled security type 'tlsvnc'
+10/01/2024 14:15:31 Enabled security type 'tlsotp'
+10/01/2024 14:15:31 Enabled security type 'tlsplain'
+10/01/2024 14:15:31 Enabled security type 'x509vnc'
+10/01/2024 14:15:31 Enabled security type 'x509otp'
+10/01/2024 14:15:31 Enabled security type 'x509plain'
+10/01/2024 14:15:31 Enabled security type 'vnc'
+10/01/2024 14:15:31 Enabled security type 'otp'
+10/01/2024 14:15:31 Enabled security type 'unixlogin'
+10/01/2024 14:15:31 Enabled security type 'plain'
+10/01/2024 14:15:31 Desktop name 'TurboVNC: i16n3.ocelote.hpc.arizona.edu:4 (sdwilson)' (i16n3.ocelote.hpc.arizona.edu:4)
+10/01/2024 14:15:31 Protocol versions supported: 3.3, 3.7, 3.8, 3.7t, 3.8t
+10/01/2024 14:15:31 Listening for VNC connections on TCP port 5904
+10/01/2024 14:15:31   Interface 0.0.0.0
+10/01/2024 14:15:31 Framebuffer: BGRX 8/8/8/8
+10/01/2024 14:15:31 New desktop size: 800 x 600
+10/01/2024 14:15:31 New screen layout:
+10/01/2024 14:15:31   0x00000040 (output 0x00000040): 800x600+0+0
+10/01/2024 14:15:31 Maximum clipboard transfer size: 1048576 bytes
+10/01/2024 14:15:31 VNC extension running!

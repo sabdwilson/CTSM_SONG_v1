@@ -1,0 +1,1 @@
+create_newcase -case testPTS_MODE -res f19_g16 -compset I -mach generic_linux_pgi -scratchroot /home/ysa/clm4_ornl_cnp/run -din_loc_root_csmdata /home/ysa/ccsm_inputdata -max_tasks_per_node 8 -pts_lat 40.0 -pts_lon -105

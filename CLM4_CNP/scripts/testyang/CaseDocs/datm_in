@@ -1,0 +1,7 @@
+  &datm_nml
+    atm_in = 'datm_atm_in'
+    decomp = '1d'
+    factorFn = 'unused '
+    iradsw   = 1
+    presaero = .true.
+  /

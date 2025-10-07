@@ -1,0 +1,22 @@
+
+setenv EXEROOT  /home/ysa/clm4_ornl_cnp/run/testsite_I1850CN     # executable root directory
+setenv COMP_INTERFACE  MCT     # MCT,ESMF
+setenv ESMF_LIBDIR       # directory of esmf.mk in pre-built ESMF library
+setenv USE_ESMF_LIB  FALSE     # TRUE,FALSE
+setenv DEBUG  FALSE     # TRUE,FALSE
+setenv BUILD_THREADED  FALSE     # TRUE,FALSE
+setenv PIO_CONFIG_OPTS  " --disable-timing "     # PIO configure options, see PIO configure utility for details
+setenv GMAKE  gmake     # GNU make command
+setenv GMAKE_J  1     # Number of processors for gmake
+
+setenv RUNDIR  $EXEROOT/run     # case run directory
+setenv OBJROOT  /home/ysa/clm4_ornl_cnp/run/testsite_I1850CN     # case build directory
+setenv LIBROOT  /home/ysa/clm4_ornl_cnp/run/testsite_I1850CN/lib     # case lib directory
+setenv INCROOT  $EXEROOT/lib/include     # case lib include directory
+
+setenv BUILD_COMPLETE  FALSE     # TRUE,FALSE
+setenv SMP_BUILD  0     # smp status of previous build, coded string. (DO NOT EDIT)
+setenv SMP_VALUE  0     # smp status of current setup, coded string (DO NOT EDIT)
+setenv NINST_BUILD  0     # ninst status of previous build, coded string. (DO NOT EDIT)
+setenv NINST_VALUE  0     # ninst status of current setup, coded string (DO NOT EDIT)
+setenv BUILD_STATUS  0     # Status of prior build. (DO NOT EDIT)

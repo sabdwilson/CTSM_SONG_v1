@@ -1,0 +1,16 @@
+#! /bin/csh -f
+
+# -------------------------------------------------------------------------
+# Hadley machine specific settings
+# -------------------------------------------------------------------------
+
+source /usr/Modules/init/csh
+module purge
+module unload ifort
+module load ifort/10.1.018  
+module load icc/10.1.018
+module load openmpi/1.2.8-intel
+module load netcdf/4.0-intel
+#module list
+
+

@@ -1,0 +1,24 @@
+Script starting...
+Waiting for Jupyter Notebook to open port 52832...
+[I 15:15:55.326 NotebookApp] Serving notebooks from local directory: /home/u8/sdwilson
+[I 15:15:55.326 NotebookApp] Jupyter Notebook 6.4.8 is running at:
+[I 15:15:55.326 NotebookApp] http://i16n0.ocelote.hpc.arizona.edu:52832/node/i16n0.ocelote.hpc.arizona.edu/52832/
+[I 15:15:55.326 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+Discovered Jupyter Notebook listening on port 52832!
+Generating connection YAML file...
+[I 15:18:19.611 NotebookApp] 302 POST /node/i16n0.ocelote.hpc.arizona.edu/52832/login (128.196.131.30) 1.590000ms
+[I 15:18:19.748 NotebookApp] 302 GET /node/i16n0.ocelote.hpc.arizona.edu/52832/ (128.196.131.30) 0.490000ms
+[W 15:18:21.059 NotebookApp] 404 GET /node/i16n0.ocelote.hpc.arizona.edu/52832/ipyparallel/clusters?_=1704925098556 (128.196.131.30) 10.110000ms referer=https://ood.hpc.arizona.edu/node/i16n0.ocelote.hpc.arizona.edu/52832/tree?
+[W 15:18:37.096 NotebookApp] Notebook be434-Spring2024/assignments/00_getting_started/hw00_getting_started_part1.ipynb is not trusted
+[I 15:18:38.016 NotebookApp] 302 GET /node/i16n0.ocelote.hpc.arizona.edu/52832/notebooks/be434-Spring2024/assignments/00_getting_started/images/1_github_repo_to_fork.png (128.196.131.30) 11.620000ms
+[I 15:18:38.019 NotebookApp] 302 GET /node/i16n0.ocelote.hpc.arizona.edu/52832/notebooks/be434-Spring2024/assignments/00_getting_started/images/2_github_plan_for_fork.png (128.196.131.30) 14.150000ms
+[I 15:18:38.025 NotebookApp] Kernel started: 74aa5fcd-5bdd-490d-ad7d-aee832b8321b, name: python3
+[I 15:18:38.048 NotebookApp] 302 GET /node/i16n0.ocelote.hpc.arizona.edu/52832/notebooks/be434-Spring2024/assignments/00_getting_started/images/3_github_add_a_collaborator.png (128.196.131.30) 3.120000ms
+[I 15:20:38.641 NotebookApp] Saving file at /be434-Spring2024/assignments/00_getting_started/hw00_getting_started_part1.ipynb
+[I 15:24:03.724 NotebookApp] Kernel interrupted: 74aa5fcd-5bdd-490d-ad7d-aee832b8321b
+[I 15:24:38.000 NotebookApp] Saving file at /be434-Spring2024/assignments/00_getting_started/hw00_getting_started_part1.ipynb
+[I 15:24:48.386 NotebookApp] Kernel interrupted: 74aa5fcd-5bdd-490d-ad7d-aee832b8321b
+[I 15:26:38.024 NotebookApp] Saving file at /be434-Spring2024/assignments/00_getting_started/hw00_getting_started_part1.ipynb
+[I 15:38:26.171 NotebookApp] Starting buffering for 74aa5fcd-5bdd-490d-ad7d-aee832b8321b:4151f19be4fb486a8034f7f927931dfe
+Jan 10 16:15:49.611971  6307 slurmstepd   0x2b84408de700: error: *** JOB 2650520 ON i16n0 CANCELLED AT 2024-01-10T16:15:49 DUE TO TIME LIMIT ***
+5&local_job_id=2650520 by 8am on 2024/01/11.

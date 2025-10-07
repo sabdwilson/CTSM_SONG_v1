@@ -1,0 +1,8 @@
+create_newcase --case testyang -res f09_g16 -compset I1850CN -mach generic_linux_pgi -scratchroot /home/ysa/clm4_ornl_cnp/run -din_loc_root_csmdata /home/ysa/ccsm_inputdata/ -max_tasks_per_node 8
+case created 2016-06-12 20:19:38
+configure -case 2016-06-12 20:53:32
+configure -cleanmach 2016-06-12 22:43:58
+configure -case 2016-06-12 22:44:11
+configure -cleannamelist 2016-06-13 09:01:01
+configure -case 2016-06-13 09:01:07
+build complete 2016-06-13 12:05:40

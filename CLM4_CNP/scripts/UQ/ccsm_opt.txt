@@ -1,0 +1,13 @@
+site       = US-NR1
+case       = N16_US-NR1
+mypft      = 1
+optdir     = /home/zdr/models/clm4_ornl/scripts/UQ
+rundir     = /home/zdr/models/clm4_ornl/run
+ccsm_input = /home/zdr/models/ccsm_inputdata
+samples    = in_10k_good.dat
+n_samples  = 7434
+fullrun    = T
+nyears_ad  = 600
+nyears_ex  = 1
+nyears_fin = 1002
+nyears_tr  = 158

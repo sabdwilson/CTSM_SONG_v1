@@ -1,0 +1,24 @@
+{
+  "job_name": "sys/dashboard/sys/UAz_vscode",
+  "workdir": "/home/u8/sdwilson/ondemand/data/sys/dashboard/batch_connect/sys/UAz_vscode/output/188e0fd6-8b15-4d10-a8f4-f3e532aee160",
+  "output_path": "/home/u8/sdwilson/ondemand/data/sys/dashboard/batch_connect/sys/UAz_vscode/output/188e0fd6-8b15-4d10-a8f4-f3e532aee160/output.log",
+  "shell_path": "/bin/bash",
+  "email_on_started": false,
+  "wall_time": 3600,
+  "accounting_id": "bh_class",
+  "queue_name": "standard",
+  "native": [
+    "--job-name",
+    "vscode",
+    "--nodes",
+    "1",
+    "--account",
+    "bh_class",
+    "--ntasks",
+    "1",
+    "--mem-per-cpu",
+    "4gb",
+    "--time",
+    "1:00:00"
+  ]
+}

@@ -1,0 +1,8 @@
+fpftcon = $DIN_LOC_ROOT/lnd/clm2/pftdata/pft-physiology.c110425.nc
+fsnowaging = $DIN_LOC_ROOT/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+fsnowoptics = $DIN_LOC_ROOT/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc
+fsurdat = $DIN_LOC_ROOT/lnd/clm2/surfdata/surfdata_0.9x1.25_simyr1850_c110921.nc
+fatmlndfrc = /home/ysa/ccsm_inputdata//share/domains/domain.lnd.fv0.9x1.25_gx1v6.090309.nc
+frivinp_rtm = $DIN_LOC_ROOT/lnd/clm2/rtmdata/rdirc_0.5x0.5_simyr2000_c101124.nc
+finidat = $DIN_LOC_ROOT/ccsm4_init/b40.1850.track1.1deg.006/0863-01-01/b40.1850.track1.1deg.006.clm2.r.0863-01-01-00000.nc
+stream_fldfilename_ndep = $DIN_LOC_ROOT/lnd/clm2/ndepdata/fndep_clm_hist_simyr1849-2006_1.9x2.5_c100428.nc

@@ -1,0 +1,73 @@
+---
+abstract: 'Interface to Gnome libxml2 xml parsing and DOM library'
+author:
+  - 'Petr Pajas <PAJAS@cpan.org>'
+build_requires:
+  Config: '0'
+  Errno: '0'
+  ExtUtils::MakeMaker: '0'
+  IO::File: '0'
+  IO::Handle: '0'
+  POSIX: '0'
+  Scalar::Util: '0'
+  Test::More: '0'
+  locale: '0'
+  utf8: '0'
+configure_requires:
+  Alien::Base::Wrapper: '0'
+  Alien::Libxml2: '0.14'
+  Config: '0'
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 0
+generated_by: 'ExtUtils::MakeMaker version 7.70, CPAN::Meta::Converter version 2.150010'
+keywords:
+  - dom
+  - html
+  - libxml
+  - 'object oriented'
+  - oop
+  - parse
+  - parser
+  - parsing
+  - pullparser
+  - sax
+  - sgml
+  - xml
+  - xpath
+  - XPath
+  - xs
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: XML-LibXML
+no_index:
+  directory:
+    - t
+    - inc
+    - xt
+requires:
+  Carp: '0'
+  DynaLoader: '0'
+  Encode: '0'
+  Exporter: '5.57'
+  IO::Handle: '0'
+  Scalar::Util: '0'
+  Tie::Hash: '0'
+  XML::NamespaceSupport: '1.07'
+  XML::SAX: '0.11'
+  XML::SAX::Base: '0'
+  XML::SAX::DocumentLocator: '0'
+  XML::SAX::Exception: '0'
+  base: '0'
+  constant: '0'
+  overload: '0'
+  parent: '0'
+  perl: '5.008001'
+  strict: '0'
+  vars: '0'
+  warnings: '0'
+resources:
+  repository: https://github.com/shlomif/perl-XML-LibXML.git
+version: '2.0210'
+x_serialization_backend: 'CPAN::Meta::YAML version 0.018'

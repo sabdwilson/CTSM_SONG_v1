@@ -1,0 +1,76 @@
+#===============================================================================
+# The following always need to be set
+# SPMD             Whether to build in SPMD mode or not.  [values TRUE FALSE]
+# SMP              Set to TRUE to enable building in SMP mode (uses OpenMP).  
+# USER_CPPDEFS     CPP definitions (non platform dependent)
+#
+#===============================================================================
+
+# Note that CPPDEFS is set in Macros.cppdefs
+CPPDEFS += -DLINUX -DSEQ_$(FRAMEWORK) -DFORTRANUNDERSCORE -DNO_R16 -DNO_SHR_VMATH 
+
+ifeq ($(compile_threaded), true)
+   CPPDEFS += -DTHREADED_OMP
+endif
+
+SFC            := ftn
+SCC            := cc
+MPIFC          := ftn
+MPICC          := cc
+
+ifneq ($(CRAY_NETCDF_DIR),)
+  NETCDF_PATH:= $(CRAY_NETCDF_DIR)/netcdf-intel
+else
+  NETCDF_PATH:= $(NETCDF)
+endif
+
+
+INC_NETCDF    := $(NETCDF_PATH)/include
+LIB_NETCDF    := $(NETCDF_PATH)/lib
+MOD_NETCDF    := $(NETCDF_PATH)/include
+MPICH_PATH    := $(MPICH_DIR)
+
+SLIBS := $(shell nc-config --flibs) -lz -lm
+
+
+MPI_LIB_NAME  := mpich
+PNETCDF_PATH  :=
+INC_PNETCDF   :=
+LIB_PNETCDF   := 
+LAPACK_LIBDIR := 
+#=====================================================
+
+CFLAGS        := $(CPPDEFS) 
+FIXEDFLAGS    := -132
+FREEFLAGS     := -FR
+FFLAGS        := $(CPPDEFS) -g -fp-model precise -convert big_endian -assume byterecl -ftz -traceback
+FFLAGS_NOOPT  := $(FFLAGS) -O0
+FFLAGS_OPT    := -O2
+LDFLAGS       := 
+AR            := ar
+MOD_SUFFIX    := mod
+CONFIG_SHELL  :=
+PIO_CONFIG_OPTS := --enable-filesystem-hints=gpfs
+FPPDEFS := $(CPPDEFS)
+FC_AUTO_R8 := -r8
+
+#===============================================================================
+# Set model and other specific options
+# NOTE - all CPPDEFS options must be defined before this point
+#===============================================================================
+
+ifeq ($(DEBUG),TRUE)
+  FFLAGS       += -CU -check pointers -fpe0 -ftz
+  FFLAGS_NOOPT += -CU -check pointers -fpe0 -ftz
+else
+  FFLAGS += $(FFLAGS_OPT)
+endif
+
+ifeq ($(compile_threaded), true)
+  FFLAGS       += -openmp
+  FFLAGS_NOOPT += -openmp
+  CFLAGS       += -openmp
+  LDFLAGS      += -openmp
+endif
+
+

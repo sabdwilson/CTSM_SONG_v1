@@ -1,0 +1,348 @@
+================================================================================
+SVN $Id: ChangeLog 30292 2011-09-12 22:46:25Z jedwards $
+SVN $URL: https://svn-ccsm-models.cgd.ucar.edu/Machines/trunk/ChangeLog $
+================================================================================
+This file describes what tags were created and why
+================================================================================
+Originator: tcraig
+Date: Jan 23 2012
+Model: Machine
+Version: Machines_120123
+One-line: update esmf lib on bluefire to esmf-5.2.0rp1bs18-64-O
+
+M       config_machines.xml
+================================================================================
+Originator: jedwards
+Date: Jan 13 2012
+Model: Machine
+Version: Machines_120113
+One-line: port to titan
+
+D            33577   Macros.titan_cray
+A  +             -   env_machopts.titan
+A  +             -   mkbatch.titan
+D            33577   mkbatch.titan_pgi
+D            33577   Macros.titan_pgi
+M            33577   config_pes.xml
+M            33577   config_machines.xml
+D            33577   env_machopts.titan_cray
+D            33577   mkbatch.titan_cray
+D            33577   env_machopts.titan_pgi
+A  +             -   Macros.titan
+
+
+================================================================================
+Originator: jedwards
+Date: Jan 10 2012
+Model: Machine
+Version: Machines_120110
+One-line: port to titan_pgi
+
+Deleting       Macros.jaguarpf
+Adding         Macros.titan_pgi
+Sending        config_pes.xml
+Deleting       env_machopts.jaguarpf
+Sending        env_machopts.titan_cray
+Adding         env_machopts.titan_pgi
+Deleting       mkbatch.jaguarpf
+Adding         mkbatch.titan_pgi
+	
+================================================================================
+Originator: mvertens
+Date: Dec 20 2011
+Model: Machine
+Version: Machines_111220
+One-line: changed all mkbatch scripts to enable a TESTMODE environment variable
+	  (needed to have the batch commands appear in the test script)
+
+This had already been done in lynx_pgi for Machines_111218 - but not for the 
+platforms - - so this is in effect a bug fix
+	
+M       mkbatch.brutus_im
+M       mkbatch.brutus_io
+M       mkbatch.chester
+M       mkbatch.bluefire
+M       mkbatch.prototype_ranger
+M       mkbatch.prototype_hera
+M       mkbatch.lynx_cray
+M       mkbatch.generic_darwin_pgi
+M       mkbatch.prototype_columbia
+M       mkbatch.hopp2
+M       mkbatch.jaguarpf
+M       mkbatch.lynx_gnu
+M       mkbatch.janus_intel
+M       mkbatch.generic_xt
+M       mkbatch.generic_linux_lahey
+M       mkbatch.prototype_nyblue
+M       mkbatch.lynx_intel
+M       mkbatch.edinburgh_lahey
+M       mkbatch.generic_darwin_intel
+M       mkbatch.pingo
+M       mkbatch.pleiades
+M       mkbatch.titan_cray
+M       mkbatch.generic_ibm
+M       mkbatch.franklin
+M       mkbatch.prototype_frost
+M       mkbatch.hector
+M       mkbatch.generic_linux_pgi
+M       mkbatch.midnight
+M       mkbatch.pleiades_wes
+M       mkbatch.edinburgh_pgi
+M       mkbatch.hadley
+M       mkbatch.kraken
+M       mkbatch.generic_linux_pathscale
+M       mkbatch.generic_linux_intel
+M       mkbatch.prototype_atlas
+M       mkbatch.edinburgh_intel
+M       mkbatch.prototype_ubgl
+M       mkbatch.intrepid
+M       mkbatch.lynx_pathscale
+M       mkbatch.brutus_pm
+M       mkbatch.brutus_po
+
+	
+================================================================================
+Originator: jedwards
+Date: Dec 19 2011
+Model: Machine
+Version: Machines_111219a
+One-line: Remove no longer used lt archive variables
+         M env_machopts.bluefire
+         M env_machopts.hadley
+         M env_machopts.prototype_frost
+         M env_machopts.prototype_ubgl
+================================================================================
+Originator: jedwards
+Date: Dec 19 2011
+Model: Machine
+Version: Machines_111219
+One-line: Update lynx machines to load ESMF lib, update ne30npf layout on intrepid
+            M   env_machopts.lynx_pgi
+            M   env_machopts.lynx_intel
+            M   config_pes.xml
+            M   config_machines.xml
+
+	
+================================================================================
+Originator: mvertens
+Date: Dec 18 2011
+Model: Machines
+Version: Machines_111218
+One-line: change all mkbatch scripts to not have leverage $mach name in .run 
+	  or .l_archive scripts
+
+M       Macros.cppdefs
+	- removed CCSM_BGC, VOC and GLC_NEC_NN as cpp-defs
+	
+M       mkbatch.brutus_im
+M       mkbatch.brutus_io
+M       mkbatch.chester
+M       mkbatch.bluefire
+M       mkbatch.prototype_ranger
+M       mkbatch.prototype_hera
+M       mkbatch.lynx_cray
+M       mkbatch.generic_darwin_pgi
+M       mkbatch.prototype_columbia
+M       mkbatch.hopp2
+M       mkbatch.jaguarpf
+M       mkbatch.lynx_gnu
+M       mkbatch.janus_intel
+M       mkbatch.generic_xt
+M       mkbatch.generic_linux_lahey
+M       mkbatch.prototype_nyblue
+M       mkbatch.lynx_intel
+M       mkbatch.edinburgh_lahey
+M       mkbatch.generic_darwin_intel
+M       mkbatch.pingo
+M       mkbatch.pleiades
+M       mkbatch.lynx_pgi
+M       mkbatch.titan_cray
+M       mkbatch.generic_ibm
+M       mkbatch.franklin
+M       mkbatch.prototype_frost
+M       mkbatch.hector
+M       mkbatch.generic_linux_pgi
+M       mkbatch.midnight
+M       mkbatch.pleiades_wes
+M       mkbatch.edinburgh_pgi
+M       mkbatch.hadley
+M       mkbatch.kraken
+M       mkbatch.generic_linux_pathscale
+M       mkbatch.generic_linux_intel
+M       mkbatch.prototype_atlas
+M       mkbatch.edinburgh_intel
+M       mkbatch.prototype_ubgl
+M       mkbatch.intrepid
+M       mkbatch.lynx_pathscale
+M       mkbatch.brutus_pm
+M       mkbatch.brutus_po
+
+================================================================================
+Originator: jedwards
+Date: Dec 14 2011
+Model: Machines
+Version: Machines_111214
+One-line: Refactor config_machines.xml to make it more extendable
+
+M       config_machines.xml
+================================================================================
+
+================================================================================
+Originator: tcraig
+Date: Dec 13 2011
+Model: Machines
+Version: Machines_111213
+One-line: Add sleep 10 for bluefire before running ccsm
+
+M       mkbatch.bluefire
+================================================================================
+Originator: jedwards
+Date: Dec 8 2011
+Model: Machines
+Version: Machines_111208b
+One-line: Correct typo for janus, add pnetcdf for titan
+M    Macros.titan_cray
+M    config_pes.xml
+M    env_machopts.titan_cray
+M    config_machines.xml
+
+
+================================================================================
+Originator: jedwards
+Date: Dec 8 2011
+Model: Machines
+Version: Machines_111208a
+One-line: Correct location of netcdf library flag in Macros
+M            32572   Macros.janus_intel
+M            32572   Macros.bluefire
+M            32572   Macros.jaguarpf
+================================================================================
+
+
+
+Originator: jedwards
+Date: Dec 8 2011
+Model: Machines
+Version: Machines_111208
+One-line: Add jaguarpf replacement titan_cray, update config_pes.xml
+
+A    Macros.titan_cray
+A    env_machopts.titan_cray 
+A    env_machopts.titan_cray
+M    Macros.postdefs
+M    config_machines.xml
+M    config_pes.xml
+
+	
+================================================================================
+Originator: jedwards
+Date: Dec 6 2011
+Model: Machines
+Version: Machines_111206
+One-line: update lynx intel to 12.1.0
+
+M    Macros.lynx_intel
+M    env_machopts.lynx_intel
+
+================================================================================
+Originator: jedwards
+Date: Nov 30, 2011
+Model: Machines
+Version: Machines_111130
+One-line: update lynx pgi to 11.10.0
+
+M    Macros.lynx_pgi
+M    env_machopts.lynx_pgi
+
+================================================================================
+Originator: erik
+Date: Nov 29, 2011
+Model: Machines
+Version: Machines_111129
+One-line: Remove DIN_LOC_ROOT_CLMQIAN, add DIN_LOC_ROOT_CLM_FORC
+
+M       config_machines.xml
+
+================================================================================
+Originator: jedwards
+Date: Nov 22, 2011
+Model: Machines
+Version: Machines_111122
+One-line: Updates for hopper - ESMF library added - initial port to janus_intel
+        M Macros.hopp2
+        M config_machines.xml
+        A         Macros.janus_intel
+        A         mkbatch.janus_intel
+        A         env_machopts.janus_intel
+
+================================================================================    
+
+Originator: jedwards
+Date: Nov 01, 2011
+Model: Machines
+Version: Machines_111101
+One-line: Add -D_NO_MPI_RSEND work around for bad rsend performance on hopper
+         M Macros.hopp2
+
+
+
+
+
+================================================================================        
+Originator: jedwards
+Date: Oct 27, 2011
+Model: Machines
+Version: Machines_111027
+One-line: Updates for intrepid - change working directory
+	  change pe layout for several compsets 
+
+	M        config_machines.xml
+        M        config_pes.xml
+        M        env_machopts.intrepid
+        M        mkbatch.intrepid
+
+================================================================================        
+Originator: trey
+Date: Oct 11, 2011
+Model: Machines
+Version: Machines_111011
+One-line: Change mkbatch so it uses lt_archive.csh.
+
+M      mkbatch.lynx_pgi
+M      mkbatch.bluefire
+M      mkbatch.chester
+M      mkbatch.franklin
+M      mkbatch.lynx_cray
+M      mkbatch.hopp2
+M      mkbatch.jaguarpf
+M      mkbatch.lynx_gnu
+M      mkbatch.edinburgh_pgi
+M      mkbatch.kraken
+M      mkbatch.edinburgh_intel
+M      mkbatch.intrepid
+M      mkbatch.lynx_pathscale
+M      mkbatch.lynx_intel
+M      mkbatch.edinburgh_lahey	
+
+================================================================================        
+Originator: jedwards
+Date: Oct 10, 2011
+Model: Machines
+Version: Machines_111010
+One-line: Update ESMF library path on bluefire to be compatible with netcdf 4.1.3
+
+================================================================================        
+Originator: jedwards
+Date: Oct 7, 2011
+Model: Machines
+Version: Machines_111007
+One-line: Update jaguarpf, hopp2 and franklin to use netcdf 4.1.3 and pgi 11.7.0
+
+================================================================================        
+Originator: jedwards
+Date: Sep 20 2011
+Model: Machines
+Version: Machines_110920
+One-line: Moved from scripts/ccsm_utils/Machines to decouple Machine configurations from other scripts changes
+
+================================================================================        	

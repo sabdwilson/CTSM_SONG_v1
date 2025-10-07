@@ -1,0 +1,9 @@
+ATM_DOMAINFILE = /home/ysa/ccsm_inputdata/share/domains/domain.clm/domain.lnd.1x1pt_MAN-05_navy.nc
+domain1 = /home/ysa/ccsm_inputdata/atm/cam/chem/trop_mozart_aero/aero/aerosoldep_monthly_1849-2006_1.9x2.5_c090803.nc
+file1 = /home/ysa/ccsm_inputdata/atm/cam/chem/trop_mozart_aero/aero/aerosoldep_monthly_1849-2006_1.9x2.5_c090803.nc
+domain1 = /home/ysa/ccsm_inputdata/atm/datm7/CO2/fco2_datm_1765-2007_c100614.nc
+file1 = /home/ysa/ccsm_inputdata/atm/datm7/CO2/fco2_datm_1765-2007_c100614.nc
+domain1 = /home/ysa/ccsm_inputdata/atm/cam/chem/trop_mozart_aero/aero/aerosoldep_monthly_1849-2006_1.9x2.5_c090803.nc
+file1 = /home/ysa/ccsm_inputdata/atm/cam/chem/trop_mozart_aero/aero/aerosoldep_monthly_1849-2006_1.9x2.5_c090803.nc
+domain1 = /home/ysa/ccsm_inputdata/atm/datm7/CO2/fco2_datm_1765-2007_c100614.nc
+file1 = /home/ysa/ccsm_inputdata/atm/datm7/CO2/fco2_datm_1765-2007_c100614.nc

@@ -1,0 +1,29 @@
+#!/bin/csh -f
+
+#PBS -N UQ_setup
+#PBS -q esd08q
+#PBS -M ricciutodm@ornl.gov
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -S /bin/csh -V
+
+cd /home/zdr/models/clm4_ornl/scripts/UQ
+setenv mysite       `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 1p`
+setenv mycase       `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 2p`
+setenv mypft        `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 3p`
+setenv myoptdir     `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 4p`
+setenv myrundir     `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 5p`
+setenv myccsm_input `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 6p`
+setenv mysamples    `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 7p`
+setenv myn_samples  `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 8p`
+setenv myfullrun    `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 9p`
+setenv nyears_ad    `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 10p`
+setenv nyears_ex    `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 11p`
+setenv nyears_fin   `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 12p`
+setenv nyears_tr    `awk -F" " '{print $3}' ccsm_opt.txt | sed -n 13p`
+
+mpirun -np 1 ./psens > psens_log.txt
+
+
+

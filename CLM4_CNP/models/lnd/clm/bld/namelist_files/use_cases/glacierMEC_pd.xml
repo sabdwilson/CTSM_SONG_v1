@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!-- Support for running with glacier model -->
+
+<namelist_defaults>
+
+<use_case_desc>Running an IG case with the ice sheet model glimmer</use_case_desc>
+
+<glc_nec>10</glc_nec>
+
+<!-- glc_smb will already be set if glc_nec is set, but set explicitly here -->
+<glc_smb     >.true.</glc_smb>
+
+<hist_fincl2 >QICEYR</hist_fincl2>
+<hist_mfilt  >1,1</hist_mfilt>
+<hist_nhtfrq >0,-8760</hist_nhtfrq>
+
+<!-- Settings for datm and driver for standalone testing -->
+<datm_presaero mode="clm_stndln">clim_2000</datm_presaero>
+
+</namelist_defaults>

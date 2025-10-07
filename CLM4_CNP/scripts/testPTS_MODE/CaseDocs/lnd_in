@@ -1,0 +1,25 @@
+
+&clm_inparm
+ co2_ppmv		= 367.0
+ co2_type		= 'constant'
+ create_crop_landunit		= .false.
+ do_rtm		= .false.
+ dtime		= 1800
+ fatmlndfrc		= '/home/ysa/ccsm_inputdata/share/domains/domain.lnd.fv1.9x2.5_gx1v6.090206.nc'
+ finidat		= ' '
+ fpftcon		= '/home/ysa/ccsm_inputdata/lnd/clm2/pftdata/pft-physiology.c110425.nc'
+ fsnowaging		= '/home/ysa/ccsm_inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc'
+ fsnowoptics		= '/home/ysa/ccsm_inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc'
+ fsurdat		= '/home/ysa/ccsm_inputdata/lnd/clm2/surfdata/surfdata_1.9x2.5_simyr2000_c091005.nc'
+ maxpatch_glcmec		= 0
+ urban_hac		= 'ON_WASTEHEAT'
+ urban_traffic		= .false.
+/
+&ndepdyn_nml
+/
+#!--------------------------------------------------------------------------------------------------------------------------
+#! lnd_in:: Comment:
+#! This namelist was created using the following command-line:
+#!     /home/ysa/clm4_ornl_cnp/models/lnd/clm/bld/build-namelist -config /home/ysa/clm4_ornl_cnp/scripts/testPTS_MODE/Buildconf/clmconf/config_cache.xml -res 1.9x2.5 -mask gx1v6 -ignore_ic_year -use_case 2000_control -infile cesm_namelist -clm_start_type cold -glc_nec 0 -rtm off -rtm_res R05 -rtm_tstep 10800 -co2_ppmv 367.0 -datm_presaero clim_2000 -namelist &clm_inparm  / -csmdata /home/ysa/ccsm_inputdata -inputdata /home/ysa/clm4_ornl_cnp/scripts/testPTS_MODE/Buildconf/clm.input_data_list
+#! For help on options use: /home/ysa/clm4_ornl_cnp/models/lnd/clm/bld/build-namelist -help
+#!--------------------------------------------------------------------------------------------------------------------------

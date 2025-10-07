@@ -1,0 +1,82 @@
+#! /bin/csh -f
+
+set svnrepo = "https://svn-ccsm-rundb.cgd.ucar.edu"
+set svnstr = "${svnrepo}/${case}"
+
+set no_svn = "FALSE"
+#look for subversion client
+svn --version > /dev/null
+if ($status != 0) then
+	set no_svn = "TRUE"
+	echo ""
+	echo "Error: the subversion client svn was not found."
+else
+	echo "your subversion password may be requested..."
+	svn list $svnrepo > /dev/null
+	if ($status != 0) then
+	    set no_svn = "TRUE"
+	    echo ""
+	    echo "Error: subversion username/password was invalid."
+	endif
+endif
+
+if ($no_svn == "TRUE") then
+	echo "Unable to contact the CCSM run database to verify that the casename is unique."
+	echo "To avoide potential conflicts, please verify a unique casename manually at:"
+	echo "http://ccsm-rundb.cgd.ucar.edu/case_reserved.php"
+	echo ""
+	echo "create_newcase can then be invoked including '-skip_rundb ' as an "
+	echo "argument to skip communications with the run database repository."
+	echo ""
+	exit -1
+endif
+
+#look for existence of this case's trunk in rundb repository 
+svn list $svnstr/trunk > /dev/null
+if ($status == 0) then
+	echo "case= $case already exists in the CCSM run database - please use a unique casename"
+	echo "a list of existing and reserved casenames can be found here:"
+	echo "http://ccsm-rundb.cgd.ucar.edu/case_reserved.php"
+	exit -1
+endif
+
+#look for reservation of this case in repository
+svn list $svnstr > /dev/null
+if ($status == 0) then
+	#get reserver for reserved casename
+    set reserver = `svn log $svnstr | grep 'reserved by:' | sed "s/^.*reserved by: //;"`
+
+	set entry = "NOT_VALID"
+	while ($entry == "NOT_VALID")
+	    echo "The casename $case has been reserved by $reserver..."
+	    echo "enter 'cont' if you acknowledge using this reservation and wish to continue or 'quit' to exit"
+	    set ans = $<
+	    if ("$ans" == 'cont') then
+		set entry = "VALID"
+	    else if ("$ans" == 'quit') then
+		exit -1
+	    endif
+	end
+else
+	set entry = "NOT_VALID"
+	while ($entry == "NOT_VALID")
+	    echo "No information has been entered for this casename in the run database..."
+	    echo "Enter a contact email address to reserve the casename or <enter> to skip"
+	    set ans = $<
+	    if ("$ans" =~ *@*.* ) then
+            svn mkdir $svnrepo/$case -m "create_newcase: casename $case reserved by: $ans"
+		if ($status == 0) then
+		    echo "a reservation for $case should be made in the run database within a few minutes"
+		else
+		    echo "Error: unable to make casename reservation in run database repository - exiting"
+		    exit -1  
+		endif
+		set entry = "VALID"
+	    else if ("$ans" == "") then
+		set entry = "VALID"
+		echo "skipping..."
+	    endif
+	end
+endif
+
+

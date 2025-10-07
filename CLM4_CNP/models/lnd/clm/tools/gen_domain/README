@@ -1,0 +1,168 @@
+
+This directory contains utilities for generating mapping and domain files
+
+==========================================================
+1) gen_maps.sh
+==========================================================
+
+- creates all necessary atm/ocn cpl mapping files then used in step 2).
+
+gen_maps.sh 
+  --fileocn|-focn  input ocn_grid_filename (required) 
+  --fileatm|-fatm  input atm_grid_filename (required)
+  --nameocn|-nocn  output ocn_name in mapping file (required)
+  --nameatm|-natm  output atm_name in mapping file (required)
+  [ --typeocn|tocn ] [regional|global]
+  [ --typelnd|tlnd ] [regional|global]
+  [ --help|-h ]
+  [ -v ]
+
+The output mapping file can then be used as input to gen_domain 
+talked about below.
+
+==========================================================
+2) gen_domain 
+==========================================================
+
+- created by going into src and invoking make (see more build information below)
+- reads in a conservative ocean -> atmosphere mapping matrix file (from step 1 above) and 
+  outputs three domain description files, 
+   - one ocean domain file
+   - one land domain file with the land mask
+   - one land domain file with the ocean mask
+
+Ocean fraction will be either 0 or 1, depending on the ocean domain
+mask, and land fraction will be calculated such that it is the
+complement of the ocean domain.
+
+To get appropriate landfrac values, a conservative ocean -> atmosphere 
+mapping file must be used.
+
+Information on the build:
+
+        src/Makefile ----- GNU Makefile to build the tool
+        src/Filepath ----- Filepath of source directories, normally "."
+                           unless you need to build in a different directory
+                           (as per CLM testing for example).
+
+    To build:
+
+        cd <directory>
+        setenv INC_NETCDF <path-to-NetCDF-include-files>
+        setenv LIB_NETCDF <path-to-NetCDF-library-files>
+        gmake
+
+      By default the code is compiled non-optimized for speed.
+      If you want to use the debugger, and turn bounds-checking, and float trapping on,
+      do the following...
+
+   gmake OPT=FALSE
+
+
+Output from gen_domain that is intended for use in a standard version of CESM
+(ie. to be used in an out-of-the-box CESM configuration), should be created by 
+CSEG, or in coordination with CSEG, in a standard location using standard code 
+and standard input data files.  Failure to do so will probably mean that the 
+domain files generated will not be accepted for use in a standard version of 
+CESM.  For more information, contact CSEG.
+
+Usage for gen_domain:
+
+(a) compile
+    unix> cd src
+    unix> gmake
+    unix> cd .. 	
+
+(b) execute
+    unix> gen_domain -m <filemap>
+	             -o <gridocn>
+	             -l <gridlnd>
+	             [-p set_fv_pole_yc]
+	             [-c <user comment gen_domain.nml>]
+
+  where:
+    filemap = input mapping file name  (character string)
+    gridocn = output ocean grid name
+    gridlnd = output land grid name
+    usercomment = optional, netcdf global attribute (character string)
+    set_fv_pole_yc = [0,1,2] ~ optional, default = 0 (see comments below)
+
+    The following output domain files are created:
+       domain.lnd.gridlnd_gridocn.nc
+         land domain file on the land grid with a 
+         land fraction corresponding to 
+         (1-gridocn) mask mapped to the land grid
+       domain.ocn.gridlnd_gridocn.nc
+         ocean domain on the land grid with an 
+         ocean fraction corresponding to the 
+         gridocn mask mapped to the land grid
+         this is used when both atm,lnd,ice,ocn are all on the
+         same grid (F compset)
+       domain.ocn.gridocn.nc'
+         ocean domain on the ocean grid 
+
+Notes for gen_domain:
+
+(a) Computation of land mask and cell fraction
+
+    This code adds "cell fraction" data to the output domain files.
+    The "cell fraction" indicates how much of each grid cell is active.
+    Typically ocean models do not have fractional cells (their fraction
+    is either 0 or 1), where as land models do have fractional cells.
+    This code generates domain files where gridocn has fractions of either
+    0 or 1 (for grid cells that are masked or unmasked, respectively) and
+    gridlnd has fractions that represent the complement of gridocn fraction
+    data, as computed by the input mapping data.  Thus gridocn is intended
+    to be an ocean domain file and gridlnd is intended to be the complementary
+    land domain file.  Related, the input mapping data, filemap, should be 
+    a conservative mapping: ocean -> atmosphere.
+
+    Computed land fractions will be truncated into the range [0,1] 
+    after the min/max land fraction values have been documented.
+    Computed land fractions that are less than fminval will be truncated to 0
+    to avoid active land cells with tiny land fractions.
+
+    The input atmosphere grid is assumed to be unmasked (global) and the land
+    and atmosphere grids are assumed to be identical, except for cell fractions
+    and masks.  Land cells whose fraction is zero will have land mask = 0.
+
+(b) Fraction error reported in stdout
+
+    In the stdout, the min/max land fraction is reported.  Land fractions should
+    be in the range [0,1], but due to either unavoidable/acceptable numerical 
+    errors or other avoidable/unacceptable errors (eg. bad mapping matrix data)
+    this code may compute land fractions outside the range [0,1].
+
+    *** THE USER IS RESPONSIBLE FOR EXAMINING THE STDOUT MIN/MAX LAND 
+    *** FRACTION DATA AND MAKING THEIR OWN SUBJECTIVE DECISION ABOUT WHETHER 
+    *** SUCH ERRORS ARE ACCEPTABLE OR NOT.
+
+(c) The "pole fix" option
+
+    set_fv_pole_yc = 0 => do not do the pole fix      (default)
+    set_fv_pole_yc = 1 => do the pole-fix on gridocn
+    set_fv_pole_yc = 2 => do the pole-fix on gridlnd
+
+    The "pole fix" means setting 
+    yc(i,j) = -90 for j=1  (the min value of j: 1), and
+    yc(i,j) =  90 for j=nj (the max value of j, the size of the j-dimension)
+    regardless of what the coordinate values are in the input mapping data file.
+
+    In other words, if the input mapping data min/max yc coordinates ARE NOT at 
+    +/- 90 degrees but the desire is to have domain data with min/max yc coordinates 
+    at +/- 90, the "pole fix" namelist option can be activated to accomplish this.
+    This would only work for lat/lon grids, ie. grids that could be described
+    by x(i) and y(j) coordinate arrays.
+    
+    Why?
+
+    This option was introduced to accommodate a request by the CESM Atmosphere 
+    Model Working Group wherein they want certain finite volume grids 
+    with min/max yc coordinates (latitude of grid cell "centers") at +/- 90 degrees, 
+    yet they want the corresponding mapping data created for grids
+    where the min/max yc coordinates ARE NOT at +/- 90 degrees, 
+    (they are somewhat displaced toward the equator).  
+
+    While this type of manipulation has been requested by the AMWG, it is not 
+    required by the CESM model, CESM coupler, or the SCRIP map generation tool.
+

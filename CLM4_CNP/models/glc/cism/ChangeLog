@@ -1,0 +1,988 @@
+================================================================================
+This file describes what main-trunk tags were created and why
+================================================================================
+
+================================================================================
+Originator: tcraig
+Date: Jan 23, 2012
+Model: cism
+Version: cism1_120123
+One-line summary: update esmf to 520r
+
+M       source_glc/glc_io.F90
+M       drivers/cpl_mct/glc_comp_mct.F90
+================================================================================
+Originator: sacks
+Date: Dec 21, 2011
+Model: cism
+Version: cism1_111221
+One-line summary: Restore "correct" glc_time_management, with fix for compiler bug
+
+Purpose of changes:
+
+Return glc_time_management to its "correct" state - i.e., before the changes
+made in cism1_111220a; introduce unused module variable in glc_time_management
+to get around an internal compiler error in xlf. Also, move incorrectly-placed
+'implicit none' in glc_time_management_test.F90.
+
+Changes answers relative to previous tag: No, but replaces functionality removed
+in cism1_111220a
+
+Bugs fixed (include bugzilla ID) (http://bugs.cgd.ucar.edu/):
+
+Known bugs (include bugzilla ID) (http://bugs.cgd.ucar.edu/):
+      1433 (time manager needs additional changes to support longer timesteps)
+      1441 (time manager doesn't restart properly when last run stopped in the middle of a day)
+
+List all modified files, and describe the changes:
+
+*** Restore to version prior to cism1_111220a, introduce unused module variable
+    to get around internal compiler error
+M       source_glc/glc_time_management.F90
+
+*** Move incorrectly-placed 'implicit none'
+M       test/unit/time_management/glc_time_management_test.F90
+
+
+Summary of testing: 
+
+- Tested build for an IGCN case
+
+- Full cesm system tests pending, including bluefire.glc.auxtest with comparison
+  to beta07 (needed to create this tag before testing was complete, but I will
+  create a new tag if any fail)
+
+================================================================================
+Originator: sacks
+Date: Dec 20, 2011
+Model: cism
+Version: cism1_111220a
+One-line summary: Rolled back glc_time_management
+
+Purpose of changes:
+
+The cesm build was failing with the new version of glc_time_management. I have
+temporarily rolled this file back to the version in 31393.
+
+This should be fixed ASAP!
+
+
+Changes answers relative to previous tag: No, but removes functionality
+
+Bugs fixed (include bugzilla ID) (http://bugs.cgd.ucar.edu/):
+
+Known bugs (include bugzilla ID) (http://bugs.cgd.ucar.edu/):
+
+List all modified files, and describe the changes:
+
+*** Rolled back
+M       source_glc/glc_time_management.F90
+
+Summary of testing: Just tested build
+
+================================================================================
+Originator: sacks
+Date: Dec 20, 2011
+Model: cism
+Version: cism1_111220
+One-line summary: Updated ChangeLog entry for cism1_111214
+
+Purpose of changes:
+  I realized that I hadn't documented the testing done for cism1_111214 entirely
+  correctly; I have now fixed this.
+
+Changes answers relative to previous tag: No
+
+Bugs fixed (include bugzilla ID) (http://bugs.cgd.ucar.edu/):
+
+Known bugs (include bugzilla ID) (http://bugs.cgd.ucar.edu/):
+      1433 (time manager needs additional changes to support longer timesteps)
+      1441 (time manager doesn't restart properly when last run stopped in the middle of a day)
+
+List all modified files, and describe the changes:
+
+*** Update ChangeLog entry for cism1_111214
+M       ChangeLog
+
+Summary of testing: None
+
+================================================================================
+Originator: mvertens
+Date: Dec 18, 2011
+Model: cism
+Version: cism1_111218
+One-line summary: Simplified way that cism field names generated for driver
+
+Purpose of changes:
+  Implemented new scheme of determine cism field names that is more flexible
+  and robust 
+
+Changes answers relative to previous tag: No
+
+Known bugs (include bugzilla ID) (http://bugs.cgd.ucar.edu/): None
+
+List all modified files, and describe the changes:
+M       source_glc/glc_constants.F90
+        - no longer set glc_nec to 10 - but determine it from fields set in
+	  coupler - consistency check is also made in the land - more
+	  robust implemention
+M       drivers/cpl_share/glc_cpl_indices.F90
+	- new index array for multiple elevation classes now is used instead
+	  of hard wired index names for each class - much more extensible 
+	  scheme
+M       drivers/cpl_mct/glc_comp_mct.F90
+        - using changes in glc_cpl_indices - glc_export_mct and glc_import_mct
+	  are greatly simplified (no more hard-wiring)
+	
+Summary of testing: 
+Ran IGCN and BGCN system tests and verified that results were bit-for-bit
+
+================================================================================
+Originator: sacks
+Date: Dec 14, 2011
+Model: cism
+Version: cism1_111214
+One-line summary: Add test driver for glc_time_management
+
+Purpose of changes:
+
+Add a test driver for glc_time_management, along with a list of standard tests
+to run. Remove some variables from glc_time_management that aren't being used
+and weren't properly preserved in restarts. Add code & makefile that can be used
+for future unit testers. Add ChangeLog_template.
+
+
+Changes answers relative to previous tag: No
+
+
+Bugs fixed (include bugzilla ID) (http://bugs.cgd.ucar.edu/):
+
+Known bugs (include bugzilla ID) (http://bugs.cgd.ucar.edu/):
+      1433 (time manager needs additional changes to support longer timesteps)
+      1441 (time manager doesn't restart properly when last run stopped in the middle of a day)
+
+
+List all modified files, and describe the changes:
+
+*** Remove unused variables that aren't preserved in restarts
+M       source_glc/glc_time_management.F90
+
+*** Add code & makefile that can be used for any cism unit tester
+A       test  
+A       test/unit 
+A       test/unit/unit_test_replacements 
+A       test/unit/unit_test_replacements/glc_communicate.F90
+A       test/unit/unit_test_replacements/shr_sys_mod.F90
+A       test/unit/unit_test_replacements/README
+A       test/unit/unit_test_shr/writevar_mod.F90
+A       test/unit/unit_test_shr/Makefile.common
+A       test/unit/unit_test_shr/README
+A       test/unit/unit_test_shr
+
+*** Add test driver for the glc_time_management module
+A       test/unit/time_management 
+A       test/unit/time_management/README 
+A       test/unit/time_management/Filepath
+A       test/unit/time_management/Srcfiles 
+A       test/unit/time_management/Makefile
+A       test/unit/time_management/glc_time_management_test_mod.F90
+A       test/unit/time_management/glc_time_management_test.F90
+
+*** Script to run exact restart test using the time management test driver
+A       test/unit/time_management/restart_test
+
+*** Add list of tests to be run with the time management test driver
+A       test/unit/time_management/restart_testlist
+A       test/unit/time_management/testlist
+
+*** Namelists for each of the standard tests to run using the time management
+    test driver and the restart_test script (note: I am not listing all of the
+    individual files added in this directory)
+A       test/unit/time_management/inputs
+
+*** Add ChangeLog_template to be used for new ChangeLog entries
+A       ChangeLog_template
+
+
+Summary of testing: No system tests, but many unit tests
+
+- test/unit/time_management (tests in testlist & restart_testlist; for testlist,
+  performed regression tests against code similar to cism1_111026 where
+  possible, manually checked output where regression tests were impossible -
+  e.g., where the old code was buggy):
+
+Note that there is a known bug in newhour (see bug 1433). I am considering tests
+to have passed even if they have the wrong newhour value. Also, since I didn't
+do a careful look at every variable output by the test driver, it's possible
+that there are errors in other variables that I didn't catch. Here, I am just
+listing tests that have failures in variables that I checked, other than
+newhour (variables I checked more carefully were: iyear, imonth, iday,
+seconds_this_day, eoy, eom, eod, adjust_nyears, elapsed_days, elapsed_months,
+elapsed_years).
+
+All pass except:
+
+  oneyear_leap: model doesn't run to completion (see bug 1433)
+
+  threeyear_leap: also has problems related to bug 1433, though here the model
+    runs to completion
+
+  219day_leap: also has problems related to bug 1433; the first error I notice
+    is that year 5, day_of_year 73 is translated to 0005-mar-13 rather than
+    0005-mar-14, but there are likely other errors, too, as for oneyear_leap
+
+  511day_leap: also has problems relatd to bug 1433; e.g., both the leap and the
+    non-leap tests have a time step with time stamp 0005-mar-15; the leap should
+    differ
+
+
+================================================================================
+Originator: sacks
+Date: Nov 22, 2011
+Model: cism
+Version: cism1_111122
+One-line summary: Modified time manager to support longer time steps
+
+Previously, the time manager did not correctly handle time steps longer
+than one month. With the changes here, time steps as long as desired
+should be possible. However, as noted below, I have only tested this for
+daily and annual time steps so far.
+	
+M       source_glc/glc_time_management.F90
+
+pretag testing: so far I have tested this for daily and annual time steps;
+more testing is needed of other length time steps
+
+	- 10-year TG compset with daily time step (i.e., the default),
+	using gland10 and 10 years of forcing from a af19_g16 IG compset:
+	last year of cism history output identical to a similar run set up
+	using old version; cism log files also essentially identical
+
+	- Similar to the above, but with annual time step & annual
+	coupling interval. This was set up by (1) averaging the 10 years
+	of cpl history files into annual-average files; (2) explicitly
+	setting atm_cpl_dt to 31536000, and the same for other components,
+	in cpl.buildnml.csh; (3) changing dt_option from steps_per_day to
+	steps_per_year in cism.buildnml.csh. Last year of cism history
+	output identical to the daily run; cism log files also show
+	correct time stepping
+
+	- exact restart, daily time step: similar to daily time step run
+	above, but two 5-year runs; checked last year of history file
+	against the above 10-year run
+
+	- exact restart, annual time step: similar to annual time step run
+	above, but two 5-year runs; checked last year of history file
+	against the above 10-year run
+
+================================================================================
+Originator: sacks
+Date: Oct 26, 2011
+Model: cism
+Version: cism1_111026
+One-line summary: change ntem default to 1000000. for gland5UM
+
+This turns off ice temperature evolution (I think) -- at least, as long as
+you are running for less than 1000000 years. This change should have been
+made at the same time as the creation of ice.config.gland5UM, when
+evolution was (correctly) set to -1.
+	
+M       input_templates/ice.config.gland5UM
+
+pretag testing: NONE
+
+================================================================================
+Originator: jwolfe
+Date:
+Model: cism
+Version: cism1_111007
+One-line summary: add support for new GLC_GRID gland5UM
+
+M       bld/cism.cpl7.template
+A       input_templates/ice.config.gland5UM
+
+================================================================================
+Originator: sacks, lipscomb
+Date: Oct 4, 2011
+Model: cism
+Version: cism1_111004
+One-line summary: allow evolution=-1; reformat glimmer_ncio.F90 to satisfy
+      		  some compilers
+
+* Allow evolution=-1 -- i.e., no thickness evolution
+M       source_glimmer-cism/glide.F90
+M       source_glimmer-cism/glide_setup.F90
+
+* Reformat to satisfy some compilers
+M       source_glimmer-cism/glimmer_ncio.F90
+
+pretag testing:
+	- 10-year TG compsets before and after these modifications
+	(evolution=0 in both cases), using a single year of forcing from a
+	f19_g16 IG compset: last year of cism history output identical
+
+	- 10-year TG compset with evolution=-1, compared with the above
+	evolution=0 case: last year of cism history output differs, as
+	expected (but didn't evaluate whether the differences make sense)
+
+================================================================================
+Originator: jwolfe, lipscomb
+Date: Mon Apr 18, 2011
+Model: cism
+Version: cism1_110418
+One-line summary: changes to make restarts completely functional for branch
+                  and hybrid runs, using the glimmer-cism native hotstart
+                  capability
+
+M       bld/cism.cpl7.template
+M       input_templates/ice.config.gland10
+M       input_templates/ice.config.gland20
+M       input_templates/ice.config.gland5
+
+================================================================================
+Originator: jwolfe, lipscomb
+Date: Mon Mar 07, 2011
+Model: cism
+Version: cism1_110307
+One-line summary: modify input templates to remove setting native glimmer-cism
+                  history output files, which interferes with creating CESM-style
+                  history output
+
+M       input_templates/ice.config.gland10
+M       input_templates/ice.config.gland20
+M       input_templates/ice.config.gland5
+
+pretag testing: Results are bfb relative to cesm1_0_beta15 for ERI.f19_f19.FG.bluefire
+
+================================================================================
+Originator: jwolfe, lipscomb
+Date: Sun Feb 20, 2011
+Model: cism
+Version: cism1_110220
+One-line summary: reworked the way CISM handles history files, to more closely
+                  follow CESM naming conventions and alarms
+
+M       bld/cism.cpl7.template
+M       source_glc/glc_InitMod.F90
+M       source_glc/glc_io.F90
+M       drivers/cpl_mct/glc_comp_mct.F90
+
+pretag testing: Results are bfb relative to cesm1_0_beta15 for ERI.f19_f19.FG.bluefire
+
+================================================================================
+Originator: fischer
+Date: Tue Jan 25, 2011
+Model: cism
+Version: cism1_110125
+One-line summary: renamed glint_smb.F90 to smb_dummy.F90
+
+A      source_glimmer-cism/smb_dummy.F90
+D      source_glimmer-cism/glint_smb.F90
+
+================================================================================
+Originator: mvertens
+Date: Mon Jan 24, 2011
+Model: cism
+Version: cism1_110124
+One-line summary: removed use seq_flds_indices, now using local glc_cpl_indices_set
+
+A       drivers/cpl_share
+A       drivers/cpl_share/glc_cpl_indices.F90
+M       drivers/cpl_mct/glc_comp_mct.F90
+	
+pretag testing: Results are bfb relative to cesm1_0_beta14 for ERI.f19_f19.FG.bluefire
+	
+================================================================================
+Originator: jwolfe, lipscomb
+Date: Sep 13, 2010
+Model: cism
+Version: cism1_100913
+One-line summary: add more capabilities, clean-up
+
+* pull vars.def files together along with template and python script, to
+  allow users to modify the IO list on a per case basis
+A      bld/cismIO
+A      bld/cismIO/glide_lithot_vars.def
+A      bld/cismIO/README.cismIO
+A      bld/cismIO/glint_mbal_vars.def
+A      bld/cismIO/glint_vars.def
+A      bld/cismIO/ncdf_template.F90.in
+A      bld/cismIO/glide_vars.def
+A      bld/cismIO/generate_ncvars.py
+M      bld/cism.cpl7.template
+
+* make GLC_DEBUG a variable instead of an IFDEF
+M      source_glimmer-cism/glide.F90
+M      source_glimmer-cism/glint_timestep.F90
+M      source_glimmer-cism/glint_climate.F90
+M      source_glimmer-cism/glimmer_paramets.F90
+M      source_glimmer-cism/glide_diagnostics.F90
+M      source_glimmer-cism/glint_main.F90
+M      source_glimmer-cism/glint_interp.F90
+M      source_glimmer-cism/glint_type.F90
+
+* reworked restart to keep glc calls out of glimmer-cism
+M      source_glc/glc_InitMod.F90
+M      source_glc/glc_io.F90
+A      source_glimmer-cism/glimmer_restart_gcm.F90
+M      source_glimmer-cism/glint_initialise.F90
+M      source_glimmer-cism/glimmer_config.F90
+
+* fixed configuration files to make other resolutions work correctly
+M      input_templates/ice.config.gland10
+M      input_templates/ice.config.gland20
+M      input_templates/ice.config.gland5
+
+================================================================================
+Originator: jwolfe, lipscomb
+Date: Jun 17, 2010
+Model: cism
+Version: cism1_100617a
+One-line summary: keep use statement for shr_file_mod (temporarily)
+
+M      source_glimmer-cism/glimmer_config.F90
+
+================================================================================
+Originator: jwolfe, lipscomb
+Date: Jun 17, 2010
+Model: cism
+Version: cism1_100617
+One-line summary: pick up mods to glc_comp from Bill L's sandbox
+
+M      drivers/cpl_mct/glc_comp_mct.F90
+
+================================================================================
+Originator: jwolfe, lipscomb
+Date: Jun 16, 2010
+Model: cism
+Version: cism1_100616a
+One-line summary: change Filepath to refer to new drivers directory
+
+M      bld/cism.cpl7.template
+
+================================================================================
+Originator: jwolfe, lipscomb
+Date: Jun 16, 2010
+Model: cism
+Version: cism1_100616
+One-line summary: rearrange driver code for future esmf support, clean-up
+
+* rearrange driver code for future esmf support
+D      source_glc/glc_comp_mct.F90
+A      drivers
+A      drivers/cpl_mct
+A      drivers/cpl_mct/glc_comp_mct.F90
+A      drivers/cpl_esmf
+
+* remove unused code
+D      source_glc/glc_domain_size.F90
+D      source_glimmer-cism/glimmer_restart_statarr.F90
+D      source_glimmer-cism/glimmer_restart_pointarr.F90
+D      source_glimmer-cism/glimmer_restart_common.F90
+D      source_glimmer-cism/glimmer_restart.F90
+D      source_glimmer-cism/glimmer_restart_statscal.F90
+
+* fixed input template files for different resolutions
+M      input_templates/ice.config.gland10
+M      input_templates/ice.config.gland20
+M      input_templates/ice.config.gland5
+
+* enhanced I/O to fix restart issue
+M      source_glimmer-cism/glint_io.F90
+M      source_glimmer-cism/glide_lithot_io.F90
+M      source_glimmer-cism/glint_mbal_io.F90
+M      source_glimmer-cism/glide_io.F90
+
+* clean-up and fix documentation
+M      source_glc/glc_InitMod.F90
+M      source_glc/glc_RunMod.F90
+M      source_glc/glc_global_grid.F90
+M      source_glc/glc_io.F90
+M      source_glc/glc_constants.F90
+M      source_glc/glc_global_fields.F90
+M      source_glc/glc_FinalMod.F90
+M      source_glc/glc_time_management.F90
+M      source_glimmer-cism/glide.F90
+M      source_glimmer-cism/glimmer_scales.F90
+M      source_glimmer-cism/glint_timestep.F90
+M      source_glimmer-cism/glide_thck.F90
+M      source_glimmer-cism/isostasy_setup.F90
+M      source_glimmer-cism/isostasy_el.F90
+M      source_glimmer-cism/glide_nc_custom.F90
+M      source_glimmer-cism/isostasy_types.F90
+M      source_glimmer-cism/glimmer_ts.F90
+M      source_glimmer-cism/glimmer_routing.F90
+M      source_glimmer-cism/glimmer_searchcircle.F90
+M      source_glimmer-cism/glimmer_daily_pdd.F90
+M      source_glimmer-cism/xls.F90
+M      source_glimmer-cism/glint_mbal.F90
+M      source_glimmer-cism/glide_temp.F90
+M      source_glimmer-cism/glint_climate.F90
+M      source_glimmer-cism/glimmer_utils.F90
+M      source_glimmer-cism/glimmer_map_init.F90
+M      source_glimmer-cism/glimmer_anomcouple.F90
+M      source_glimmer-cism/glimmer_filenames.F90
+M      source_glimmer-cism/glimmer_ncparams.F90
+M      source_glimmer-cism/glimmer_writestats.F90
+M      source_glimmer-cism/glint_initialise.F90
+M      source_glimmer-cism/glimmer_paramets.F90
+M      source_glimmer-cism/glimmer_vers.F90
+M      source_glimmer-cism/glide_lithot1d.F90
+M      source_glimmer-cism/glimmer_map_CFproj.F90
+M      source_glimmer-cism/glide_mask.F90
+M      source_glimmer-cism/glide_profile.F90
+M      source_glimmer-cism/glide_setup.F90
+M      source_glimmer-cism/glimmer_map_proj4.F90
+M      source_glimmer-cism/glide_types.F90
+M      source_glimmer-cism/glide_velo.F90
+M      source_glimmer-cism/glimmer_global.F90
+M      source_glimmer-cism/glimmer_map_types.F90
+M      source_glimmer-cism/glimmer_deriv.F90
+M      source_glimmer-cism/glimmer_ncdf.F90
+M      source_glimmer-cism/glimmer_coordinates.F90
+M      source_glimmer-cism/kelvin.F90
+M      source_glimmer-cism/glide_stop.F90
+M      source_glimmer-cism/ncdf_utils.F90
+M      source_glimmer-cism/glint_example_clim.F90
+M      source_glimmer-cism/glimmer_log.F90
+M      source_glimmer-cism/glimmer_integrate.F90
+M      source_glimmer-cism/glint_precip_param.F90
+M      source_glimmer-cism/glint_global_grid.F90
+M      source_glimmer-cism/glimmer_sparse.F90
+M      source_glimmer-cism/glint_constants.F90
+M      source_glimmer-cism/glide_diagnostics.F90
+M      source_glimmer-cism/isostasy.F90
+M      source_glimmer-cism/glint_global_interp.F90
+M      source_glimmer-cism/glimmer_config.F90
+M      source_glimmer-cism/glint_main.F90
+M      source_glimmer-cism/glimmer_pdd.F90
+M      source_glimmer-cism/glint_mpinterp.F90
+M      source_glimmer-cism/glint_interp.F90
+M      source_glimmer-cism/glide_lithot3d.F90
+M      source_glimmer-cism/glimmer_physcon.F90
+M      source_glimmer-cism/glimmer_map_trans.F90
+M      source_glimmer-cism/profile.F90
+M      source_glimmer-cism/glimmer_ncio.F90
+M      source_glimmer-cism/glide_lithot.F90
+M      source_glimmer-cism/glint_mbal_coupling.F90
+M      source_glimmer-cism/glint_smb.F90
+M      source_glimmer-cism/glint_type.F90
+
+================================================================================
+Originator: jwolfe
+Date: Jun 08, 2010
+Model: cism
+Version: cism1_100608
+One-line summary: Additional resolution support, fix calendar bug
+
+M      bld/cism.cpl7.template
+M      source_glc/glc_io.F90
+M      source_glc/glc_time_management.F90
+
+================================================================================
+Originator: jwolfe
+Date: Jun 03, 2010
+Model: cism
+Version: cism1_100603
+One-line summary: Update cpl7 template to work correctly with hybrid and branch runs
+
+M      bld/cism.cpl7.template
+
+================================================================================
+Originator: jwolfe
+Date: May 25, 2010
+Model: cism
+Version: cism1_100525a
+One-line summary: patch to new tag, deleting one file that no longer belongs
+
+D      source_glc/glc_glint_interp.F90
+
+================================================================================
+Originator: jwolfe
+Date: May 25, 2010
+Model: cism
+Version: cism1_100525
+One-line summary: initial commit of cism1, which is more-or-less the same as
+                  $SVN/glc/branch_tags/glimmer-cism-gcm_tags/glimmer-cism-gcm03_glc4_100301
+                  except the var.def files have been removed from the bld as well
+                  as the scripts to handle them.  CSEG decided not to require
+                  python, which one of the scripts uses, so the resulting _io.F90
+                  files are included in source_glimmer-cism instead.
+
+A      source_slap
+A      source_slap/dmset.F
+A      source_slap/dlaputil.F
+A      source_slap/xersla.F
+A      source_slap/dcgs.F
+A      source_slap/blas.F
+A      source_slap/dmvops.F
+A      source_slap/mach.F
+D      bld/namelist_definition_gglc.xml
+M      bld/configure
+M      bld/config_definition.xsl
+D      bld/gglc.cpl7.template
+M      bld/README
+A      bld/namelist_definition_cism.xml
+D      bld/namelist_defaults_gglc.xml
+A      bld/cism.cpl7.template
+M      bld/build-namelist
+M      bld/config_definition.xml
+A      bld/namelist_defaults_cism.xml
+M      source_glc/glc_glint_interp.F90
+M      source_glc/glc_comp_mct.F90
+M      source_glc/glc_InitMod.F90
+M      source_glc/glc_RunMod.F90
+M      source_glc/glc_global_grid.F90
+M      source_glc/glc_io.F90
+M      source_glc/glc_constants.F90
+M      source_glc/glc_global_fields.F90
+M      source_glc/glc_time_management.F90
+A      source_glimmer-cism
+A      source_glimmer-cism/glide.F90
+A      source_glimmer-cism/glimmer_scales.F90
+A      source_glimmer-cism/glint_timestep.F90
+A      source_glimmer-cism/glide_thck.F90
+A      source_glimmer-cism/glide_lithot_io.F90
+A      source_glimmer-cism/isostasy_setup.F90
+A      source_glimmer-cism/isostasy_el.F90
+A      source_glimmer-cism/glide_nc_custom.F90
+A      source_glimmer-cism/glint_mbal_io.F90
+A      source_glimmer-cism/glimmer_restart_statarr.F90
+A      source_glimmer-cism/isostasy_types.F90
+A      source_glimmer-cism/glimmer_ts.F90
+A      source_glimmer-cism/glimmer_routing.F90
+A      source_glimmer-cism/glimmer_searchcircle.F90
+A      source_glimmer-cism/glimmer_daily_pdd.F90
+A      source_glimmer-cism/xls.F90
+A      source_glimmer-cism/glint_mbal.F90
+A      source_glimmer-cism/glide_temp.F90
+A      source_glimmer-cism/glint_climate.F90
+A      source_glimmer-cism/glimmer_utils.F90
+A      source_glimmer-cism/glimmer_map_init.F90
+A      source_glimmer-cism/glimmer_anomcouple.F90
+A      source_glimmer-cism/glimmer_restart_pointarr.F90
+A      source_glimmer-cism/glimmer_filenames.F90
+A      source_glimmer-cism/glimmer_ncparams.F90
+A      source_glimmer-cism/glimmer_writestats.F90
+A      source_glimmer-cism/glint_initialise.F90
+A      source_glimmer-cism/glimmer_paramets.F90
+A      source_glimmer-cism/glimmer_vers.F90
+A      source_glimmer-cism/glide_lithot1d.F90
+A      source_glimmer-cism/glimmer_map_CFproj.F90
+A      source_glimmer-cism/glide_mask.F90
+A      source_glimmer-cism/glint_io.F90
+A      source_glimmer-cism/glide_profile.F90
+A      source_glimmer-cism/glide_setup.F90
+A      source_glimmer-cism/glimmer_map_proj4.F90
+A      source_glimmer-cism/glimmer_restart_common.F90
+A      source_glimmer-cism/glide_types.F90
+A      source_glimmer-cism/glide_velo.F90
+A      source_glimmer-cism/glimmer_global.F90
+A      source_glimmer-cism/glimmer_map_types.F90
+A      source_glimmer-cism/glimmer_deriv.F90
+A      source_glimmer-cism/glimmer_coordinates.F90
+A      source_glimmer-cism/glimmer_ncdf.F90
+A      source_glimmer-cism/kelvin.F90
+A      source_glimmer-cism/glide_stop.F90
+A      source_glimmer-cism/ncdf_utils.F90
+A      source_glimmer-cism/glint_example_clim.F90
+A      source_glimmer-cism/glimmer_log.F90
+A      source_glimmer-cism/glimmer_integrate.F90
+A      source_glimmer-cism/glint_precip_param.F90
+A      source_glimmer-cism/glimmer_restart.F90
+A      source_glimmer-cism/glint_global_grid.F90
+A      source_glimmer-cism/glimmer_sparse.F90
+A      source_glimmer-cism/glint_constants.F90
+A      source_glimmer-cism/glide_diagnostics.F90
+A      source_glimmer-cism/isostasy.F90
+A      source_glimmer-cism/glint_global_interp.F90
+A      source_glimmer-cism/glimmer_config.F90
+A      source_glimmer-cism/glint_main.F90
+A      source_glimmer-cism/glimmer_pdd.F90
+A      source_glimmer-cism/glint_mpinterp.F90
+A      source_glimmer-cism/glint_interp.F90
+A      source_glimmer-cism/glide_lithot3d.F90
+A      source_glimmer-cism/glimmer_restart_statscal.F90
+A      source_glimmer-cism/glimmer_physcon.F90
+A      source_glimmer-cism/profile.F90
+A      source_glimmer-cism/glimmer_map_trans.F90
+A      source_glimmer-cism/glimmer_ncio.F90
+A      source_glimmer-cism/glide_lithot.F90
+A      source_glimmer-cism/glint_mbal_coupling.F90
+A      source_glimmer-cism/glide_io.F90
+A      source_glimmer-cism/glint_type.F90
+A      source_glimmer-cism/glint_smb.F90
+M      ChangeLog
+D      source_glimmer
+A      input_templates/ice.config.gland10
+M      input_templates/ice.config.gland20
+A      input_templates/ice.config.gland5
+M      README
+
+================================================================================
+Originator: jwolfe
+Date: May 07, 2010
+Model: glc
+Version: glc4_100507
+One-line summary: bug fixes and clean up
+
+* replace hard-wired unit numbers with calls to shr_file_getunit
+M      source_glimmer/glimmer_ts.F90
+M      source_glimmer/glimmer_config.F90
+
+* clean up unused files
+D      input_templates/glc_in.jw
+D      input_templates/glc_in
+
+* rename "ice.config" file to "cism.config"
+M      bld/gglc.cpl7.template
+M      bld/namelist_defaults_gglc.xml
+
+================================================================================
+Originator: jwolfe
+Date: Mar 30, 2010
+Model: glc
+Version: glc4_100330
+One-line summary: CCSMize output filenames, add tools for creating overlap files,
+                  bug fix
+
+* CCSMize output filenames
+A      source_glc/glc_io.F90
+M      bld/gglc.cpl7.template
+M      input_templates/ice.config.gland20
+M      source_glimmer/glint_initialise.F90
+
+* Add tools for creating overlap files
+A      tools
+A      tools/README.glc_tools
+A      tools/README.glc_overlap_tools
+A      tools/glc2scripConvert.ncl
+A      tools/scrip_make_wgts_CCSM_to_GLC_bilin.csh
+A      tools/scrip2CLMoverlap.ncl
+
+* Fix bug that closed log file before the end of output
+M      source_glimmer/glint_main.F90
+
+================================================================================
+Originator: jwolfe
+Date: Mar 16, 2010
+Model: glc
+Version: glc4_100316
+One-line summary: Support for fracdata files for downscaling
+
+* Changed output for gglc.buildnml.csh to point at fracdata file
+M      bld/gglc.cpl7.template
+
+* The following files were changed Bill Lipscomb to support the use of fracdata
+  files for downscaling:
+M      source_glc/glc_InitMod.F90
+M      source_glc/glc_comp_mct.F90
+M      source_glc/glc_constants.F90
+M      source_glc/glc_global_grid.F90
+M      source_glc/glc_glint_interp.F90
+M      source_glimmer/glint_global_grid.F90
+M      source_glimmer/glint_interp.F90
+M      source_glimmer/glint_main.F90
+M      source_glimmer/glint_mbal_coupling.F90
+M      source_glimmer/glint_timestep.F90
+
+================================================================================
+Originator: jwolfe
+Date: Mar 01, 2010
+Model: glc
+Version: glc4_100301
+One-line summary: Set test cell information in code based on global grid size,
+                  instead of set as parameters in glc_constants (caused a
+                  problem with T31 grid)
+
+M      source_glc/glc_global_grid.F90 ----- Added test cell settings based on
+                                            global grid size
+M      source_glc/glc_constants.F90 ------- Removed parameter attribute from 
+                                            test cell constants
+
+================================================================================
+Originator: erik
+Date: Nov 03, 2009
+Model: glc
+Version: glc4_091103
+One-line summary: Point to checked in version of topo files, add documentation,
+                  add config files to buildnml script so can change, start adding
+                  xml support.
+
+M      bld/gglc.cpl7.template -------------- Point to checked in version of topo files
+                                             Add documentation and put config file in
+                                             the buildnml script so can be changed by
+                                             the user. Start adding flexibility for
+                                             support for different GLC grids.
+
+A      bld/README -------------------------- Document files in the build directory
+A      bld/namelist_defaults_gglc.xml ------ GGLC specific namelist defaults
+A      bld/namelist_definition_gglc.xml ---- GGLC specific namelist defintion
+A      bld/namelist_defaults_overall.xml --- Overall namelist defaults
+A      bld/namelist_definition_overall.xml - Overall namelist defintion
+A      bld/namelist_defaults.xsl ----------- Style sheet to display defaults as html
+A      bld/namelist_definition.xsl --------- Style sheet to display definition as html
+
+Some scripts starting to add that do NOT work yet.
+
+A      bld/build-namelist ----------------- Start adding a build-namelist (not working yet)
+A      bld/configure ---------------------- Start adding a configure      (not working yet)
+A      bld/configure_definition.xml ------- Definition of configurations
+A      bld/configure_definition.xsl ------- Style sheet to display definition as html
+
+================================================================================
+Originator: lipscomb
+Date: Oct 27, 2009
+Model: glc
+Version: glc4_091027
+One-line summary: Add glimmer log file and add greenland 20km config file
+
+  M  source_glc/glc_InitMod.F90 ---------- Change glimmer log file
+  M  source_glimmer/glimmer_log.F90 ------ Add subroutine to change glimmer log
+  M  input_templates/ice.config.gland20 -- Add greenland 20km config file
+
+================================================================================
+Originator: erik
+Date: Aug 14, 2009
+Model: glc
+Version: glc4_090814
+One-line summary:  Template changes to allow multiple grid files
+
+Set up grid files for 48x96, 1.9x.25, and 0.9x1.25 resolutions. Abort
+if it isn't one of those. Also remove the coupled_nml namelist as not needed,
+and set the stop_option to never, since, the coupler will tell it to stop.
+
+M      bld/gglc.cpl7.template
+
+================================================================================
+Originator: lipscomb
+Date: Aug 13, 2009
+Model: glc
+Version: glc4_090813
+One-line summary:  Latest changes from Bill Lipscomb
+
+Mostly changes to get time-management working correctly. Also
+make sure proper mask of r8 for some variables. Update some of
+the documentation and formatting.
+
+M   README
+M   source_glc/glc_glint.F90
+M   source_glc/glc_comp_mct.F90
+M   source_glc/glc_InitMod.F90
+M   source_glc/glc_RunMod.F90
+M   source_glc/glc_global_grid.F90
+M   source_glc/glc_FinalMod.F90
+M   source_glc/glc_time_management.F90
+M   source_glimmer/glide.F90
+M   source_glimmer/glint_initialise.F90
+M   source_glimmer/glimmer_ncio.F90
+
+================================================================================
+Originator: tcraig
+Date: Fri Jan 16, 2009
+Model: glc
+Version: glc4_090116
+One-line summary:  Upgrade from ccsm3 to ccsm4 coupling
+
+- Try not to touch any glimmer code	
+- Delete unusued code and remove use of unused code from used code as needed
+- Add bld and gglc.cpl7.template
+- Delete glc.F90 and add glc_comp_mct.F90 for migration from ccsm3 to ccsm4
+- Update the stdout, stderr, and nml unit numbers to be set from shr_file_getunit,
+  eliminate use of local get_unit in favor of shr_file_getunit in glc
+- Migrate all use of unit 6 to stdout in all source_glc code.  includes write,
+  print, and flush statements.  this was not done to glimmer.
+- Add a shr_sys_abort to source_glimmer/glimmer_log.F90 before the stop to
+  prevent ccsm4 hang from glimmer abort.  (there are probably more calls to
+  stop that need to be fixed in the code).
+- Get rid of use and reference to ccsm3 coupling code
+- Update initialization of glc communicator from ccsm4 driver
+
+Other potential issues still not addressed
+- other unit numbers hardwired in glc/glimmer
+- use of stop, proper aborts
+- reference to gland20.input.nc file from ice.config input file
+- hardwired glc_nec = 10
+- hardwired T31 resolution
+- glimmer mostly writes to unit 6
+- restart flag captured in coupling interface but not used
+	
+A      bld
+A      bld/gglc.cpl7.template
+D      mpi/glc_gather_scatter.F90
+D      mpi/glc_global_reductions.F90
+D      mpi/glc_broadcast.F90
+D      mpi/glc_boundary.F90
+D      mpi/glc_timers.F90
+M      mpi/glc_communicate.F90
+A      source_glc/glc_comp_mct.F90
+D      source_glc/glc_fileunits.F90
+M      source_glc/glc_InitMod.F90
+M      source_glc/glc_RunMod.F90
+M      source_glc/glc_global_grid.F90
+D      source_glc/glc_domain.F90
+M      source_glc/glc_exit_mod.F90
+M      source_glc/glc_constants.F90
+M      source_glc/glc_glint.F90
+D      source_glc/glc_blocks.F90
+D      source_glc/glc_distribution.F90
+D      source_glc/glc.F90
+M      source_glc/glc_FinalMod.F90
+M      source_glc/glc_ErrorMod.F90
+M      source_glc/glc_time_management.F90
+D      source_glc/glc_coupled.F90
+D      source_glc/glc_io_types.F90
+M      source_glimmer/glimmer_log.F90
+	
+================================================================================
+Originator: tcraig
+Date: Oct 17, 2009
+Model: glc
+Version: glc_081017
+One-line summary:  Port to bluefire, update usability
+
+M       input_templates/glc_in
+  update input file paths to bluefire inputdata area
+	        
+================================================================================
+Originator: 
+Date: 
+Model: glc
+Version: glc_080817
+One-line summary: 
+Changes made: 
+
+================================================================================
+
+Originator: jwolfe
+Date: Mon Nov  5 13:39:33 MST 2007
+Model: glc
+Version: glc_071105
+One-line summary: update to include all of Bll Lipscomb's new changes
+Changes made: 
+
+?      source_glc/glc_glint.F90
+?      source_glc/glc_global_fields.F90
+?      source_glc/glc_coupled.F90
+?      source_glc/glc_global_grid.F90
+?      source_glc/POP_files/grid.F90
+M      source_glc/glc_domain_size.F90
+M      source_glc/glc_InitMod.F90
+M      source_glc/glc_RunMod.F90
+M      source_glc/glc_domain.F90
+M      source_glc/glc_io.F90
+M      source_glc/glc_kinds_mod.F90
+M      source_glc/glc_constants.F90
+M      source_glc/glc.F90
+M      source_glc/glc_FinalMod.F90
+M      source_glc/glc_ErrorMod.F90
+M      source_glc/glc_IOUnitsMod.F90
+M      source_glc/glc_time_management.F90
+M      source_glimmer/glint_timestep.F90
+M      source_glimmer/glint_initialise.F90
+M      source_glimmer/glint_example_clim.F90
+M      source_glimmer/glint_main.F90
+M      source_glimmer/glint_interp.F90
+M      input_templates/glc_in
+
+================================================================================

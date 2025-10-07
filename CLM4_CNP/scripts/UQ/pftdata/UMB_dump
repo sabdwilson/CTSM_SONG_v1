@@ -1,0 +1,672 @@
+netcdf pft-physiology.c110425.US-UMB {
+dimensions:
+	pft = 21 ;
+	string_length = 40 ;
+variables:
+	double aleaff(pft) ;
+		aleaff:long_name = "Leaf Allocation coefficient parameter used in CNAllocationn" ;
+		aleaff:units = "unitless" ;
+		aleaff:coordinates = "pftname" ;
+	double allconsl(pft) ;
+		allconsl:long_name = "Leaf Allocation coefficient parameter power used in CNAllocation" ;
+		allconsl:units = "unitless" ;
+		allconsl:_FillValue = 0. ;
+		allconsl:coordinates = "pftname" ;
+	double allconss(pft) ;
+		allconss:long_name = "Stem Allocation coefficient parameter power used in CNAllocation" ;
+		allconss:units = "unitless" ;
+		allconss:_FillValue = 0. ;
+		allconss:coordinates = "pftname" ;
+	double arootf(pft) ;
+		arootf:long_name = "Root Allocation coefficient parameter used in CNAllocation" ;
+		arootf:units = "unitless" ;
+		arootf:_FillValue = 0. ;
+		arootf:coordinates = "pftname" ;
+	double arooti(pft) ;
+		arooti:long_name = "Root Allocation coefficient parameter used in CNAllocation" ;
+		arooti:units = "unitless" ;
+		arooti:_FillValue = 0. ;
+		arooti:coordinates = "pftname" ;
+	double astemf(pft) ;
+		astemf:long_name = "Stem Allocation coefficient parameter used in CNAllocation" ;
+		astemf:units = "unitless" ;
+		astemf:_FillValue = 0. ;
+		astemf:coordinates = "pftname" ;
+	double baset(pft) ;
+		baset:long_name = "Base Temperature, parameter used in accFlds" ;
+		baset:units = "C" ;
+		baset:coordinates = "pftname" ;
+	double bfact(pft) ;
+		bfact:long_name = "Exponential factor used in CNAllocation for fraction allocated to leaf" ;
+		bfact:units = "unitless" ;
+		bfact:_FillValue = 0. ;
+		bfact:coordinates = "pftname" ;
+	double c3psn(pft) ;
+		c3psn:long_name = "Photosynthetic pathway" ;
+		c3psn:units = "flag" ;
+		c3psn:coordinates = "pftname" ;
+		c3psn:valid_range = 0., 1. ;
+		c3psn:flag_meanings = "C4 C3" ;
+		c3psn:flag_values = 0., 1. ;
+	double croot_stem(pft) ;
+		croot_stem:long_name = "Allocation parameter: new coarse root C per new stem C" ;
+		croot_stem:units = "gC/gC" ;
+		croot_stem:coordinates = "pftname" ;
+	double crop(pft) ;
+		crop:long_name = "Binary crop PFT flag:" ;
+		crop:units = "logical flag" ;
+		crop:coordinates = "pftname" ;
+		crop:valid_range = 0., 1. ;
+		crop:flag_values = 0., 1. ;
+		crop:flag_meanings = "NOT_crop crop_PFT" ;
+	double deadwdcn(pft) ;
+		deadwdcn:long_name = "Dead wood (xylem and heartwood) C:N" ;
+		deadwdcn:units = "gC/gN" ;
+		deadwdcn:coordinates = "pftname" ;
+	double declfact(pft) ;
+		declfact:long_name = "Decline factor for gddmaturity used in CNAllocation" ;
+		declfact:units = "unitless" ;
+		declfact:_FillValue = 0. ;
+		declfact:coordinates = "pftname" ;
+	double displar(pft) ;
+		displar:long_name = "Ratio of displacement height to canopy top height" ;
+		displar:units = "unitless" ;
+		displar:coordinates = "pftname" ;
+	double dleaf(pft) ;
+		dleaf:long_name = "Characteristic leaf dimension" ;
+		dleaf:units = "m" ;
+		dleaf:coordinates = "pftname" ;
+	double dsladlai(pft) ;
+		dsladlai:long_name = "Through canopy, projected area basis: dSLA/dLAI" ;
+		dsladlai:units = "m^2/gC" ;
+		dsladlai:coordinates = "pftname" ;
+	double evergreen(pft) ;
+		evergreen:long_name = "Binary flag for evergreen leaf habit" ;
+		evergreen:units = "logical flag" ;
+		evergreen:coordinates = "pftname" ;
+		evergreen:flag_meanings = "NON-evergreen evergreen" ;
+		evergreen:flag_values = 0., 1. ;
+	double fcur(pft) ;
+		fcur:long_name = "Allocation parameter: fraction of allocation that goes to currently displayed growth, remainder to storage" ;
+		fcur:units = "fraction" ;
+		fcur:coordinates = "pftname" ;
+	double fcurdv(pft) ;
+		fcurdv:long_name = "Alternate fcur for use with CNDV" ;
+		fcurdv:units = "fraction" ;
+		fcurdv:coordinates = "pftname" ;
+	double fleafi(pft) ;
+		fleafi:long_name = "Leaf Allocation coefficient parameter fraction used in CNAllocation" ;
+		fleafi:units = "unitless" ;
+		fleafi:_FillValue = 0. ;
+		fleafi:coordinates = "pftname" ;
+	double flivewd(pft) ;
+		flivewd:long_name = "Allocation parameter: fraction of new wood that is live (phloem and ray parenchyma)" ;
+		flivewd:units = "fraction" ;
+		flivewd:coordinates = "pftname" ;
+	double flnr(pft) ;
+		flnr:long_name = "Fraction of leaf N in Rubisco enzyme" ;
+		flnr:units = "fraction" ;
+		flnr:coordinates = "pftname" ;
+	double fnitr(pft) ;
+		fnitr:long_name = "Foliage nitrogen limitation factor" ;
+		fnitr:units = "unitless" ;
+		fnitr:coordinates = "pftname" ;
+	double fr_fcel(pft) ;
+		fr_fcel:long_name = "Fine root litter cellulose fraction" ;
+		fr_fcel:units = "fraction" ;
+		fr_fcel:coordinates = "pftname" ;
+	double fr_flab(pft) ;
+		fr_flab:long_name = "Fine root litter labile fraction" ;
+		fr_flab:units = "fraction" ;
+		fr_flab:coordinates = "pftname" ;
+	double fr_flig(pft) ;
+		fr_flig:long_name = "Fine root litter lignin fraction" ;
+		fr_flig:units = "fraction" ;
+		fr_flig:coordinates = "pftname" ;
+	double froot_leaf(pft) ;
+		froot_leaf:long_name = "Allocation parameter: new fine root C per new leaf C" ;
+		froot_leaf:units = "gC/gC" ;
+		froot_leaf:coordinates = "pftname" ;
+	double frootcn(pft) ;
+		frootcn:long_name = "Fine root C:N" ;
+		frootcn:units = "gC/gN" ;
+		frootcn:coordinates = "pftname" ;
+	double gddmin(pft) ;
+		gddmin:long_name = "Minimim growing degree days used in CNPhenology" ;
+		gddmin:units = "unitless" ;
+		gddmin:_FillValue = 0. ;
+		gddmin:coordinates = "pftname" ;
+	double graincn(pft) ;
+		graincn:long_name = "Grain C:N" ;
+		graincn:units = "gC/gN" ;
+		graincn:_FillValue = 0. ;
+		graincn:coordinates = "pftname" ;
+	double grnfill(pft) ;
+		grnfill:long_name = "Grain fill parameter used in CNPhenology" ;
+		grnfill:units = "unitless" ;
+		grnfill:_FillValue = 0. ;
+		grnfill:coordinates = "pftname" ;
+	double grperc(pft) ;
+		grperc:long_name = "Growth respiration factor" ;
+		grperc:units = "unitless" ;
+		grperc:coordinates = "pftname" ;
+	double grpnow(pft) ;
+		grpnow:long_name = "Growth respiration factor" ;
+		grpnow:units = "unitless" ;
+		grpnow:coordinates = "pftname" ;
+	double hybgdd(pft) ;
+		hybgdd:long_name = "Growing Degree Days for maturity used in CNPhenology" ;
+		hybgdd:units = "unitless" ;
+		hybgdd:_FillValue = 0. ;
+		hybgdd:coordinates = "pftname" ;
+	double irrigated(pft) ;
+		irrigated:long_name = "Binary Irrigated PFT flag" ;
+		irrigated:units = "logical flag" ;
+		irrigated:coordinates = "pftname" ;
+		irrigated:valid_range = 0., 1. ;
+		irrigated:flag_meanings = "NOT_irrigated irrigated" ;
+		irrigated:flag_values = 0., 1. ;
+	double laimx(pft) ;
+		laimx:long_name = "Maximum Leaf Area Index used in CNVegStructUpdate" ;
+		laimx:units = "unitless" ;
+		laimx:_FillValue = 0. ;
+		laimx:coordinates = "pftname" ;
+	double leaf_long(pft) ;
+		leaf_long:long_name = "Leaf longevity" ;
+		leaf_long:units = "years" ;
+		leaf_long:coordinates = "pftname" ;
+	double leafcn(pft) ;
+		leafcn:long_name = "Leaf C:N" ;
+		leafcn:units = "gC/gN" ;
+		leafcn:coordinates = "pftname" ;
+	double lf_fcel(pft) ;
+		lf_fcel:long_name = "Leaf litter cellulose fraction" ;
+		lf_fcel:units = "fraction" ;
+		lf_fcel:coordinates = "pftname" ;
+	double lf_flab(pft) ;
+		lf_flab:long_name = "Leaf litter labile fraction" ;
+		lf_flab:units = "fraction" ;
+		lf_flab:coordinates = "pftname" ;
+	double lf_flig(pft) ;
+		lf_flig:long_name = "Leaf litter lignin fraction" ;
+		lf_flig:units = "fraction" ;
+		lf_flig:coordinates = "pftname" ;
+	double lfemerg(pft) ;
+		lfemerg:long_name = "Leaf emergence parameter used in CNPhenology" ;
+		lfemerg:units = "unitless" ;
+		lfemerg:_FillValue = 0. ;
+		lfemerg:coordinates = "pftname" ;
+	double lflitcn(pft) ;
+		lflitcn:long_name = "Leaf litter C:N" ;
+		lflitcn:units = "gC/gN" ;
+		lflitcn:coordinates = "pftname" ;
+	double livewdcn(pft) ;
+		livewdcn:long_name = "Live wood (phloem and ray parenchyma) C:N" ;
+		livewdcn:units = "gC/gN" ;
+		livewdcn:coordinates = "pftname" ;
+	int max_NH_planting_date(pft) ;
+		max_NH_planting_date:_FillValue = 0 ;
+		max_NH_planting_date:long_name = "Maximum planting date for the Northern Hemipsphere" ;
+		max_NH_planting_date:units = "YYYYMMDD" ;
+		max_NH_planting_date:coordinates = "pftname" ;
+		max_NH_planting_date:comment = "Typical U.S. latest planting dates according to AgroIBIS: Maize May 10th; soybean Jun 20th; spring wheat mid-May; winter wheat early Nov." ;
+	int max_SH_planting_date(pft) ;
+		max_SH_planting_date:_FillValue = 0 ;
+		max_SH_planting_date:long_name = "Maximum planting date for the Southern Hemipsphere" ;
+		max_SH_planting_date:units = "YYYYMMDD" ;
+		max_SH_planting_date:coordinates = "pftname" ;
+		max_SH_planting_date:comment = "Same as max_NH_planting_date, but offset by six months" ;
+	int min_NH_planting_date(pft) ;
+		min_NH_planting_date:_FillValue = 0 ;
+		min_NH_planting_date:long_name = "Minimum planting date for the Northern Hemipsphere" ;
+		min_NH_planting_date:units = "YYYYMMDD" ;
+		min_NH_planting_date:coordinates = "pftname" ;
+		min_NH_planting_date:comment = "Typical U.S. earliest planting dates according to AgroIBIS: Maize Apr 10th; soybean May 15th; spring wheat early Apr; winter wheat Sep 1st" ;
+	int min_SH_planting_date(pft) ;
+		min_SH_planting_date:_FillValue = 0 ;
+		min_SH_planting_date:long_name = "Minimum planting date for the Southern Hemipsphere" ;
+		min_SH_planting_date:units = "YYYYMMDD" ;
+		min_SH_planting_date:coordinates = "pftname" ;
+		min_SH_planting_date:comment = "Same as min_NH_planting_date, but offset by six months" ;
+	double min_planting_temp(pft) ;
+		min_planting_temp:long_name = "Average 5 day daily minimum temperature needed for planting" ;
+		min_planting_temp:units = "C" ;
+		min_planting_temp:coordinates = "pftname" ;
+		min_planting_temp:_FillValue = 1000. ;
+		min_planting_temp:comment = "From AGROIBIS derived from EPIC model parameterizations" ;
+	double mp(pft) ;
+		mp:long_name = "Slope of conductance-to-photosynthesis relationship" ;
+		mp:units = "unitless" ;
+		mp:coordinates = "pftname" ;
+	int mxmat(pft) ;
+		mxmat:_FillValue = 0 ;
+		mxmat:long_name = "Maximum number of days to maturity parameter in CNPhenology" ;
+		mxmat:units = "days" ;
+		mxmat:coordinates = "pftname" ;
+	double mxtmp(pft) ;
+		mxtmp:long_name = "Max Temperature, parameter used in accFlds" ;
+		mxtmp:units = "C" ;
+		mxtmp:_FillValue = 0 ;
+	double pconv(pft) ;
+		pconv:long_name = "Deadstem proportions to send to conversion flux" ;
+		pconv:units = "fraction" ;
+		pconv:coordinates = "pftname" ;
+		pconv:valid_range = 0., 1. ;
+		pconv:comment = "pconv+pprod10+pprod100 must sum to 1.0" ;
+	char pftname(pft, string_length) ;
+		pftname:long_name = "Description of plant type" ;
+		pftname:units = "unitless" ;
+	short pftnum(pft) ;
+		pftnum:long_name = "Plant Functional Type number" ;
+		pftnum:units = "unitless" ;
+		pftnum:coordinates = "pftname" ;
+	double pftpar20(pft) ;
+		pftpar20:long_name = "Tree maximum crown area" ;
+		pftpar20:units = "m2" ;
+		pftpar20:_FillValue = 9999.9 ;
+		pftpar20:coordinates = "pftname" ;
+	double pftpar28(pft) ;
+		pftpar28:long_name = "Minimum coldest monthly mean temperature" ;
+		pftpar28:units = "degrees_Celsius" ;
+		pftpar28:_FillValue = 9999.9 ;
+		pftpar28:coordinates = "pftname" ;
+	double pftpar29(pft) ;
+		pftpar29:long_name = "Maximum coldest monthly mean temperature" ;
+		pftpar29:units = "degrees_Celsius" ;
+		pftpar29:_FillValue = 1000. ;
+		pftpar29:coordinates = "pftname" ;
+	double pftpar30(pft) ;
+		pftpar30:long_name = "Minimum growing degree days (>= 5 degree Celsius)" ;
+		pftpar30:units = "degree_C_days" ;
+		pftpar30:coordinates = "pftname" ;
+	double pftpar31(pft) ;
+		pftpar31:long_name = "Upper limit of temperature of the warmest month (twmax)" ;
+		pftpar31:units = "degrees_Celsius" ;
+		pftpar31:_FillValue = 1000. ;
+		pftpar31:coordinates = "pftname" ;
+	double planting_temp(pft) ;
+		planting_temp:long_name = "Average 10 day temperature needed for planting" ;
+		planting_temp:units = "C" ;
+		planting_temp:coordinates = "pftname" ;
+		planting_temp:_FillValue = 1000. ;
+		planting_temp:comment = "From AGROIBIS derived from EPIC model parameterizations" ;
+	double pprod10(pft) ;
+		pprod10:long_name = "Deadstem proportions to send to 10 year product pool" ;
+		pprod10:units = "fraction" ;
+		pprod10:coordinates = "pftname" ;
+		pprod10:valid_range = 0., 1. ;
+		pprod10:comment = "pconv+pprod10+pprod100 must sum to 1.0" ;
+	double pprod100(pft) ;
+		pprod100:long_name = "Deadstem proportions to send to 100 year product pool" ;
+		pprod100:units = "fraction" ;
+		pprod100:coordinates = "pftname" ;
+		pprod100:valid_range = 0., 1. ;
+		pprod100:comment = "pconv+pprod10+pprod100 must sum to 1.0" ;
+	double pprodharv10(pft) ;
+		pprodharv10:long_name = "Deadstem proportions to send to 10 year harvest pool" ;
+		pprodharv10:units = "fraction" ;
+		pprodharv10:coordinates = "pftname" ;
+		pprodharv10:_FillValue = 0. ;
+		pprodharv10:valid_range = 0., 1. ;
+		pprodharv10:comment = "100 year harvest is one minus this value" ;
+	double qe25(pft) ;
+		qe25:long_name = "Quantum efficiency at 25 degrees Celsius" ;
+		qe25:units = "umol CO2 / umol photon" ;
+		qe25:coordinates = "pftname" ;
+	double resist(pft) ;
+		resist:long_name = "Fire resistance index" ;
+		resist:units = "unitless" ;
+		resist:coordinates = "pftname" ;
+	double rholnir(pft) ;
+		rholnir:long_name = "Leaf reflectance: near-IR" ;
+		rholnir:units = "fraction" ;
+		rholnir:coordinates = "pftname" ;
+	double rholvis(pft) ;
+		rholvis:long_name = "Leaf reflectance: visible" ;
+		rholvis:units = "fraction" ;
+		rholvis:coordinates = "pftname" ;
+	double rhosnir(pft) ;
+		rhosnir:long_name = "Stem reflectance: near-IR" ;
+		rhosnir:units = "fraction" ;
+		rhosnir:coordinates = "pftname" ;
+	double rhosvis(pft) ;
+		rhosvis:long_name = "Stem reflectance: visible" ;
+		rhosvis:units = "fraction" ;
+		rhosvis:coordinates = "pftname" ;
+	double roota_par(pft) ;
+		roota_par:long_name = "CLM rooting distribution parameter" ;
+		roota_par:units = "1/m" ;
+		roota_par:coordinates = "pftname" ;
+	double rootb_par(pft) ;
+		rootb_par:long_name = "CLM rooting distribution parameter" ;
+		rootb_par:units = "1/m" ;
+		rootb_par:coordinates = "pftname" ;
+	double season_decid(pft) ;
+		season_decid:long_name = "Binary flag for seasonal-deciduous leaf habit" ;
+		season_decid:units = "logical flag" ;
+		season_decid:coordinates = "pftname" ;
+		season_decid:flag_meanings = "NOT seasonal-deciduous" ;
+		season_decid:flag_values = 0., 1. ;
+	double slatop(pft) ;
+		slatop:long_name = "Specific Leaf Area (SLA) at top of canopy, projected area basis" ;
+		slatop:units = "m^2/gC" ;
+		slatop:coordinates = "pftname" ;
+	double smpsc(pft) ;
+		smpsc:long_name = "Soil water potential at full stomatal closure" ;
+		smpsc:units = "mm" ;
+		smpsc:coordinates = "pftname" ;
+	double smpso(pft) ;
+		smpso:long_name = "Soil water potential at full stomatal opening" ;
+		smpso:units = "mm" ;
+		smpso:coordinates = "pftname" ;
+	double stem_leaf(pft) ;
+		stem_leaf:long_name = "Allocation parameter: new stem C per new leaf C (-1 means use dynamic stem allocation)" ;
+		stem_leaf:units = "gC/gC" ;
+		stem_leaf:coordinates = "pftname" ;
+	double stress_decid(pft) ;
+		stress_decid:long_name = "Binary flag for stress-deciduous leaf habit" ;
+		stress_decid:units = "logical flag" ;
+		stress_decid:coordinates = "pftname" ;
+		stress_decid:valid_range = 0., 1. ;
+		stress_decid:flag_values = 0., 1. ;
+		stress_decid:flag_meanings = "NOT stress_decidious" ;
+	double taulnir(pft) ;
+		taulnir:long_name = "Leaf transmittance: near-IR" ;
+		taulnir:units = "fraction" ;
+		taulnir:coordinates = "pftname" ;
+	double taulvis(pft) ;
+		taulvis:long_name = "Leaf transmittance: visible" ;
+		taulvis:units = "fraction" ;
+		taulvis:coordinates = "pftname" ;
+	double tausnir(pft) ;
+		tausnir:long_name = "Stem transmittance: near-IR" ;
+		tausnir:units = "fraction" ;
+		tausnir:coordinates = "pftname" ;
+	double tausvis(pft) ;
+		tausvis:long_name = "Stem transmittance: visible" ;
+		tausvis:units = "fraction" ;
+		tausvis:coordinates = "pftname" ;
+	double woody(pft) ;
+		woody:long_name = "Binary woody lifeform flag" ;
+		woody:units = "logical flag" ;
+		woody:coordinates = "pftname" ;
+		woody:valid_range = 0., 1. ;
+		woody:flag_values = 0., 1. ;
+		woody:flag_meanings = "NON_woody woody" ;
+	double xl(pft) ;
+		xl:long_name = "Leaf/stem orientation index" ;
+		xl:units = "unitless" ;
+		xl:coordinates = "pftname" ;
+		xl:valid_range = -1., 1. ;
+	double z0mr(pft) ;
+		z0mr:long_name = "Ratio of momentum roughness length to canopy top height" ;
+		z0mr:units = "unitless" ;
+		z0mr:coordinates = "pftname" ;
+	double ztopmx(pft) ;
+		ztopmx:long_name = "Canopy top coefficient used in CNVegStructUpdate" ;
+		ztopmx:units = "m" ;
+		ztopmx:_FillValue = 0. ;
+		ztopmx:coordinates = "pftname" ;
+
+// global attributes:
+		:history = "Mon Apr 25 13:15:54 2011: ncks --exclude -v vcmx25,dw_fcel,dw_flig pft-physiology.c110331.nc pft-physiology.c110425.nc\n",
+			"Thu Mar 31 17:44:06 MDT 201: Change some meta-data on crop planting dates, change wheat pftname for temperate cereal\\nTue Mar 29 15:29:41 MDT 2011: Add planting temperatures and dates, temperatures are from EPIC model parameterizations, dates are in line with typical planting dates for the US\\nMon Mar  7 15:17:52 MST 2011: Add valid_range, flags, change a few names\\nWed Mar  2 22:17:36 MST 2011: Add grpnow and pftdyn variables on file\\nThu Feb 17 09:50 2011: Add crop variables onto file\\n Fri Feb 25 12:53:22 MST 2011: Add grperc on file, fix declfact long_name" ;
+		:Conventions = "CF-1.0" ;
+		:title = "Vegetation (Plant Function Type or PFT) constants" ;
+data:
+
+ aleaff = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ allconsl = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 5, 3, 3, 2 ;
+
+ allconss = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 2, 1, 1, 5 ;
+
+ arootf = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 0.05, _, _, 0.2 ;
+
+ arooti = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 0.4, 0.3, 0.3, 
+    0.5 ;
+
+ astemf = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 0.05, 0.05, 
+    0.3 ;
+
+ baset = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 10 ;
+
+ bfact = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 0.1, 0.1, 0.1, 0.1 ;
+
+ c3psn = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1 ;
+
+ croot_stem = 0, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0 ;
+
+ crop = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 ;
+
+ deadwdcn = 1, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 0, 0, 
+    0, 0, 0, 500, 500, 500, 500 ;
+
+ declfact = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 1.05, 1.05, 
+    1.05, 1.05 ;
+
+ displar = 0, 0.67, 0.67, 0.67, 0.67, 0.67, 0.67, 0.67, 0.67, 0.68, 0.68, 
+    0.68, 0.68, 0.68, 0.68, 0.68, 0.68, 0.68, 0.68, 0.68, 0.68 ;
+
+ dleaf = 0, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 
+    0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04 ;
+
+ dsladlai = 0, 0.00125, 0.001, 0.003, 0.0015, 0.0015, 0.004, 0.004, 0.004, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ evergreen = 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ fcur = 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ;
+
+ fcurdv = 0, 1, 1, 0.5, 1, 1, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 
+    0.5, 1, 1, 1, 1 ;
+
+ fleafi = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 0.8, 0.75, 
+    0.425, 0.85 ;
+
+ flivewd = 0, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.5, 0.5, 0.1, 0, 0, 0, 
+    0, 0, 1, 1, 1, 1 ;
+
+ flnr = 0, 0.05, 0.04, 0.08, 0.06, 0.06, 0.09, 0.09, 0.09, 0.06, 0.09, 0.09, 
+    0.09, 0.09, 0.09, 0.1, 0.1, 0.1, 0.2, 0.2, 0.1 ;
+
+ fnitr = 0, 0.72, 0.78, 0.79, 0.83, 0.71, 0.66, 0.64, 0.7, 0.62, 0.6, 0.76, 
+    0.68, 0.61, 0.64, 0.61, 0.61, 0.55, 0.55, 0.55, 0.55 ;
+
+ fr_fcel = 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 
+    0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ;
+
+ fr_flab = 0, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+    0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25 ;
+
+ fr_flig = 0, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+    0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25 ;
+
+ froot_leaf = 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2 ;
+
+ frootcn = 1, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 
+    42, 42, 42, 42 ;
+
+ gddmin = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 50, 50, 50, 50 ;
+
+ graincn = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 50, 50, 50, 50 ;
+
+ grnfill = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 0.65, 0.6, 0.4, 
+    0.7 ;
+
+ grperc = 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 
+    0.3, 0.3, 0.3, 0.3, 0.25, 0.25, 0.25, 0.25 ;
+
+ grpnow = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ;
+
+ hybgdd = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 1700, 1700, 
+    1700, 1900 ;
+
+ irrigated = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 ;
+
+ laimx = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 5, 7, 7, 6 ;
+
+ leaf_long = 0, 3, 6, 1, 1.5, 1.5, 1, 1, 1, 1.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+    1, 1 ;
+
+ leafcn = 1, 35, 40, 25, 30, 30, 25, 25, 25, 30, 25, 25, 25, 25, 25, 25, 25, 
+    25, 25, 25, 25 ;
+
+ lf_fcel = 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 
+    0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ;
+
+ lf_flab = 0, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+    0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25 ;
+
+ lf_flig = 0, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+    0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25 ;
+
+ lfemerg = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 0.03, 0.05, 
+    0.05, 0.03 ;
+
+ lflitcn = 1, 70, 80, 50, 60, 60, 50, 50, 50, 60, 50, 50, 50, 50, 50, 50, 50, 
+    25, 25, 25, 25 ;
+
+ livewdcn = 1, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 50, 
+    50, 50, 50 ;
+
+ max_NH_planting_date = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
+    615, 615, 1130, 615 ;
+
+ max_SH_planting_date = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
+    1215, 1215, 530, 1215 ;
+
+ min_NH_planting_date = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
+    401, 401, 901, 501 ;
+
+ min_SH_planting_date = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
+    1001, 1001, 301, 1101 ;
+
+ min_planting_temp = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 6, 
+    -1, 5, 6 ;
+
+ mp = 9, 6, 6, 6, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 9, 9, 4, 9, 9, 9 ;
+
+ mxmat = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 165, 150, 265, 150 ;
+
+ mxtmp = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 26, 26, 30 ;
+
+ pconv = 0, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.8, 0.8, 0.8, 1, 1, 1, 
+    1, 1, 0, 0, 0, 0 ;
+
+ pftname =
+  "not_vegetated                           ",
+  "needleleaf_evergreen_temperate_tree     ",
+  "needleleaf_evergreen_boreal_tree        ",
+  "needleleaf_deciduous_boreal_tree        ",
+  "broadleaf_evergreen_tropical_tree       ",
+  "broadleaf_evergreen_temperate_tree      ",
+  "broadleaf_deciduous_tropical_tree       ",
+  "broadleaf_deciduous_temperate_tree      ",
+  "broadleaf_deciduous_boreal_tree         ",
+  "broadleaf_evergreen_shrub               ",
+  "broadleaf_deciduous_temperate_shrub     ",
+  "broadleaf_deciduous_boreal_shrub        ",
+  "c3_arctic_grass                         ",
+  "c3_non-arctic_grass                     ",
+  "c4_grass                                ",
+  "c3_crop                                 ",
+  "c3_irrigated                            ",
+  "corn                                    ",
+  "spring_temperate_cereal                 ",
+  "winter_temperate_cereal                 ",
+  "soybean                                 " ;
+
+ pftnum = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 
+    19, 20 ;
+
+ pftpar20 = _, 15, 15, 15, 15, 15, 15, 15, 15, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0 ;
+
+ pftpar28 = _, -2, -32.5, _, 15.5, 3, 15.5, -17, -1000, _, -17, -1000, -1000, 
+    -17, 15.5, _, _, _, _, _, _ ;
+
+ pftpar29 = _, 22, -2, -2, _, 18.8, _, 15.5, -2, _, _, -2, -17, 15.5, _, _, 
+    _, _, _, _, _ ;
+
+ pftpar30 = 0, 900, 600, 350, 0, 1200, 0, 1200, 350, 0, 1200, 350, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0 ;
+
+ pftpar31 = _, _, 23, 23, _, _, _, _, 23, _, _, 23, _, _, _, _, _, _, _, _, _ ;
+
+ planting_temp = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 10, 7, _, 13 ;
+
+ pprod10 = 0, 0.3, 0.3, 0.3, 0.4, 0.3, 0.4, 0.3, 0.3, 0.2, 0.2, 0.2, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0 ;
+
+ pprod100 = 0, 0.1, 0.1, 0.1, 0, 0.1, 0, 0.1, 0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0 ;
+
+ pprodharv10 = _, 0.75, 0.75, 0.75, 1, 0.75, 1, 0.75, 0.75, _, _, _, _, _, _, 
+    _, _, _, _, _, _ ;
+
+ qe25 = 0, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 
+    0.06, 0.06, 0.04, 0.06, 0.06, 0.04, 0.06, 0.06, 0.06 ;
+
+ resist = 1, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 
+    0.12, 0.12, 0.12, 0.12, 1, 1, 1, 1, 1, 1 ;
+
+ rholnir = 0, 0.35, 0.35, 0.35, 0.45, 0.45, 0.45, 0.45, 0.45, 0.35, 0.45, 
+    0.45, 0.35, 0.35, 0.35, 0.35, 0.35, 0.35, 0.35, 0.35, 0.35 ;
+
+ rholvis = 0, 0.07, 0.07, 0.07, 0.1, 0.1, 0.1, 0.1, 0.1, 0.07, 0.1, 0.1, 
+    0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11 ;
+
+ rhosnir = 0, 0.39, 0.39, 0.39, 0.39, 0.39, 0.39, 0.39, 0.39, 0.39, 0.39, 
+    0.39, 0.53, 0.53, 0.53, 0.53, 0.53, 0.53, 0.53, 0.53, 0.53 ;
+
+ rhosvis = 0, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 
+    0.16, 0.31, 0.31, 0.31, 0.31, 0.31, 0.31, 0.31, 0.31, 0.31 ;
+
+ roota_par = 0, 7, 7, 7, 7, 7, 6, 6, 6, 7, 7, 7, 11, 11, 11, 6, 6, 6, 6, 6, 6 ;
+
+ rootb_par = 0, 2, 2, 2, 1, 1, 2, 2, 2, 1.5, 1.5, 1.5, 2, 2, 2, 3, 3, 3, 3, 
+    3, 3 ;
+
+ season_decid = 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ slatop = 0, 0.01, 0.008, 0.024, 0.012, 0.012, 0.03, 0.03, 0.03, 0.012, 0.03, 
+    0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.05, 0.07, 0.07, 0.07 ;
+
+ smpsc = 0, -255000, -255000, -255000, -255000, -255000, -224000, -224000, 
+    -224000, -428000, -428000, -428000, -275000, -275000, -275000, -275000, 
+    -275000, -275000, -275000, -275000, -275000 ;
+
+ smpso = 0, -66000, -66000, -66000, -66000, -66000, -35000, -35000, -35000, 
+    -83000, -83000, -83000, -74000, -74000, -74000, -74000, -74000, -74000, 
+    -74000, -74000, -74000 ;
+
+ stem_leaf = 0, -1, -1, -1, -1, -1, -1, -1, -1, 0.2, 0.2, 0.2, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0 ;
+
+ stress_decid = 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ;
+
+ taulnir = 0, 0.1, 0.1, 0.1, 0.25, 0.25, 0.25, 0.25, 0.25, 0.1, 0.25, 0.25, 
+    0.34, 0.34, 0.34, 0.34, 0.34, 0.34, 0.34, 0.34, 0.34 ;
+
+ taulvis = 0, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 
+    0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05 ;
+
+ tausnir = 0, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 
+    0.001, 0.001, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25 ;
+
+ tausvis = 0, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 
+    0.001, 0.001, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12 ;
+
+ woody = 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ xl = 0, 0.01, 0.01, 0.01, 0.1, 0.1, 0.01, 0.25, 0.25, 0.01, 0.25, 0.25, 
+    -0.3, -0.3, -0.3, -0.3, -0.3, -0.5, 0.65, 0.65, -0.5 ;
+
+ z0mr = 0, 0.055, 0.055, 0.055, 0.075, 0.075, 0.055, 0.055, 0.055, 0.12, 
+    0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12 ;
+
+ ztopmx = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 2.5, 1.2, 1.2, 
+    0.75 ;
+}

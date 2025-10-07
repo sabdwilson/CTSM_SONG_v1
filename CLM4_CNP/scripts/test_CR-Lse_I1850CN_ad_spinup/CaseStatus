@@ -1,0 +1,10 @@
+create_newcase --case test_CR-Lse_I1850CN_ad_spinup --mach generic_linux_pgi --compset I1850CN --res CLM_USRDAT --skip_rundb --max_tasks_per_node 8 --scratchroot /home/xyk/TropicalWarming/clm4_ornl_cnp/run --din_loc_root /home/xyk/DownloadedCCSMData/ccsm_inputdata
+case created 2015-08-27 18:06:27
+configure -case 2015-08-27 18:06:29
+build complete 2015-08-29 22:30:03
+build complete 2015-08-29 23:23:07
+build complete 2015-08-29 23:25:13
+run started 2015-08-29 23:27:52
+run FAILED 2015-08-29 23:28:43
+run started 2015-08-29 23:49:20
+run FAILED 2015-08-29 23:50:09

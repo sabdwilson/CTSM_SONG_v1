@@ -1,0 +1,5 @@
+#config_definition.xml /check for the configuration definition file/
+#config_grid.xml /define grid resolution file/
+#config_compsets.xml  /define specificed compset paramters file/
+#config_machines.xml  /define the machine/
+#config_ 

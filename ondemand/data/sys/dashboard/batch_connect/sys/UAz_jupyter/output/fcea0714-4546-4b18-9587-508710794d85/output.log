@@ -1,0 +1,42 @@
+Script starting...
+Waiting for Jupyter Notebook to open port 46956...
+[I 14:10:32.606 NotebookApp] Writing notebook server cookie secret to /home/u8/sdwilson/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 14:10:33.823 NotebookApp] Serving notebooks from local directory: /home/u8/sdwilson
+[I 14:10:33.823 NotebookApp] Jupyter Notebook 6.4.8 is running at:
+[I 14:10:33.824 NotebookApp] http://i16n3.ocelote.hpc.arizona.edu:46956/node/i16n3.ocelote.hpc.arizona.edu/46956/
+[I 14:10:33.824 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+Discovered Jupyter Notebook listening on port 46956!
+Generating connection YAML file...
+[I 14:11:05.254 NotebookApp] 302 POST /node/i16n3.ocelote.hpc.arizona.edu/46956/login (128.196.131.30) 1.550000ms
+[I 14:11:05.290 NotebookApp] 302 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/ (128.196.131.30) 0.340000ms
+[W 14:11:06.370 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/ipyparallel/clusters?_=1704921064003 (128.196.131.30) 9.650000ms referer=https://ood.hpc.arizona.edu/node/i16n3.ocelote.hpc.arizona.edu/46956/tree?
+[I 14:14:30.204 NotebookApp] Creating new directory in 
+[I 14:15:03.697 NotebookApp] Uploading file to /Bioanalytics/hw00_getting_started_part1.ipynb
+[I 14:15:03.765 NotebookApp] Writing notebook-signing key to /home/u8/sdwilson/.local/share/jupyter/notebook_secret
+[W 14:15:06.735 NotebookApp] Notebook Bioanalytics/hw00_getting_started_part1.ipynb is not trusted
+[W 14:15:06.956 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/Bioanalytics/images/1_github_repo_to_fork.png (128.196.131.30): No such file or directory: Bioanalytics/images/1_github_repo_to_fork.png
+[W 14:15:06.958 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/Bioanalytics/images/1_github_repo_to_fork.png (128.196.131.30) 2.300000ms referer=https://ood.hpc.arizona.edu/node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/Bioanalytics/hw00_getting_started_part1.ipynb
+[W 14:15:06.965 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/Bioanalytics/images/3_github_add_a_collaborator.png (128.196.131.30): No such file or directory: Bioanalytics/images/3_github_add_a_collaborator.png
+[W 14:15:06.965 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/Bioanalytics/images/3_github_add_a_collaborator.png (128.196.131.30) 5.860000ms referer=https://ood.hpc.arizona.edu/node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/Bioanalytics/hw00_getting_started_part1.ipynb
+[W 14:15:07.000 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/Bioanalytics/images/2_github_plan_for_fork.png (128.196.131.30): No such file or directory: Bioanalytics/images/2_github_plan_for_fork.png
+[W 14:15:07.002 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/Bioanalytics/images/2_github_plan_for_fork.png (128.196.131.30) 23.510000ms referer=https://ood.hpc.arizona.edu/node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/Bioanalytics/hw00_getting_started_part1.ipynb
+[I 14:15:07.025 NotebookApp] Kernel started: 92fde0b2-f328-48c9-abbd-65ac37ac5fb1, name: python3
+[I 14:17:07.016 NotebookApp] Saving file at /Bioanalytics/hw00_getting_started_part1.ipynb
+[I 14:35:07.510 NotebookApp] Saving file at /Bioanalytics/hw00_getting_started_part1.ipynb
+[I 14:37:07.094 NotebookApp] Saving file at /Bioanalytics/hw00_getting_started_part1.ipynb
+[I 14:43:07.041 NotebookApp] Saving file at /Bioanalytics/hw00_getting_started_part1.ipynb
+[I 14:45:10.621 NotebookApp] Uploading file to /hw00_getting_started_part1.ipynb
+[W 14:45:15.190 NotebookApp] Notebook hw00_getting_started_part1.ipynb is not trusted
+[W 14:45:15.440 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/images/3_github_add_a_collaborator.png (128.196.131.30): No such file or directory: images/3_github_add_a_collaborator.png
+[W 14:45:15.444 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/images/3_github_add_a_collaborator.png (128.196.131.30) 4.880000ms referer=https://ood.hpc.arizona.edu/node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/hw00_getting_started_part1.ipynb
+[W 14:45:15.445 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/images/2_github_plan_for_fork.png (128.196.131.30): No such file or directory: images/2_github_plan_for_fork.png
+[W 14:45:15.446 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/images/2_github_plan_for_fork.png (128.196.131.30) 1.630000ms referer=https://ood.hpc.arizona.edu/node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/hw00_getting_started_part1.ipynb
+[W 14:45:15.510 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/images/1_github_repo_to_fork.png (128.196.131.30): No such file or directory: images/1_github_repo_to_fork.png
+[W 14:45:15.511 NotebookApp] 404 GET /node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/images/1_github_repo_to_fork.png (128.196.131.30) 2.810000ms referer=https://ood.hpc.arizona.edu/node/i16n3.ocelote.hpc.arizona.edu/46956/notebooks/hw00_getting_started_part1.ipynb
+[I 14:45:15.520 NotebookApp] Kernel started: 3c71063d-c49c-4c52-bc4a-4e3b15bdda14, name: python3
+[I 14:45:17.064 NotebookApp] Starting buffering for 92fde0b2-f328-48c9-abbd-65ac37ac5fb1:a2d03c754be440b785ea4ad02201746b
+[I 14:45:58.897 NotebookApp] Kernel shutdown: 92fde0b2-f328-48c9-abbd-65ac37ac5fb1
+[W 14:45:58.922 NotebookApp] delete /Bioanalytics/hw00_getting_started_part1.ipynb
+[I 14:47:15.648 NotebookApp] Saving file at /hw00_getting_started_part1.ipynb
+Jan 10 15:10:49.477837  9745 slurmstepd   0x2b1033d8b700: error: *** JOB 2650460 ON i16n3 CANCELLED AT 2024-01-10T15:10:49 DUE TO TIME LIMIT ***
+Detailed performance metrics for this job will be available at https://metrics.hpc.arizona.edu/#job_viewer?action=show&realm=SUPREMM&resource_id=5&local_job_id=2650460 by 8am on 2024/01/11.

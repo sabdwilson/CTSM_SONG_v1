@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/u8/sdwilson/CTSM_SONG/case_run/Omics_soilbgc/1x1pt_OAES'
+let g:netrw_dirhist_2='/home/u8/sdwilson/CTSM_SONG/case_run/Omics_soilbgc/1x1pt_HARV'
+let g:netrw_dirhist_3='/home/u32/tianyihu/CTSM_SONG/case_run/Rainman_da5'
+let g:netrw_dirhist_4='/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_GUAN/control3'
+let g:netrw_dirhist_5='/home/u8/sdwilson/CTSM_SONG/bld/namelist_files'

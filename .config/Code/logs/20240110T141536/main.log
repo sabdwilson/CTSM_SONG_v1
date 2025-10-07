@@ -1,0 +1,4 @@
+[2024-01-10 14:15:36.641] [main] [info] update#setState idle
+[2024-01-10 14:15:39.693] [main] [info] Starting extension host with pid 10687 (fork() took 47 ms).
+[2024-01-10 14:16:06.652] [main] [info] update#setState checking for updates
+[2024-01-10 14:16:06.668] [main] [info] update#setState available for download

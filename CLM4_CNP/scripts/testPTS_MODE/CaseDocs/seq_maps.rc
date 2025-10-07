@@ -1,0 +1,56 @@
+##################################################################
+#
+# seq_maps.rc
+#
+# This is a resource file which lists the names of mapping
+# weight files to use in a sequential CCSM run (mapname).
+# You can also set when data is rearranged in the mapping (maptype).
+#
+# This file is read during the map_model2model_init calls.
+#
+# For maptype:  X = Rearrange the input so that the output
+#                   is on the correct processor.
+#               Y = Rearrange the output and sum partial outputs
+#                   if necessary
+#
+# NOTE:  For bfb on different processor counts, set all maptypes to "X".
+################################################################## 
+
+atm2ocnFmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/map_fv1.9x2.5_to_gx1v6_aave_da_090206.nc
+atm2ocnFmaptype: X
+
+atm2ocnSmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/map_fv1.9x2.5_to_gx1v6_patch_090209.nc
+atm2ocnSmaptype: X
+
+ocn2atmFmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/map_gx1v6_to_fv1.9x2.5_aave_da_090206.nc
+ocn2atmFmaptype: Y
+
+ocn2atmSmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/map_gx1v6_to_fv1.9x2.5_aave_da_090206.nc
+ocn2atmSmaptype: Y
+
+atm2iceFmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/map_fv1.9x2.5_to_gx1v6_aave_da_090206.nc
+atm2iceFmaptype: X
+
+atm2iceSmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/map_fv1.9x2.5_to_gx1v6_patch_090209.nc
+atm2iceSmaptype: X
+
+ice2atmFmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/map_gx1v6_to_fv1.9x2.5_aave_da_090206.nc
+ice2atmFmaptype: Y
+
+ice2atmSmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/map_gx1v6_to_fv1.9x2.5_aave_da_090206.nc
+ice2atmSmaptype: Y
+
+atm2lndFmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/idmap
+atm2lndFmaptype: X
+
+atm2lndSmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/idmap
+atm2lndSmaptype: X
+
+lnd2atmFmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/idmap
+lnd2atmFmaptype: Y
+
+lnd2atmSmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/idmap
+lnd2atmSmaptype: Y
+
+rof2ocnFmapname: /home/ysa/ccsm_inputdata/cpl/cpl6/map_r05_to_gx1v6_e1000r300_090226.nc
+rof2ocnFmaptype: Y

@@ -1,0 +1,12 @@
+ &shr_strdata_nml
+   dataMode       = 'CLMNCEP'
+   domainFile     = '/home/xyk/DownloadedCCSMData/ccsm_inputdata/share/domains/domain.clm/domain.lnd.1x1pt_MAN-05_navy.nc'
+   streams        = 'clm1PT.1x1pt_MAN-05.stream.txt 1 1986 2006 ',
+                    'presaero.stream.txt 1 1850 1850'
+   vectors        = 'null','null'
+   mapmask        = 'nomask','nomask'
+   mapalgo        = 'nn','nn'
+   tintalgo       = 'nearest','linear'
+   taxmode        = 'cycle','cycle'
+  /
+! Set time-interpolation to nearest for forcing data as available hourly or half-hourly

@@ -1,0 +1,131 @@
+#!/bin/csh -f
+#===============================================================================
+# GENERIC_USER
+# This is where the batch submission is set.  The above code computes
+# the total number of tasks, nodes, and other things that can be useful
+# here.  Use PBS, BSUB, or whatever the local environment supports.
+#===============================================================================
+
+#PBS -N testyang_ERU
+#PBS -q esd08q
+#PBS -l nodes=24:ppn=4
+#PBS -l walltime=48:00:00
+#PBS -W group_list=esd
+#PBS -r n
+#PBS -j oe
+#PBS -S /bin/csh -V
+
+##BSUB -l nodes=24:ppn=4:walltime=48:00:00
+##BSUB -q batch
+###BSUB -k eo
+###BSUB -J testyang_ERU
+###BSUB -W 48:00:00
+
+#limit coredumpsize 1000000
+#limit stacksize unlimited
+
+
+# ---------------------------------------- 
+# PE LAYOUT: 
+#   total number of tasks  = 128 
+#   maximum threads per task = 2 
+#   cpl ntasks=128  nthreads=1 rootpe=0 ninst=1 
+#   datm ntasks=128  nthreads=1 rootpe=0 ninst=1 
+#   clm ntasks=64  nthreads=2 rootpe=0 ninst=1 
+#   sice ntasks=128  nthreads=1 rootpe=0 ninst=1 
+#   socn ntasks=128  nthreads=1 rootpe=0 ninst=1 
+#   sglc ntasks=128  nthreads=1 rootpe=0 ninst=1 
+#   
+#   total number of hw pes = 192 
+#     cpl hw pe range ~ from 0 to 191 
+#     datm hw pe range ~ from 0 to 191 
+#     clm hw pe range ~ from 0 to 127 
+#     sice hw pe range ~ from 0 to 191 
+#     socn hw pe range ~ from 0 to 191 
+#     sglc hw pe range ~ from 0 to 191 
+# ---------------------------------------- 
+#----------------------------------------------------
+# Determine necessary environment variables
+#----------------------------------------------------
+
+cd /home/ysa/clm4_ornl_cnp/scripts/testyang_ERU
+
+./Tools/ccsm_check_lockedfiles || exit -1
+source ./Tools/ccsm_getenv || exit -2
+
+if ($BUILD_COMPLETE != "TRUE") then
+  echo "BUILD_COMPLETE is not TRUE"
+  echo "Please rebuild the model interactively via"
+  echo "   ./${CASE}.build"
+  exit -2
+endif
+
+setenv LBQUERY  FALSE
+setenv LBSUBMIT FALSE
+
+#----------------------------------------------------
+# Determine time-stamp/file-ID string
+# Clean up previous run timing files
+#----------------------------------------------------
+
+setenv LID "`date +%y%m%d-%H%M%S`"
+# document env vars
+env | egrep '(MP_|LOADL|XLS|FPE|DSM|OMP|MPC)' 
+
+# ---------------------------------------------------
+# Build the namelists and check prestage
+# ---------------------------------------------------
+
+cd $CASEROOT
+source $CASETOOLS/ccsm_buildnml.csh || exit -3
+cd $CASEROOT
+source $CASETOOLS/ccsm_prestage.csh || exit -3
+cd $CASEROOT
+source $CASETOOLS/ccsm_buildnml.csh || exit -3
+
+# ---------------------------------------------------
+# Create and cleanup the timing directories
+# ---------------------------------------------------
+
+if (-d $RUNDIR/timing) rm -r -f $RUNDIR/timing
+mkdir $RUNDIR/timing
+mkdir $RUNDIR/timing/checkpoints
+
+set sdate = `date +"%Y-%m-%d %H:%M:%S"`
+echo "run started $sdate" >>& $CASEROOT/CaseStatus
+
+# -------------------------------------------------------------------------
+# Run the model
+# -------------------------------------------------------------------------
+
+sleep 25
+cd $RUNDIR
+echo "`date` -- CSM EXECUTION BEGINS HERE" 
+
+#===============================================================================
+# GENERIC_USER
+# Launch the job here.  Some samples are commented out below
+#===============================================================================
+
+setenv OMP_NUM_THREADS 2
+if ($USE_MPISERIAL == "FALSE") then
+   #
+   # Find the correct mpirun command and comment it out
+   # Usually it will just be mpiexec or mpirun...
+   # Remove the echo and exit below when you've done so.
+   #
+   #echo "GENERIC_USER: Put the correct mpirun command in your *.run script, then remove this echo/exit"
+   #exit 2
+   #mpiexec -n 128 ./ccsm.exe >&! ccsm.log.$LID
+   mpirun -np 128 ./ccsm.exe >&! ccsm.log.$LID
+else
+                           ./ccsm.exe >&! ccsm.log.$LID
+endif
+
+wait
+echo "`date` -- CSM EXECUTION HAS FINISHED" 
+
+
+cd $CASEROOT
+./Tools/ccsm_postrun.csh || exit 1
+

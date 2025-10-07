@@ -1,0 +1,18 @@
+Script starting...
+Waiting for Jupyter Notebook to open port 55020...
+[I 13:31:20.830 NotebookApp] Serving notebooks from local directory: /home/u8/sdwilson
+[I 13:31:20.830 NotebookApp] Jupyter Notebook 6.4.8 is running at:
+[I 13:31:20.830 NotebookApp] http://i16n0.ocelote.hpc.arizona.edu:55020/node/i16n0.ocelote.hpc.arizona.edu/55020/
+[I 13:31:20.830 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+Discovered Jupyter Notebook listening on port 55020!
+Generating connection YAML file...
+[I 13:32:35.495 NotebookApp] 302 POST /node/i16n0.ocelote.hpc.arizona.edu/55020/login (128.196.131.30) 1.880000ms
+[I 13:32:35.513 NotebookApp] 302 GET /node/i16n0.ocelote.hpc.arizona.edu/55020/ (128.196.131.30) 0.390000ms
+[W 13:32:36.718 NotebookApp] 404 GET /node/i16n0.ocelote.hpc.arizona.edu/55020/ipyparallel/clusters?_=1705091554376 (128.196.131.30) 10.930000ms referer=https://ood.hpc.arizona.edu/node/i16n0.ocelote.hpc.arizona.edu/55020/tree?
+[W 13:32:42.524 NotebookApp] delete /hw00_getting_started_part1.ipynb
+[I 13:33:17.679 NotebookApp] Uploading file to /hw00_getting_started_part1.ipynb
+[W 13:33:20.976 NotebookApp] Notebook hw00_getting_started_part1.ipynb is not trusted
+[I 13:33:21.512 NotebookApp] Kernel started: 60b41bff-1130-4391-8c8d-368a449cee3d, name: python3
+[I 13:35:21.683 NotebookApp] Saving file at /hw00_getting_started_part1.ipynb
+Jan 12 14:31:17.998885 22025 slurmstepd   0x2b70cf283700: error: *** JOB 2653057 ON i16n0 CANCELLED AT 2024-01-12T14:31:17 DUE TO TIME LIMIT ***
+Detailed performance metrics for this job will be available at https://metrics.hpc.arizona.edu/#job_viewer?action=show&realm=SUPREMM&resource_id=5&local_job_id=2653057 by 8am on 2024/01/13.

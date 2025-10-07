@@ -1,0 +1,92 @@
+#===============================================================================
+# The following always need to be set
+# SPMD             Whether to build in SPMD mode or not.  [values TRUE FALSE]
+# SMP              Set to TRUE to enable building in SMP mode (uses OpenMP).  
+# USER_CPPDEFS     CPP definitions (non platform dependent)
+#
+#===============================================================================
+
+# Note that CPPDEFS is set in Macros.cppdefs
+CPPDEFS += -DLINUX -DSEQ_$(FRAMEWORK) -DBGP -DNO_SHR_VMATH -DFORTRAN_SAME -DnoI8
+
+ifeq ($(compile_threaded), true)
+   CPPDEFS += -DTHREADED_OMP
+endif
+
+cpre = $(null)-WF,-D$(null)
+
+FPPDEFS := $(patsubst -D%,$(cpre)%,$(CPPDEFS)) 
+SFC            := xlf95_r
+SCC            := xlc_r
+MPIFC   := mpixlf90_r
+MPICC   := mpixlc_r
+ifeq ($(USE_MPISERIAL),TRUE)
+   FC :=$(SFC)
+   CC :=$(SCC)
+   INC_MPI    := $(CODEROOT)/utils/mct/mpi-serial
+else
+   FC :=$(MPIFC)
+   CC :=$(MPICC)
+endif
+
+NETCDF_PATH   := /soft/apps/netcdf-3.6.2
+INC_NETCDF    := $(NETCDF_PATH)/include
+LIB_NETCDF    := $(NETCDF_PATH)/lib
+MOD_NETCDF    := $(NETCDF_PATH)/include
+
+MPI_LIB_NAME  := 
+#PNETCDF_PATH  := /soft/apps/parallel-netcdf-1.0.2
+#INC_PNETCDF   := $(PNETCDF_PATH)/include
+#LIB_PNETCDF   := $(PNETCDF_PATH)/lib
+PNETCDF_PATH  :=
+INC_PNETCDF   :=
+LIB_PNETCDF   := 
+LAPACK_LIBDIR := 
+
+CFLAGS        := -O2
+FREEFLAGS     := -qsuffix=f=f90:cpp=F90
+FIXEDFLAGS    := -qfixed=132
+FFLAGS        := -qspillsize=2500 -g -qfullpath -qarch=450 -qextname=flush
+FFLAGS_NOOPT  := $(FFLAGS)
+FFLAGS_NOOPT2 := $(FFLAGS)
+FFLAGS_OPT    := -O3 -Q -qstrict
+LDFLAGS       := -Wl,--relax -Wl,--allow-multiple-definition -qfullpath
+AR            := ar
+MOD_SUFFIX    := mod
+CONFIG_SHELL  :=
+CONFIG_ARGS := --build=powerpc-bgp-linux --host=powerpc64-suse-linux
+PIO_CONFIG_OPTS := --enable-filesystem-hints=gpfs
+#===============================================================================
+# Set include paths (needed after override for any model specific builds below)
+#===============================================================================
+
+INCLDIR := -I. -I/bgsys/drivers/ppcfloor/comm/include -I/bgsys/drivers/ppcfloor/arch/include
+
+SLIBS := -L/bgsys/drivers/ppcfloor/comm/lib
+
+#===============================================================================
+# Set model and other specific options
+# NOTE - all CPPDEFS options must be defined before this point
+#===============================================================================
+
+ifeq ($(DEBUG),TRUE)
+  FFLAGS        += -O0 -qinitauto=FF911299 -qflttrap=ov:zero:inv:en
+  FFLAGS_NOOPT  += -O0 -qinitauto=FF911299 -qflttrap=ov:zero:inv:en
+  FFLAGS_NOOPT2 += -O0 -qinitauto=FF911299 -qflttrap=ov:zero:inv:en
+else
+  FFLAGS += $(FFLAGS_OPT)
+endif
+
+ifeq ($(strip $(compile_threaded)),true)
+  FFLAGS  += -qsmp=omp
+  CFLAGS  += -qsmp=omp
+  LDFLAGS += -qsmp=omp
+endif
+
+FFLAGS_NOOPT  += -qsmp=omp:noopt
+FFLAGS_NOOPT2 += -O0 -qsmp=omp:noauto:noopt
+
+ifeq ($(MODEL),cam)
+  FFLAGS+= -qstrict
+endif
+

@@ -1,0 +1,1000 @@
+   40  pwd
+   41  cd ..
+   42  git log
+   43  git diff
+   44  cd ..
+   45  cd ACME_phos_fire/
+   46  ls
+   47  cd ACME/
+   48  ls
+   49  cd scripts/test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup/
+   50  ./test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup.build 
+   51  vi /home/xyk/models/ACME/run/test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup/bld/lnd.bldlog.151029-224926
+   52  ./test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup.build 
+   53  vi /home/xyk/models/ACME/run/test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup/bld/lnd.bldlog.151029-225044
+   54  ./test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup.build 
+   55  qsub test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup.run 
+   56  cd ACME_phos_landuse/
+   57  ls
+   58  cd ACME/
+   59  ls
+   60  cd run/
+   61  ls
+   62  cd test_phos_landuse_BR-Cax_I20TRCLM45CN/run/
+   63  ls
+   64  history 
+   65  /home/xyk/models/ACME/run/test_phos_landuse_BR-Cax_I20TRCLM45CN/bld/cesm.exe
+   66  ls -lt |more
+   67  history 
+   68  :q
+   69  ls -lt |more
+   70  cd ..
+   71  cd ACME_phos_fire/
+   72  ls
+   73  cd ACME/
+   74  ls
+   75  cd scripts/
+   76  cd test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup/
+   77  ./test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup.build 
+   78  qsub test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup.run 
+   79  cd 
+   80  cd ACME_phos_fire/
+   81  ls
+   82  cd ACME/run/
+   83  cd test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup/
+   84  cd run/
+   85  ls -lt |more
+   86  qstat -u xyk
+   87  ls -lt |more
+   88  ncdump test_phos_fire_BR-Cax_I1850CLM45CN_ad_spinup.clm2.h0.0017-01-01-00000.nc >aaa
+   89  vi aaa
+   90  ls -lt |more
+   91  qstat -u xyk
+   92  ls -lt |more
+   93  qstat -u xyk
+   94  ls -lt |more
+   95  qstat -u xyk
+   96  ls -lt |more
+   97  cd ACME_phos_landuse/
+   98  ls
+   99  cd ACME/
+  100  ls
+  101  cd run/
+  102  ls
+  103  cd test_phos_landuse_BR-Cax_I20TRCLM45CN/
+  104  cd run/
+  105  vi lnd_
+  106  vi lnd_in 
+  107  ls
+  108  cd ACME_phos_fire/
+  109  ls
+  110  cd ACME/
+  111  ls
+  112  git branch
+  113  git log
+  114  ls
+  115  cd TropicalWarming/
+  116  ls
+  117  cd clm4_ornl_cnp/
+  118  ls
+  119  cd scripts/
+  120  ls
+  121  ls -lt |more
+  122  cd MKN6-ZRS7-C8RS
+  123  ls
+  124  ls -lt |more
+  125  cd test4_CR-Lse_I1850CN_ad_spinup/
+  126  ls
+  127  vi README.case 
+  128  qsub test4_CR-Lse_I1850CN_ad_spinup.run 
+  129  ls -lt |more
+  130  qstat -u xyk
+  131  vi test4_CR-Lse_I1.o412458
+  132  ./test4_CR-Lse_I1850CN_ad_spinup.build 
+  133  export USE_MPISERIAL=TRUE
+  134      
+  135  export CLM_USRDAT_NAME=1x1pt_AU-EuF
+  136  export CLM_USRDAT_NAME=1x1pt_CR-Lse
+  137  qsub test4_CR-Lse_I1850CN_ad_spinup.run 
+  138  qstat -u xyk
+  139  ls -lt |more
+  140  vi test4_CR-Lse_I1.o412459
+  141  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/cpl.log.151116-134249
+  142  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/atm.log.151116-134249
+  143  cd datm_atm_in
+  144  vi datm_atm_in
+  145  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/atm.log.151116-134249
+  146  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/lnd.log.151116-134249
+  147  cd /home/zdr/1x1pt_CR-Lse
+  148  ls
+  149  ls
+  150  cd TropicalWarming/
+  151  ls
+  152  cd clm4_ornl_cnp/
+  153  ls
+  154  cd run/
+  155  ls
+  156  cd test4_CR-Lse_I1850CN_ad_spinup/
+  157  ls
+  158  cd run/l
+  159  cd run/
+  160  ls
+  161  vi lnd_in 
+  162  history 
+  163  cd /home/xyk/DownloadedCCSMData/ccsm_inputdata
+  164  ls
+  165  cd lnd/clm2/
+  166  ls
+  167  cd ..
+  168  cd at
+  169  ls
+  170  cd ..
+  171  ls
+  172  cd atm/
+  173  ls
+  174  cd datm7/
+  175  ls
+  176  cd CLM1PT_data/
+  177  ls
+  178  ls -lt |more
+  179  cd 1x1pt_CR-Lse/
+  180  ls
+  181  cp /home/zdr/1x1pt_CR-Lse/* ./
+  182  cp -f /home/zdr/1x1pt_CR-Lse/* ./
+  183  cd ..
+  184  rm -rf 1x1pt_CR-Lse/
+  185  cp -r /home/zdr/1x1pt_CR-Lse ./
+  186  ls
+  187  cd 1x1pt_CR-Lse/
+  188  ls
+  189  ls -lt |more
+  190  cd 
+  191  cd clm4_ornl_cnp/
+  192  cd 
+  193  cd TropicalWarming/
+  194  cd clm4_ornl_cnp/
+  195  l
+  196  ls
+  197  cd run/
+  198  cd test4_CR-Lse_I1850CN_ad_spinup/run/
+  199  ls -lt |more
+  200  vi datm_atm_in 
+  201  ls /home/xyk/DownloadedCCSMData/ccsm_inputdata/share/domains/domain.clm/domain.lnd.1x1pt_CR-Lse_navy.nc
+  202  vi datm_atm_in 
+  203  ls /home/xyk/DownloadedCCSMData/ccsm_inputdata/share/domains/domain.clm/domain.lnd.1x1pt_CR-Lse_navy.nc
+  204  vi ccsm.log.150830-011132
+  205  vi cpl.log.150830-011132
+  206  vi lnd.log.150830-011132
+  207  vi atm.log.150830-011132
+  208  ls
+  209  ls -lt |more
+  210  cd ACME_Sept
+  211  cd ACME_Sept28/
+  212  ls
+  213  vi Readme 
+  214  cd ../ACME_Sept18/
+  215  ls
+  216  cd ACME/
+  217  ls
+  218  cd models/
+  219  ls
+  220  cd lnd/clm/
+  221  ls
+  222  cd src
+  223  ls
+  224  cd biogeochem/
+  225  ls
+  226  cd CNAllocationMod.F90 
+  227  vi CNAllocationMod.F90 
+  228  git branch
+  229  ls
+  230  mkdir ACME_PR_merge
+  231  cd ACME_PR_merge/
+  232  ls
+  233  history 
+  234  git clone git@github.com:ACME-Climate/ACME.git
+  235  cd ACME/
+  236  ls
+  237  git checkout -b  yangx/lnd/phos_nitrif_denitrif-resolved
+  238  ls
+  239  cd components/
+  240  ls
+  241  cd clm/
+  242  ls
+  243  cd src
+  244  ls
+  245  cd biogeochem/
+  246  ls
+  247  vi CNAllocationMod.F90 
+  248  git branch
+  249  vi CNAllocationMod.F90 
+  250  git branch 
+  251  vi CNAllocationMod.F90 
+  252  ls
+  253  cd ACME_Sept18/
+  254  ls
+  255  cd ACME/
+  256  ls
+  257  cd models/
+  258  ls
+  259  cd lnd/
+  260  ls
+  261  cd clm/
+  262  ls
+  263  cd src
+  264  ls
+  265  cd biogeochem/
+  266  ls
+  267  vi CNAllocationMod.F90 
+  268  ls
+  269  cd TropicalWarming/
+  270  ls
+  271  cd clm4_ornl_cnp/
+  272  ls
+  273  cd scripts/
+  274  ls
+  275  ls -lt |more
+  276  cd test4_CR-Lse_I1850CN_ad_spinup
+  277  l
+  278  ls
+  279  ls -lt |more
+  280  vi test4_CR-Lse_I1.o412459
+  281  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/cpl.log.151116-134249
+  282  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/atm.log.151116-134249
+  283  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/cesm.log.151116-134249
+  284  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/ccsm.log.151116-134249
+  285  ls
+  286  vi env_mach_specific 
+  287  vi env_mach_pes.xml 
+  288  vi Macros.generic_linux_pgi 
+  289  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/ccsm.log.151116-134249
+  290  ls
+  291  vi Macros.generic_linux_pgi 
+  292  ./test4_CR-Lse_I1850CN_ad_spinup.build 
+  293  history 
+  294  export USE_MPISERIAL=TRUE
+  295    867      
+  296    868  export CLM_USRDAT_NAME=1x1pt_AU-EuF
+  297    869  export CLM_USRDAT_NAME=1x1pt_CR-Lse
+  298  export CLM_USRDAT_NAME=1x1pt_CR-Lse
+  299  ./test4_CR-Lse_I1850CN_ad_spinup.build 
+  300  vi env_build.xml 
+  301  ls
+  302  vi env_conf.xml 
+  303  vi env_case.xml 
+  304  cd ACME_PR_merge/
+  305  ls
+  306  cd ACME/
+  307  ls
+  308  git checkout -b Yangxudong/lnd/phos_nitrif_denitrif-resolved
+  309  ls
+  310  git branch
+  311  ls
+  312  cd cime/
+  313  ls
+  314  cd scripts
+  315  ls
+  316  history 
+  317  ls
+  318  cd ..
+  319  ls
+  320  cd ..
+  321  ls
+  322  cd ..
+  323  ls
+  324  cd ..
+  325  ls
+  326  ls -lt |more
+  327  ls
+  328  cd clm4_ornl_cnp/
+  329  ls
+  330  cd scripts/
+  331  ls
+  332  ls -lt |more
+  333  cd 
+  334  vi .bashrc
+  335  ls
+  336  cd cd TropicalWarming/
+  337  ls
+  338  cd TropicalWarming/
+  339  ls
+  340  cd clm4_ornl_cnp/
+  341  ls
+  342  cd scripts/
+  343  ls
+  344  ls -lt |more
+  345  cd test4_CR-Lse_I1850CN_ad_spinup/
+  346  qsub test4_CR-Lse_I1850CN_ad_spinup.run 
+  347  qstat -u xyk
+  348  ls -lt |more
+  349  vi test4_CR-Lse_I1.o412607
+  350  history 
+  351  export CLM_USRDAT_NAME=1x1pt_AU-EuF
+  352  export CLM_USRDAT_NAME=1x1pt_CR-Lse
+  353  qsub test4_CR-Lse_I1850CN_ad_spinup.run 
+  354  qstat -u xyk
+  355  ls -lt |more
+  356  vi test4_CR-Lse_I1.o412608
+  357  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/cpl.log.151123-114413
+  358  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/ccsm.log.151123-114413
+  359  source /home/xyk/.bashrc
+  360  qsub test4_CR-Lse_I1850CN_ad_spinup.run 
+  361  qstat -u xyk
+  362  ls -lt |more
+  363  vi test4_CR-Lse_I1.o412610
+  364  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/cpl.log.151123-122814
+  365  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/ccsm.log.151123-122814
+  366  vi /home/xyk/.bashrc
+  367  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/ccsm.log.151123-122814
+  368  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/atm.log.151123-122814
+  369  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/lnd.log.151123-122814
+  370  vi env_mach_specific 
+  371  vi env_mach_pes.xml 
+  372  vi Macros.generic_linux_pgi 
+  373  source /home/xyk/.bashrc
+  374  qsub test4_CR-Lse_I1850CN_ad_spinup.run 
+  375  qstat -u xyk
+  376  ls -lt |more
+  377  vi test4_CR-Lse_I1.o412611
+  378  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/cpl.log.151123-134743
+  379  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/ccsm.log.151123-134743
+  380  cd Tools/
+  381  ls
+  382  vi Makefile 
+  383  cd ..
+  384  ls
+  385  history 
+  386  vi /home/xyk/.bashrc
+  387  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/ccsm.log.151123-134743
+  388  vi /home/xyk/.bashrc
+  389  source /home/xyk/.bashrc
+  390  qsub test4_CR-Lse_I1850CN_ad_spinup.run 
+  391  qstat -u xyk
+  392  ls -la |more
+  393  vi .bashrc
+  394  vi ~zdr/.bashrc
+  395  vi .bashrc
+  396  ls /home/zdr/opt/netcdf-4.1.3_pgf95/lib
+  397  ls /home/zdr/opt/netcdf-4.1.3_pgf95
+  398  ls
+  399  cd clm4_ornl_cnp/
+  400  ls
+  401  cd models/
+  402  ls
+  403  cd ..
+  404  ls
+  405  cd scripts/
+  406  ls
+  407  cd amazon
+  408  ls
+  409  cd ..
+  410  ls
+  411  cd amazon_2_transient/
+  412  ls
+  413  cd Buildconf/
+  414  ls
+  415  vi datm.buildnml.csh 
+  416  cd ..
+  417  ls /home/zdr/models/ccsm_inputdata/atm/datm7/ugrid/amazon_regional/Solar6Hrly
+  418  ls
+  419  ls -lt /home/zdr/models/ccsm_inputdata/atm/datm7/ugrid/amazon_regional/Solar6Hrly
+  420  ls
+  421  cd ls
+  422  cd DownloadedCCSMData/
+  423  s
+  424  ls
+  425  cd ccsm_inputdata
+  426  ls
+  427  cd ugrid_@
+  428  cd ugrid_2
+  429  ls
+  430  diff testsurfdata.amazon_ACME.nc testsurfdata.amazon.nc
+  431  ls -lt  *amazon*
+  432  cd amazon_
+  433  cd amazon_region/
+  434  ls
+  435  scp testdomain.amazon.nc xyk@titan.ccs.ornl.gov:/lustre/atlas/proj-shared/cli112/xyk/ccsm_inputdata/share/do
+  436  scp testsurfdata.amazon.nc xyk@titan.ccs.ornl.gov:/lustre/atlas/proj-shared/cli112/xyk/ccsm_inputdata/lnd/clm2/surfdata
+  437  cd ..
+  438  ls
+  439  cd ../ugrid
+  440  ls
+  441  cd ..
+  442  ls
+  443  cd lnd/clm2/
+  444  ls
+  445  cd pftdata/
+  446  ls
+  447  ls *110425*
+  448  scp pft-physiology.c110425_withP.nc xyk@titan.ccs.ornl.gov:/lustre/atlas/proj-shared/cli112/xyk/ccsm_inputdata/lnd/clm2/pftdata/
+  449  scp CNP_parameters_c131108.nc xyk@titan.ccs.ornl.gov:/lustre/atlas/proj-shared/cli112/xyk/ccsm_inputdata/lnd/clm2/pftdata/
+  450  ls
+  451  cd DownloadedCCSMData/
+  452  ls
+  453  cd ccsm_inputdata
+  454  ls
+  455  cd lnd/clm2/
+  456  ls
+  457  cd ..
+  458  ls
+  459  cd ..
+  460  ls
+  461  cd atm/
+  462  ls
+  463  cd datm7/
+  464  ls
+  465  cd CLM1PT_data/
+  466  ls
+  467  ls
+  468  cd ACME_before_phosphorus/
+  469  ls
+  470  cd ACME/scripts/
+  471  ls
+  472  cd Default_BR-Cax_I1850CLM45CN_ad_spinup/
+  473  ls
+  474  vi user_nl_clm 
+  475  vi user_nl_datm 
+  476  vi user_nl_cpl 
+  477  cd ..
+  478  ls
+  479  cd Default_BR-Cax_I1850CLM45CN_ad_spinup/
+  480  ls
+  481  cd user_nl_datm 
+  482  vi user_nl_datm 
+  483  cd ..
+  484  ls
+  485  cd ..
+  486  ls
+  487  cd run/
+  488  ls
+  489  cd Default_BR-Cax_I1850CLM45CN_ad_spinup/
+  490  ls
+  491  cd run/
+  492  ls
+  493  vi datm.streams.txt.CLM1PT.CLM_USRDAT
+  494  ls
+  495  cd ACME_before_phosphorus/
+  496  ls
+  497  cd ACME/
+  498  ls
+  499  cd scripts/
+  500  ls
+  501  cd Default_BR-Cax_I1850CLM45CN_ad_spinup/
+  502  ls
+  503  vi user_nl_clm 
+  504  pwd
+  505  vi user_nl_clm 
+  506  vi user_nl_datm 
+  507  ls
+  508  cd ACME_before_phosphorus/
+  509  ls
+  510  cd ACME/
+  511  ls
+  512  cd scripts/
+  513  ls
+  514  cd acme/
+  515  ls
+  516  cd pointclm/
+  517  ls
+  518  vi pointCLM.py 
+  519  vi makepointdata.py 
+  520  cd ..
+  521  ls
+  522  cd ../run/
+  523  ls
+  524  cd Default_BR-Cax_I1850CLM45CN_ad_spinup/
+  525  ls
+  526  cd run/
+  527  ls
+  528  ls -lt
+  529  vi datm.streams.txt.CLM1PT.CLM_USRDAT
+  530  cd ..
+  531  ls
+  532  cd ..
+  533  ls
+  534  cd scripts/acme/
+  535  ls
+  536  cd pointclm/
+  537  ls
+  538  pwd
+  539  ls
+  540  qstat
+  541  ls
+  542  cd clm4_ornl_cnp/
+  543  ls
+  544  cd scripts/
+  545  ls
+  546  ls -lt |more
+  547  cd 
+  548  ls
+  549  mkdir AmazonPapeRevision
+  550  cd AmazonPapeRevision/
+  551  ls
+  552  hg clone https://www.climatemodeling.org/repos/climate_software/clm4_ornl_cnp/
+  553  ls
+  554  cd clm4_ornl_cnp/
+  555  ls
+  556  cd scripts/
+  557  ls
+  558  python site_fullrun.py --site BR-Cax  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup Decomp --caseidprefix test
+  559  cd PTCLM_files/
+  560  ls
+  561  cd PTCLM_sitedata/
+  562  ls
+  563  cd ..
+  564  python site_fullrun.py --site BR-Cax  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix test
+  565  qstat -u xyk
+  566  qstat 
+  567  qstat -u xyk
+  568  qstat
+  569  python site_fullrun.py --site BR-Cax  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix test
+  570  ls -la
+  571  vi .bashrc
+  572  source .bashrc
+  573  ls
+  574  cd AmazonPapeRevision/
+  575  ls
+  576  cd clm4_ornl_cnp/scripts/
+  577  python site_fullrun.py --site BR-Cax  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix test
+  578  qstat -u xyk
+  579  ls
+  580  cd test_BR-Cax_I1850CN_ad_spinup/
+  581  ls
+  582  ls -lt
+  583  vi Case
+  584  vi CaseStatus 
+  585  qsub test_BR-Cax_I1850CN_ad_spinup.run 
+  586  qstat -u xyk
+  587  qsub test_BR-Cax_I1850CN_ad_spinup.run 
+  588  qstat
+  589  ls -lt
+  590  vi test_BR-Cax_I18.o420644
+  591  history 
+  592   export CLM_USRDAT_NAME=1x1pt_BR-Cax
+  593  qstat
+  594  qsub test_BR-Cax_I1850CN_ad_spinup.run 
+  595  qstat
+  596  ls -lt |more
+  597  vi test_BR-Cax_I18.o420646
+  598  vi /home/xyk/AmazonPapeRevision/clm4_ornl_cnp/run/test_BR-Cax_I1850CN_ad_spinup/run/cpl.log.151204-143751
+  599  vi /home/xyk/AmazonPapeRevision/clm4_ornl_cnp/run/test_BR-Cax_I1850CN_ad_spinup/run/atm.log.151204-143751
+  600  ls
+  601  ls /home/xyk/DownloadedCCSMData/ccsm_inputdata/atm/datm7/CLM1PT_data/1x1pt_BR-Cax/2001-01.nc
+  602  vi /home/xyk/AmazonPapeRevision/clm4_ornl_cnp/run/test_BR-Cax_I1850CN_ad_spinup/run/atm.log.151204-143751
+  603  cd ..
+  604  ls
+  605  cd ..
+  606  ls
+  607  cd run/
+  608  ls
+  609  cd test_BR-Cax_I
+  610  cd test_BR-Cax_I1850CN_ad_spinup/
+  611  ls
+  612  cd run/
+  613  ls
+  614  ls -lt
+  615  vi clm1PT.1x1pt_BR-Cax.stream.txt
+  616  ./ccsm.exe 
+  617  ls -lt
+  618  vi atm.log.151204-143751
+  619  vi ccsm.log.151204-143751
+  620  vi cpl.log.151204-143751
+  621  ls
+  622  vi datm_atm_in 
+  623  ls -lt |more
+  624  ./ccsm.exe 
+  625  ls
+  626  cd DownloadedCCSMData/
+  627  ls
+  628  cd ccsm_inputdata
+  629  ls
+  630  cd lnd/
+  631  ls
+  632  cd clm2/
+  633  ls
+  634  cd pftdata/
+  635  ls
+  636  ls *131108*
+  637  ncdump CNP_parameters_c131108.nc 
+  638  ls
+  639  ls *withP*
+  640  ncdump pft-physiology.c110425_withP.nc >aaa
+  641  vi aaa
+  642  history 
+  643  cd 
+  644  ls
+  645  vi .bashrc
+  646  ls
+  647  cd AmazonPapeRevision/
+  648  ls
+  649  cd clm4_ornl_cnp/
+  650  ls
+  651  cds c
+  652  cd scripts/
+  653  ls
+  654  cd TEST_BR-Sa3_I1850CN_ad_spinup/
+  655  ls
+  656  ls -lt
+  657  qsub TEST_BR-Sa3_I1850CN_ad_spinup.run 
+  658  qstat
+  659  ls -lt |more
+  660  vi TEST_BR-Sa3_I18.o420649
+  661  ./TEST_BR-Sa3_I1850CN_ad_spinup.build 
+  662  ls -lt
+  663  cd ..
+  664  cd test_BR-Cax_I1850CN_ad_spinup/
+  665  export CLM_USRDAT_NAME=1x1pt_BR-Cax
+  666  qsub test_BR-Cax_I1850CN_ad_spinup.run 
+  667  qstat -u xyk
+  668  cd ..
+  669  cd ../run/
+  670  ls
+  671  cd test_BR-Cax_I1850CN_ad_spinup/run/
+  672  ls-lt
+  673  ls -lt
+  674  vi atm.log.151204-153104
+  675  qstat
+  676  ls -l
+  677  ls -lt
+  678  c ..
+  679  cd ..
+  680  cd TEST_BR-Sa3_I1850CN_ad_spinup/run/
+  681  ls -lt |more
+  682  qstat -u xyk
+  683  ls
+  684  cd AmazonPapeRevision/
+  685  ls
+  686  cd clm4_ornl_cnp/
+  687  ls
+  688  cd scripts/
+  689  ls
+  690  cd test_BR-Cax_I1850CN_ad_spinup/
+  691  ls
+  692  ls -lt |more
+  693  qsub test_BR-Cax_I1850CN_ad_spinup.run 
+  694  qstat 
+  695  ls -lt
+  696  vi test_BR-Cax_I18.o420632
+  697  history 
+  698  export CLM_USRDAT_NAME=1x1pt_BR-Caxc
+  699  qsub test_BR-Cax_I1850CN_ad_spinup.run 
+  700  qstat 
+  701  ls -lt |more
+  702  vi test_BR-Cax_I18.o420634
+  703  pwd
+  704  ./test_BR-Cax_I1850CN_ad_spinup.build 
+  705  vi /home/xyk/AmazonPapeRevision/clm4_ornl_cnp/run/test_BR-Cax_I1850CN_ad_spinup/run/ccsm.bldlog.151204-134039
+  706  source ~xyk/.bashrc
+  707  ./test_BR-Cax_I1850CN_ad_spinup.build 
+  708  cd ..
+  709  cd test_BR-Cax_I1850CN_ad_spinup/
+  710  ls
+  711  vi user_nl_clm 
+  712  cd ..
+  713  ls
+  714  vi site_fullrun.py 
+  715  vi runCLM.py 
+  716  history 
+  717  ls
+  718  ls test_BR-Cax_I*
+  719  rm -rf test_BR-Cax_I*
+  720  ls
+  721  python site_fullrun.py --site BR-Cax  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix test
+  722  rm -rf test_BR-Cax_I*
+  723  ls
+  724  cd /home/xyk/DownloadedCCSMData/ccsm_inputdata/atm/datm7/CLM1PT_data/1x1pt_BR-Cax
+  725  ls
+  726  ncdump 2001-01.nc 
+  727  ncdump 2001-01.nc >aaa
+  728  vi aaa
+  729  cd ..
+  730  ls
+  731  cd 
+  732  ls
+  733  cd AmazonPapeRevision/
+  734  cd clm4_ornl_cnp/
+  735  ls
+  736  cd scripts/
+  737  ls
+  738  vi runCLM.py 
+  739  history 
+  740  python site_fullrun.py --site BR-Sa3  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix test
+  741  vi runCLM.py 
+  742  ls
+  743  vi runCLM.py 
+  744  pwd
+  745  python site_fullrun.py --site BR-Sa3  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix test
+  746  ls
+  747  python site_fullrun.py --site BR-Sa3  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix TEST
+  748  qstat -u xyk
+  749  python site_fullrun.py --site BR-Cax  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix TEST
+  750  ls
+  751  cd AmazonPapeRevision/
+  752  ls
+  753  cd clm4_ornl_cnp/
+  754  ls
+  755  cd run/
+  756  ls
+  757  cd TEST_BR-Sa3_I20TRCN/run/
+  758  ls -lt
+  759  vi ccsm.log.151205-041354
+  760  cd ..
+  761  ncdump TEST_BR-Sa3_I20TRCN.clm2.h0.2002-01-01-00000.nc >aaa
+  762  ncdump TEST_BR-Sa3_I20TRCN.clm2.h0.2001-01-01-00000.nc
+  763  ls
+  764  cd run/
+  765  ncdump TEST_BR-Sa3_I20TRCN.clm2.h0.2001-01-01-00000.nc
+  766  ncdump TEST_BR-Sa3_I20TRCN.clm2.h0.2002-01-01-00000.nc >aaa
+  767  vi aaa
+  768  ls
+  769  vi aaa
+  770  pwd
+  771  vi aaa
+  772  vi lnd_in 
+  773  cd ../
+  774  cd ..
+  775  cd r
+  776  cd TEST_BR-Cax_I20TRCN/run/
+  777  ls
+  778  ncdump TEST_BR-Cax_I20TRCN.clm2.h0.2007-01-01-00000.nc >aaa
+  779  vi aaa
+  780  cd ..
+  781  ls
+  782  pwd
+  783  cd scripts/
+  784  ls
+  785  history 
+  786  python site_fullrun.py --site AGP-01  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix TEST
+  787  qstat -u xyk
+  788  python site_fullrun.py --site MAN-05  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix TEST
+  789  qstat -u xyk
+  790  python site_fullrun.py --site TAM-06  --ccsm_input /home/xyk/DownloadedCCSMData/ccsm_inputdata --sitegroup DECOMPCNP --caseidprefix TEST
+  791  qstat -u xyk
+  792  ls
+  793  cd ls
+  794  cd AmazonPapeRevision/
+  795  ls
+  796  cd clm4_ornl_cnp/
+  797  ls
+  798  cd scripts/
+  799  ls
+  800  cd ../run/
+  801  ls
+  802  rm -rf test_BR-*
+  803  ls
+  804  cd TEST_BR-Sa3_I20TRCN/run/
+  805  ls
+  806  vi aaa
+  807  ls
+  808  cd CNP_models/
+  809  ls
+  810  cd clm_0_32_P/
+  811  ls
+  812  cd scripts/
+  813  ls
+  814  cd ..
+  815  cd run/
+  816  ls
+  817  cd V1.3_MAN-05_I20TRCN
+  818  ls
+  819  cd run/
+  820  ls
+  821  vi NPP_0.txt 
+  822  cd ..
+  823  ls
+  824  cd ..
+  825  ls
+  826  cd V1.3_BR-Sa3_I20TRCN/run/
+  827  ls
+  828  ncdump V1.3_BR-Sa3_I20TRCN.clm2.h0.2003-01-01-00000.nc >aaa
+  829  vi aaa
+  830  cd ..
+  831  ls
+  832  cd ../V1.3_BR-Cax_I20TRCN/run/
+  833  ls
+  834  ncdump V1.3_BR-Cax_I20TRCN.clm2.h0.2007-01-01-00000.nc >aaa
+  835  vi aaa
+  836  cd ..
+  837  ls
+  838  cd ..
+  839  ls
+  840  cd V1.3_EXP2_BR-Sa3_I20TRCN
+  841  ls
+  842  cd run/
+  843  ls
+  844  ncdump V1.3_EXP2_BR-Sa3_I20TRCN.clm2.h0.2003-01-01-00000.nc >aaa
+  845  vi aaa
+  846  vi NPP_0.txt 
+  847  ls
+  848  cd ..
+  849  ls
+  850  cd ..
+  851  ls
+  852  cd sc
+  853  cd ..
+  854  ls
+  855  cd plot/
+  856  ls
+  857  cd ..
+  858  cd scripts/
+  859  ls
+  860  cd plot_scripts/
+  861  ls
+  862  cd ncl_post/
+  863  ls -lt
+  864  vi monthly_post.ncl 
+  865  cd ..
+  866  ls
+  867  cd AMAZON/
+  868  ls
+  869  cd ..
+  870  ls
+  871  cd BR-Sa3/
+  872  ls
+  873  cd ..
+  874  ls
+  875  vi rd_monthly.ncl 
+  876  cd ncl_post/
+  877  ls
+  878  vi monthly_analysis.ncl 
+  879  vi hourly_post.ncl  
+  880  vi vars_longname_for_plots.txt 
+  881  vi monthly_analysis.ncl 
+  882  ncl monthly_analysis.ncl 
+  883  which ncl
+  884  ~/local/ncl-6.0.0/bin/ncl monthly_analysis.ncl 
+  885  ncl
+  886  where ncl
+  887  history >aaa
+  888  vi aaa
+  889  ls
+  890  cd AmazonPapeRevision/
+  891  ls
+  892  cd clm4_ornl_cnp/
+  893  ls
+  894  cd scripts/
+  895  ls
+  896  ./create_newcase --case amazon --mach generic_linux_pgi --res f05_f05 --scratchroot /home/xyk/AmazonPapeRevision/clm4_ornl_cnp/run --din_loc_root_csmdata /home/xyk/DownloadedCCSMData/ccsm_inputdata --max_tasks_per_node 32 --compset I1850CN --skip_rundb
+  897  ls
+  898  ./create_newcase --case Amazon_ad_spinup --mach generic_linux_pgi --res f05_f05 --scratchroot /home/xyk/AmazonPapeRevision/clm4_ornl_cnp/run --din_loc_root_csmdata /home/xyk/DownloadedCCSMData/ccsm_inputdata --max_tasks_per_node 32 --compset I1850CN --skip_rundb
+  899  ls
+  900  cd Amazon_ad_spinup/
+  901  ls
+  902  pwd
+  903  cp /home/xyk/clm4_ornl_cnp/scripts/amazon/env_conf.xml ./
+  904  ./configure -case
+  905  diff env_build.xml /home/xyk/clm4_ornl_cnp/scripts/amazon/env_build.xml 
+  906  diff env_run.xml /home/xyk/clm4_ornl_cnp/scripts/amazon/env_run.xml 
+  907  ./Amazon_ad_spinup.build 
+  908  ls
+  909  cd AmazonPapeRevision/
+  910  ls
+  911  cd clm4_ornl_cnp/
+  912  ls
+  913  pwd
+  914  ls
+  915  cd scripts/
+  916  ls
+  917  cd TEST_AGP-01_I1850CN_ad_spinup/
+  918  ls
+  919  cd README.case 
+  920  vi README.case 
+  921  ls
+  922  cd clm4_
+  923  cd clm4_ornl_cnp/
+  924  ls
+  925  cd scripts/
+  926  ls
+  927  cd amazon
+  928  ls
+  929  vi README.case 
+  930  diff env_conf.xml /home/xyk/AmazonPapeRevision/clm4_ornl_cnp/scripts/Amazon_ad_spinup/env_conf.xml 
+  931  pwd
+  932  cd clm4_ornl_cnp/
+  933  ls
+  934  cd scripts/
+  935  ls
+  936  cd amazon
+  937  ls
+  938  vi amazon.run 
+  939  ls
+  940  cd AmazonPapeRevision/clm4_ornl_cnp/scripts/
+  941  ls
+  942  cd Amazon_ad_spinup/
+  943  ./Amazon_ad_spinup.build 
+  944  ls
+  945  cd Buildconf/
+  946  ls
+  947  vi clm.buildnml.csh 
+  948  diff clm.buildnml.csh /home/xyk/clm4_ornl_cnp/scripts/amazon/Buildconf/clm.buildnml.csh 
+  949  vi clm.buildnml.csh 
+  950  cp /home/xyk/clm4_ornl_cnp/scripts/amazon/Buildconf/clm.buildnml.csh ./
+  951  vi clm.buildnml.csh 
+  952  diff datm.buildnml.csh /home/xyk/clm4_ornl_cnp/scripts/amazon/Buildconf/datm.buildnml.csh
+  953  cp /home/xyk/clm4_ornl_cnp/scripts/amazon/Buildconf/datm.buildnml.csh ./
+  954  cd ..
+  955  vi Amazon_ad_spinup.run 
+  956  vi env_run.xml 
+  957  diff env_run.xml /home/xyk/clm4_ornl_cnp/scripts/amazon/env_run.xml 
+  958  vi env_run.xml 
+  959  diff env_run.xml /home/xyk/clm4_ornl_cnp/scripts/amazon/env_run.xml 
+  960  qsub Amazon_ad_spinup.run 
+  961  vi Amazon_ad_spinup.run 
+  962  diff Amazon_ad_spinup.run /home/xyk/clm4_ornl_cnp/scripts/amazon/amazon.run 
+  963  vi Amazon_ad_spinup.run 
+  964  qsub Amazon_ad_spinup.run 
+  965  vi Amazon_ad_spinup.run 
+  966  qsub Amazon_ad_spinup.run 
+  967  diff Amazon_ad_spinup.run /home/xyk/clm4_ornl_cnp/scripts/amazon/amazon.run 
+  968  vi Amazon_ad_spinup.run 
+  969  qsub Amazon_ad_spinup.run 
+  970  qstat -u xyk
+  971  ls
+  972  cd ..
+  973  ls
+  974  cd ../run/
+  975  ls
+  976  cd Amazon_ad_spinup/
+  977  ls
+  978  cd run/
+  979  ls -lt
+  980  qstat -u xyk
+  981  cd AmazonPapeRevision/clm4_ornl_cnp/
+  982  ls
+  983  cd run/
+  984  ls
+  985  cd Amazon_ad_spinup/
+  986  ls
+  987  cd run/
+  988  ls -lt |more
+  989  cd 
+  990  ls
+  991  cd clm4_ornl_cnp/
+  992  ls
+  993  cd scripts/
+  994  ls
+  995  cd amazon_2_exit_spinup
+  996  ls
+  997  vi env_conf.xml 
+  998  vi README.case 
+  999  ls
+ 1000  cd TropicalWarming/
+ 1001  ls
+ 1002  cd clm4_ornl_cnp/
+ 1003  ls
+ 1004  cd scripts/
+ 1005  ls
+ 1006  ls -lt |more
+ 1007  cd test4_CR-Lse_I1850CN_ad_spinup/
+ 1008  ls
+ 1009  ls -lt |more
+ 1010  vi test4_CR-Lse_I1.o412612
+ 1011  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/cpl.log.151123-141101
+ 1012  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/atm.log.151123-141101
+ 1013  vi /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/ccsm.log.151123-141101
+ 1014  qsub test4_CR-Lse_I1850CN_ad_spinup.run 
+ 1015  qstat -u xyk
+ 1016  history 
+ 1017  export CLM_USRDAT_NAME=1x1pt_CR-Lse
+ 1018  qsub test4_CR-Lse_I1850CN_ad_spinup.run 
+ 1019  qstat -u xyk
+ 1020  ls -lt |more
+ 1021  vi test4_CR-Lse_I1.o421883
+ 1022  vi  /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/cpl.log.151221-164845
+ 1023  vi  /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/ccsm.log.151221-164845
+ 1024  vi  /home/xyk/TropicalWarming/clm4_ornl_cnp/run/test4_CR-Lse_I1850CN_ad_spinup/run/atm.log.151221-164845
+ 1025  export CLM_USRDAT_NAME=1x1pt_CR-Lse
+ 1026  cd ..
+ 1027  ls
+ 1028  diff runCLM.py ~xyk/AmazonPapeRevision/clm4_ornl_cnp/scripts/runCLM.py 
+ 1029  diff site_fullrun.py ~xyk/AmazonPapeRevision/clm4_ornl_cnp/scripts/site_fullrun.py 
+ 1030  history 
+ 1031  cd test4_CR-Lse_I1850CN_ad_spinup/
+ 1032  ls
+ 1033  vi README.case 
+ 1034  cd ..
+ 1035  cd test4_CR-Lse_I1850CN_ad_spinup/
+ 1036  ls
+ 1037  vi README.case 
+ 1038  history 
+ 1039  history >aaa

@@ -1,0 +1,10 @@
+domainfile = /home/ysa/ccsm_inputdata/atm/datm7/domain.clm/domain.lnd.1x1pt_BR-Cax_navy.nc
+fpftcon = /home/ysa/ccsm_inputdata/lnd/clm2/pftdata/pft-physiology.c110425.BR-Cax_I1850CN.nc
+fsnowaging = $DIN_LOC_ROOT/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+fsoilordercon = /home/ysa/ccsm_inputdata/lnd/clm2/pftdata/CNP_parameters_c121029BR-Cax_I1850CN.nc
+fsnowoptics = $DIN_LOC_ROOT/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc
+fsurdat = /home/ysa/ccsm_inputdata/lnd/clm2/surfdata/surfdata_1x1pt_BR-Cax_I1850CN_simyr1850_c130404.nc
+fatmgrid = /home/ysa/ccsm_inputdata/lnd/clm2/griddata/griddata_1x1pt_BR-Cax.nc
+fatmlndfrc = /home/ysa/ccsm_inputdata/share/domains/domain.clm/domain.lnd.1x1pt_BR-Cax_navy.nc
+finidat =  
+stream_fldfilename_ndep = /home/ysa/ccsm_inputdata/lnd/clm2/ndepdata/fndep_clm_hist_simyr1849-2006_1.9x2.5_c100428.nc

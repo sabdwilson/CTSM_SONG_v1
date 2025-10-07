@@ -1,0 +1,48 @@
+Prologue Initiated
+Creating global temporary directory /globalscratch/463803.b15l01.oic.ornl.gov
+Creating local temporary directory /scratch/463803.b15l01.oic.ornl.gov
+Running on node(s): b15n027
+Prologue Complete
+
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+PBS_MOMPORT=15003
+CCSM_COMPSET=I_2000 (I)
+COMP_ATM=datm
+COMP_LND=clm
+COMP_ICE=sice
+COMP_GLC=sglc
+COMP_OCN=socn
+COMP_CPL=cpl
+CCSM_LCOMPSET=I_2000
+CCSM_SCOMPSET=I
+COMP_RUN_BARRIERS=FALSE
+CPL_DECOMP=0
+COMP_INTERFACE=MCT
+BUILD_COMPLETE=TRUE
+SMP_BUILD=a0l0i0o0g0c0
+SMP_VALUE=a0l0i0o0g0c0
+-------------------------------------------------------------------------
+ CCSM BUILDNML SCRIPT STARTING
+ - To prestage restarts, untar a restart.tar file into /home/ysa/clm4_ornl_cnp/run/testPTS_MODE/run
+ - Create modelio namelist input files
+ CCSM BUILDNML SCRIPT HAS FINISHED SUCCESSFULLY
+-------------------------------------------------------------------------
+ CCSM PRESTAGE SCRIPT STARTING
+ - CCSM input data directory, DIN_LOC_ROOT_CSMDATA, is /home/ysa/ccsm_inputdata
+ - Case input data directory, DIN_LOC_ROOT, is /home/ysa/ccsm_inputdata
+ - Checking the existence of input datasets in DIN_LOC_ROOT
+ CCSM PRESTAGE SCRIPT HAS FINISHED SUCCESSFULLY
+-------------------------------------------------------------------------
+ CCSM BUILDNML SCRIPT STARTING
+ - To prestage restarts, untar a restart.tar file into /home/ysa/clm4_ornl_cnp/run/testPTS_MODE/run
+ - Create modelio namelist input files
+ CCSM BUILDNML SCRIPT HAS FINISHED SUCCESSFULLY
+Thu Jun 16 09:00:03 EDT 2016 -- CSM EXECUTION BEGINS HERE
+Abort
+Thu Jun 16 09:00:54 EDT 2016 -- CSM EXECUTION HAS FINISHED
+Model did not complete - see /home/ysa/clm4_ornl_cnp/run/testPTS_MODE/run/cpl.log.160616-085936
+Epilogue Initiated
+Removing global temporary directory /globalscratch/463803.b15l01.oic.ornl.gov
+Removing local temporary directory /scratch/463803.b15l01.oic.ornl.gov
+Epilogue Complete

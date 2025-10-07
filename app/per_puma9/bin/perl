@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/perl -Mlocal::lib="/home/u8/sdwilson/app/per_puma9" "$@"

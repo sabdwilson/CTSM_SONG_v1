@@ -1,0 +1,66 @@
+#===============================================================================
+# The following always need to be set
+# SPMD             Whether to build in SPMD mode or not.  [values TRUE FALSE]
+# SMP              Set to TRUE to enable building in SMP mode (uses OpenMP).  
+# USER_CPPDEFS     CPP definitions (non platform dependent)
+#
+#===============================================================================
+
+# Note that CPPDEFS is set in Macros.cppdefs
+CPPDEFS += -DLINUX -DSEQ_$(FRAMEWORK) -DBGL -D_NOIO -D_MEMTRACE -DNO_SHR_VMATH -DFORTRAN_SAME
+
+ifeq ($(compile_threaded), true)
+   CPPDEFS += -DTHREADED_OMP
+endif
+
+cpre = $(null)-WF,-D$(null)
+FPPDEFS := $(patsubst -D%,$(cpre)%,$(CPPDEFS)) 
+
+MPIFC            := blrts_xlf90
+MPICC            := blrts_xlc
+SFC            := blrts_xlf90
+SCC            := blrts_xlc
+
+NETCDF_PATH   := /gpfs/home1/mzhang/local/netcdf-blrts
+INC_NETCDF    := $(NETCDF_PATH)/include
+LIB_NETCDF    := $(NETCDF_PATH)/lib
+MOD_NETCDF    := $(NETCDF_PATH)/include
+
+MPI_LIB_NAME  := 
+INC_PNETCDF   :=
+LIB_PNETCDF   := 
+LAPACK_LIBDIR := 
+
+CFLAGS        := -O3 -qstrict
+FREEFLAGS     := -qsuffix=f=f90:cpp=F90
+FIXEDFLAGS    := -qfixed=132
+FFLAGS        := -qspillsize=2500 -g -qfullpath -qarch=440 -qmaxmem=-1 -qdebug=function_trace
+FFLAGS_OPT    := -O3 -qstrict -Q
+LDFLAGS       := -Wl,--allow-multiple-definition
+AR            := ar
+MOD_SUFFIX    := mod
+CONFIG_SHELL  :=
+
+SLIBS += -L/opt/libmmath/mass/4.3/lib -lmass -lmassv 
+SLIBS += -L/gpfs/home1/jdennis/memmon -lmemmon.rts
+
+#===============================================================================
+# Set include paths (needed after override for any model specific builds below)
+#===============================================================================
+
+INCLDIR := -I. -I/bgl/BlueLight/ppcfloor/bglsys/include
+
+SLIBS := -L/bgl/BlueLight/ppcfloor/bglsys/lib -lmpich.rts -lmsglayer.rts -lrts.rts -ldevices.rts
+SLIBS += -L/opt/libmmath/mass/4.3/lib -lmass -lmassv 
+SLIBS += -L/gpfs/home1/jdennis/memmon -lmemmon.rts
+
+#===============================================================================
+# Set model and other specific options
+# NOTE - all CPPDEFS options must be defined before this point
+#===============================================================================
+
+ifeq ($(DEBUG),TRUE)
+   FFLAGS += -qinitauto=FF911299 -qflttrap=ov:zero:inv:en
+else
+   FFLAGS += $(FFLAGS_OPT)
+endif

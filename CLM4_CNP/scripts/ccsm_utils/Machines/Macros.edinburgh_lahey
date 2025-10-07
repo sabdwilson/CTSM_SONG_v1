@@ -1,0 +1,89 @@
+#===============================================================================
+# The following always need to be set
+# SPMD             Whether to build in SPMD mode or not.  [values TRUE FALSE]
+# SMP              Set to TRUE to enable building in SMP mode (uses OpenMP).  
+# USER_CPPDEFS     CPP definitions (non platform dependent)
+#
+#===============================================================================
+# WARNING! THE LAHEY COMPILER WILL NOT CURRENTLY COMPILE POP, SO THIS IS VALID
+#          ONLY FOR COMPSETS WITHOUT POP!
+#===============================================================================
+
+# Note that CPPDEFS is set in Macros.cppdefs
+CPPDEFS += -DNO_SIZEOF -DLINUX -DSEQ_$(FRAMEWORK) -DFORTRANUNDERSCORE -DNO_R16 -DNO_SHR_VMATH -DNO_MPI2
+
+ifeq ($(compile_threaded), true)
+   CPPDEFS += -DTHREADED_OMP
+endif
+
+# Note that NETCDF_PATH, INC_MPI, and LIB_MPI are obtained from env_machopts
+
+SFC := lf95
+SCC := gcc
+MPIFC := mpif90
+MPICC := mpicc
+
+
+INC_NETCDF    := $(NETCDF_PATH)/include
+LIB_NETCDF    := $(NETCDF_PATH)/lib
+MOD_NETCDF    := $(NETCDF_PATH)/include
+
+MPI_LIB_NAME  := mpich
+INC_PNETCDF   :=
+LIB_PNETCDF   := 
+LAPACK_LIBDIR := 
+
+CFLAGS        := $(CPPDEFS)
+FIXEDFLAGS    := 
+FREEFLAGS     := 
+FFLAGS        := $(CPPDEFS) --wide
+FFLAGS_OPT    := -O
+FFLAGS_NOOPT  := $(FFLAGS)
+# LDFLAGS       := --staticlink
+LDFLAGS       := -Wl,-rpath,$(LAHEY)/lib64
+AR            := ar
+MOD_SUFFIX    := mod
+CONFIG_SHELL  :=
+FPPDEFS := $(CPPDEFS)
+CONFIG_OPTS := --host=Linux
+
+#===============================================================================
+# Set model and other specific options
+# NOTE - all CPPDEFS options must be defined before this point
+#===============================================================================
+
+ifeq ($(DEBUG),TRUE)
+  # --trace produces a call traceback on abort
+  # --trap causes code to stop on divide by zero or overflow exceptions
+  # --pca prevents overwriting constant arguments
+  # --chk for basic compiler checking (a,e,s,u,x)
+  #TBH:  this works    FFLAGS += -g --chk --pca
+  #TBH:  this FAILS    FFLAGS += -g --chk a,e,s,u,x --pca
+  FFLAGS       += -g --chk a,e,s,u --pca --trace --trap
+  FFLAGS_NOOPT += -g --chk a,e,s,u --pca --trace --trap
+else
+  FFLAGS += $(FFLAGS_OPT)
+endif
+
+ifeq ($(compile_threaded), true)
+  FFLAGS       += --openmp --threadheap 4096
+  FFLAGS_NOOPT += --openmp --threadheap 4096
+  CFLAGS       += 
+  LDFLAGS      += --openmp --threadheap 4096
+endif
+
+ifeq ($(strip $(MODEL)),cam)
+# These RRTMG files cause a compiler error when using optimization.
+# Until mods are made to read the data from files, just remove optimization from
+# their compilation.
+binary_io.o: binary_io.F90
+	$(FC) -c $(FPPDEFS) $(INCLDIR) $(INCS) $(FREEFLAGS) $(FFLAGS_NOOPT) $<
+wrap_nf.o: wrap_nf.F90
+	$(FC) -c $(FPPDEFS) $(INCLDIR) $(INCS) $(FREEFLAGS) $(FFLAGS_NOOPT) $<
+wrap_mpi.o: wrap_mpi.F90
+	$(FC) -c $(FPPDEFS) $(INCLDIR) $(INCS) $(FREEFLAGS) $(FFLAGS_NOOPT) $<
+apex_subs.o: apex_subs.F90
+	$(FC) -c $(FPPDEFS) $(INCLDIR) $(INCS) $(FREEFLAGS) $(FFLAGS_NOOPT) $<
+endif
+
+

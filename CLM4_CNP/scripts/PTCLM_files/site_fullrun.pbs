@@ -1,0 +1,336 @@
+#!/bin/csh -f
+#===============================================================================
+# GENERIC_USER
+# This is where the batch submission is set.  The above code computes
+# the total number of tasks, nodes, and other things that can be useful
+# here.  Use PBS, BSUB, or whatever the local environment supports.
+#===============================================================================
+
+#PBS -N MAN-05_fullrun
+#PBS -q essg08q
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=48:00:00
+#PBS -r n
+#PBS -j oe
+#PBS -S /bin/csh -V
+
+#limit coredumpsize 1000000
+#limit stacksize unlimited
+
+
+# ---------------------------------------- 
+# PE LAYOUT: 
+#   total number of tasks  = 1 
+#   maximum threads per task = 1 
+#   cpl ntasks=1  nthreads=1 rootpe=0 
+#   datm ntasks=1  nthreads=1 rootpe=0 
+#   clm ntasks=1  nthreads=1 rootpe=0 
+#   sice ntasks=1  nthreads=1 rootpe=0 
+#   socn ntasks=1  nthreads=1 rootpe=0 
+#   sglc ntasks=1  nthreads=1 rootpe=0 
+#   
+#   total number of hw pes = 1 
+#     cpl hw pe range ~ from 0 to 0 
+#     datm hw pe range ~ from 0 to 0 
+#     clm hw pe range ~ from 0 to 0 
+#     sice hw pe range ~ from 0 to 0 
+#     socn hw pe range ~ from 0 to 0 
+#     sglc hw pe range ~ from 0 to 0 
+# ---------------------------------------- 
+#-----------------------------------------------------------------------
+# Determine necessary environment variables
+#-----------------------------------------------------------------------
+
+
+#--------------------------ad_spinup------------------------------------
+cd /home/ysa/clm4_ornl_cnp/scripts
+
+cd MAN-05_I1850CN_ad_spinup
+setenv USE_MPISERIAL TRUE
+setenv CLM_USRDAT_NAME 1x1pt_MAN-05
+
+./Tools/ccsm_check_lockedfiles || exit -1
+source ./Tools/ccsm_getenv || exit -2
+
+if ($BUILD_COMPLETE != "TRUE") then
+  echo "BUILD_COMPLETE is not TRUE"
+  echo "Please rebuild the model interactively via"
+  echo "   ./${CASE}.${MACH}.build"
+  #exit -2
+endif
+
+setenv LBQUERY  FALSE
+setenv LBSUBMIT FALSE
+
+#-----------------------------------------------------------------------
+# Determine time-stamp/file-ID string
+# Clean up previous run timing files
+#-----------------------------------------------------------------------
+
+setenv LID "`date +%y%m%d-%H%M%S`"
+env | egrep '(MP_|LOADL|XLS|FPE|DSM|OMP|MPC)' # document env vars
+
+# -------------------------------------------------------------------------
+# Build the namelists and check prestage
+# -------------------------------------------------------------------------
+
+cd $CASEROOT
+source $CASETOOLS/ccsm_buildnml.csh || exit -3
+cd $CASEROOT
+source $CASETOOLS/ccsm_prestage.csh || exit -3
+
+# -------------------------------------------------------------------------
+# Create and cleanup the timing directories
+# -------------------------------------------------------------------------
+
+if !(-d $RUNDIR/timing) mkdir $RUNDIR/timing
+if !(-d $RUNDIR/timing/checkpoints) mkdir $RUNDIR/timing/checkpoints
+rm -f $RUNDIR/timing/ccsm_timing*
+
+set sdate = `date +"%Y-%m-%d %H:%M:%S"`
+echo "run started $sdate" >>& $CASEROOT/CaseStatus
+
+# -------------------------------------------------------------------------
+# Run the model
+# -------------------------------------------------------------------------
+
+sleep 15
+cd $RUNDIR
+echo "`date` -- CSM EXECUTION BEGINS HERE" 
+
+setenv OMP_NUM_THREADS 1
+if ($USE_MPISERIAL == "FALSE") then
+   mpirun -np 1 $PBS_NODEFILE ./ccsm.exe >&! ccsm.log.$LID
+else
+   ./ccsm.exe >&! ccsm.log.$LID
+endif
+
+wait
+echo "`date` -- CSM EXECUTION HAS FINISHED" 
+
+cd $CASEROOT
+#./Tools/ccsm_postrun.csh || exit 1
+
+#---------------------------end ad_spinup -----------------------------
+
+#copy rpointers and restart file
+cp ../../run/MAN-05_I1850CN_ad_spinup/run/rpointer.* ../../run/MAN-05_I1850CN_exit_spinup/run
+cp ../../run/MAN-05_I1850CN_ad_spinup/run/*.r*.nc ../../run/MAN-05_I1850CN_exit_spinup/run
+cp ../../run/MAN-05_I1850CN_ad_spinup/run/*.r*.bin ../../run/MAN-05_I1850CN_exit_spinup/run
+
+#-----------------------------exit spinup------------------------------
+
+cd /home/ysa/clm4_ornl_cnp/scripts
+cd MAN-05_I1850CN_exit_spinup
+
+./Tools/ccsm_check_lockedfiles || exit -1
+source ./Tools/ccsm_getenv || exit -2
+
+if ($BUILD_COMPLETE != "TRUE") then
+  echo "BUILD_COMPLETE is not TRUE"
+  echo "Please rebuild the model interactively via"
+  echo "   ./${CASE}.${MACH}.build"
+  #exit -2
+endif
+
+setenv LBQUERY  FALSE
+setenv LBSUBMIT FALSE
+
+#-----------------------------------------------------------------------
+# Determine time-stamp/file-ID string
+# Clean up previous run timing files
+#-----------------------------------------------------------------------
+
+setenv LID "`date +%y%m%d-%H%M%S`"
+env | egrep '(MP_|LOADL|XLS|FPE|DSM|OMP|MPC)' # document env vars
+
+# -------------------------------------------------------------------------
+# Build the namelists and check prestage
+# -------------------------------------------------------------------------
+
+cd $CASEROOT
+source $CASETOOLS/ccsm_buildnml.csh || exit -3
+cd $CASEROOT
+source $CASETOOLS/ccsm_prestage.csh || exit -3
+
+# -------------------------------------------------------------------------
+# Create and cleanup the timing directories
+# -------------------------------------------------------------------------
+
+if !(-d $RUNDIR/timing) mkdir $RUNDIR/timing
+if !(-d $RUNDIR/timing/checkpoints) mkdir $RUNDIR/timing/checkpoints
+rm -f $RUNDIR/timing/ccsm_timing*
+
+set sdate = `date +"%Y-%m-%d %H:%M:%S"`
+echo "run started $sdate" >>& $CASEROOT/CaseStatus
+
+# -------------------------------------------------------------------------
+# Run the model
+# -------------------------------------------------------------------------
+
+sleep 15
+cd $RUNDIR
+echo "`date` -- CSM EXECUTION BEGINS HERE" 
+
+setenv OMP_NUM_THREADS 1
+if ($USE_MPISERIAL == "FALSE") then
+   mpirun -mp 1 $PBS_NODEFILE ./ccsm.exe >&! ccsm.log.$LID
+else
+   ./ccsm.exe >&! ccsm.log.$LID
+endif
+
+wait
+echo "`date` -- CSM EXECUTION HAS FINISHED" 
+
+cd $CASEROOT
+#./Tools/ccsm_postrun.csh || exit 1
+
+#---------------------------end exit_spinup -----------------------------
+
+#X. YANG - to initialize Pools before normal spinup
+ncl 'casesite="MAN-05"' /home/xyk/CNP_models/clm_0_32_P/scripts/PTCLM_files/IniPPools.ncl
+
+#copy rpointers and restart file
+cp ../../run/MAN-05_I1850CN_exit_spinup/run/rpointer.* ../../run/MAN-05_I1850CN/run
+cp ../../run/MAN-05_I1850CN_exit_spinup/run/*.r*.nc ../../run/MAN-05_I1850CN/run
+cp ../../run/MAN-05_I1850CN_exit_spinup/run/*.r*.bin ../../run/MAN-05_I1850CN/run
+#-----------------------------final spinup------------------------------
+cd /home/ysa/clm4_ornl_cnp/scripts
+cd MAN-05_I1850CN
+
+./Tools/ccsm_check_lockedfiles || exit -1
+source ./Tools/ccsm_getenv || exit -2
+
+if ($BUILD_COMPLETE != "TRUE") then
+  echo "BUILD_COMPLETE is not TRUE"
+  echo "Please rebuild the model interactively via"
+  echo "   ./${CASE}.${MACH}.build"
+  #exit -2
+endif
+
+setenv LBQUERY  FALSE
+setenv LBSUBMIT FALSE
+
+#-----------------------------------------------------------------------
+# Determine time-stamp/file-ID string
+# Clean up previous run timing files
+#-----------------------------------------------------------------------
+
+setenv LID "`date +%y%m%d-%H%M%S`"
+env | egrep '(MP_|LOADL|XLS|FPE|DSM|OMP|MPC)' # document env vars
+
+# -------------------------------------------------------------------------
+# Build the namelists and check prestage
+# -------------------------------------------------------------------------
+
+cd $CASEROOT
+source $CASETOOLS/ccsm_buildnml.csh || exit -3
+cd $CASEROOT
+source $CASETOOLS/ccsm_prestage.csh || exit -3
+
+# -------------------------------------------------------------------------
+# Create and cleanup the timing directories
+# -------------------------------------------------------------------------
+
+if !(-d $RUNDIR/timing) mkdir $RUNDIR/timing
+if !(-d $RUNDIR/timing/checkpoints) mkdir $RUNDIR/timing/checkpoints
+rm -f $RUNDIR/timing/ccsm_timing*
+
+set sdate = `date +"%Y-%m-%d %H:%M:%S"`
+echo "run started $sdate" >>& $CASEROOT/CaseStatus
+
+# -------------------------------------------------------------------------
+# Run the model
+# -------------------------------------------------------------------------
+
+sleep 15
+cd $RUNDIR
+echo "`date` -- CSM EXECUTION BEGINS HERE" 
+
+setenv OMP_NUM_THREADS 1
+if ($USE_MPISERIAL == "FALSE") then
+   mpirun -mp 1 $PBS_NODEFILE ./ccsm.exe >&! ccsm.log.$LID
+else
+   ./ccsm.exe >&! ccsm.log.$LID
+endif
+
+wait
+echo "`date` -- CSM EXECUTION HAS FINISHED" 
+
+cd $CASEROOT
+#./Tools/ccsm_postrun.csh || exit 1
+
+
+#--------------------------end final spinup------------------------------
+
+#copy rpointers and restart file
+cp ../../run/MAN-05_I1850CN/run/rpointer.* ../../run/MAN-05_I20TRCN/run
+cp ../../run/MAN-05_I1850CN/run/*.r*.nc ../../run/MAN-05_I20TRCN/run
+cp ../../run/MAN-05_I1850CN/run/*.r*.bin ../../run/MAN-05_I20TRCN/run
+
+#---------------------------transient run--------------------------------
+cd /home/ysa/clm4_ornl_cnp/scripts
+cd MAN-05_I20TRCN
+
+./Tools/ccsm_check_lockedfiles || exit -1
+source ./Tools/ccsm_getenv || exit -2
+
+if ($BUILD_COMPLETE != "TRUE") then
+  echo "BUILD_COMPLETE is not TRUE"
+  echo "Please rebuild the model interactively via"
+  echo "   ./${CASE}.${MACH}.build"
+  #exit -2
+endif
+
+setenv LBQUERY  FALSE
+setenv LBSUBMIT FALSE
+
+#-----------------------------------------------------------------------
+# Determine time-stamp/file-ID string
+# Clean up previous run timing files
+#-----------------------------------------------------------------------
+
+setenv LID "`date +%y%m%d-%H%M%S`"
+env | egrep '(MP_|LOADL|XLS|FPE|DSM|OMP|MPC)' # document env vars
+
+# -------------------------------------------------------------------------
+# Build the namelists and check prestage
+# -------------------------------------------------------------------------
+
+cd $CASEROOT
+source $CASETOOLS/ccsm_buildnml.csh || exit -3
+cd $CASEROOT
+source $CASETOOLS/ccsm_prestage.csh || exit -3
+
+# -------------------------------------------------------------------------
+# Create and cleanup the timing directories
+# -------------------------------------------------------------------------
+
+if !(-d $RUNDIR/timing) mkdir $RUNDIR/timing
+if !(-d $RUNDIR/timing/checkpoints) mkdir $RUNDIR/timing/checkpoints
+rm -f $RUNDIR/timing/ccsm_timing*
+
+set sdate = `date +"%Y-%m-%d %H:%M:%S"`
+echo "run started $sdate" >>& $CASEROOT/CaseStatus
+
+# -------------------------------------------------------------------------
+# Run the model
+# -------------------------------------------------------------------------
+
+sleep 15
+cd $RUNDIR
+echo "`date` -- CSM EXECUTION BEGINS HERE" 
+
+setenv OMP_NUM_THREADS 1
+if ($USE_MPISERIAL == "FALSE") then
+   mpirun -mp 1 $PBS_NODEFILE ./ccsm.exe >&! ccsm.log.$LID
+else
+   ./ccsm.exe >&! ccsm.log.$LID
+endif
+
+wait
+echo "`date` -- CSM EXECUTION HAS FINISHED" 
+
+cd $CASEROOT
+#./Tools/ccsm_postrun.csh || exit 1
+

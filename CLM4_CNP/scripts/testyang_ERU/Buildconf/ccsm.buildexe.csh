@@ -1,0 +1,23 @@
+#! /bin/csh -f 
+
+set objdir = $OBJROOT/ccsm/obj; cd $objdir
+
+echo -------------------------------------------------------------------------
+echo " Building a single executable version of CCSM "
+echo -------------------------------------------------------------------------
+
+\cat >! Filepath << EOF
+$CASEROOT/SourceMods/src.drv
+$CODEROOT/drv/driver
+EOF
+
+
+## Set up multiple component instances
+## WJS (2-9-11): I think these changes actually are not required here
+## any more, since seq_multiinst_mod is built as part of csm_share;
+## but I am leaving them in to be safe
+
+set multiinst_cppdefs = "-DNUM_COMP_INST_ATM=$NINST_ATM -DNUM_COMP_INST_LND=$NINST_LND -DNUM_COMP_INST_OCN=$NINST_OCN -DNUM_COMP_INST_ICE=$NINST_ICE -DNUM_COMP_INST_GLC=$NINST_GLC"
+
+gmake exec_se -j $GMAKE_J EXEC_SE=$RUNDIR/ccsm.exe MODEL=driver MACFILE=$CASEROOT/Macros.$MACH USER_CPPDEFS="$multiinst_cppdefs" -f $CASETOOLS/Makefile || exit 2
+

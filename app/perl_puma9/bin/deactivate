@@ -1,0 +1,7 @@
+eval $(/usr/bin/perl -Mlocal::lib="--deactivate-all,/home/u8/sdwilson/app/perl_puma9")
+
+if [ -n "$_PV_OLD_PS1" ]; then
+  export PS1=$_PV_OLD_PS1
+  unset _PV_OLD_PS1
+  unset -f deactivate
+fi

@@ -1,0 +1,11 @@
+c.JupyterApp.config_file_name = 'ondemand_config'
+c.KernelSpecManager.ensure_native_kernel = False
+c.NotebookApp.ip = '0.0.0.0'
+c.NotebookApp.port = 46956
+c.NotebookApp.port_retries = 0
+c.NotebookApp.password = u'sha1:xmMaI5kkwEiVxVKP:b6e37f3af38fd65cdbb4c296abe3a89d3be88baf'
+c.NotebookApp.base_url = '/node/i16n3.ocelote.hpc.arizona.edu/46956/'
+c.NotebookApp.open_browser = False
+c.NotebookApp.allow_origin = '*'
+c.NotebookApp.notebook_dir = '/home/u8/sdwilson'
+c.NotebookApp.disable_check_xsrf = True

@@ -1,0 +1,64 @@
+#! /bin/csh -f 
+
+#******************************************************************#
+#                  WARNING:                                        #
+# - If the user changes any input datasets - be sure to give it a  #
+#   unique filename. Do not duplicate any existing input files     #
+#******************************************************************#
+
+set exedir = $RUNDIR; cd $exedir
+
+set default_lnd_in_filename = "lnd_in"
+
+set lnd_inst_counter = 1
+
+while ($lnd_inst_counter <= $NINST_LND)
+
+    set lnd_in_filename = $default_lnd_in_filename
+
+    if ($NINST_LND > 1) then
+        set lnd_inst_string = $lnd_inst_counter
+        if ($lnd_inst_counter <= 999) set lnd_inst_string = 0$lnd_inst_string
+        if ($lnd_inst_counter <=  99) set lnd_inst_string = 0$lnd_inst_string
+        if ($lnd_inst_counter <=   9) set lnd_inst_string = 0$lnd_inst_string
+        set lnd_in_filename = ${default_lnd_in_filename}_${lnd_inst_string}
+    endif
+
+    cat >! $lnd_in_filename << EOF
+
+&clm_inparm
+ co2_ppmv		= 284.7
+ co2_type		= 'constant'
+ create_crop_landunit		= .false.
+ do_rtm		= .false.
+ dtime		= 1800
+ fatmgrid		= '/home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/griddata/griddata_1x1pt_CR-Lse.nc'
+ fatmlndfrc		= '/home/xyk/DownloadedCCSMData/ccsm_inputdata/share/domains/domain.clm/domain.lnd.1x1pt_CR-Lse_navy.nc'
+ finidat		= ' '
+ fpftcon		= '/home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/pftdata/pft-physiology.c110425.test_CR-Lse_I1850CN_ad_spinup.nc'
+ fsnowaging		= '$DIN_LOC_ROOT/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc'
+ fsnowoptics		= '$DIN_LOC_ROOT/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc'
+ fsoilordercon		= '/home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/pftdata/CNP_parameters_c121029test_CR-Lse_I1850CN_ad_spinup.nc'
+ fsurdat		= '/home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/surfdata/surfdata_1x1pt_test_CR-Lse_I1850CN_ad_spinup_simyr1850_c130404.nc'
+ maxpatch_glcmec		= 0
+ urban_hac		= 'ON_WASTEHEAT'
+ urban_traffic		= .false.
+/
+&ndepdyn_nml
+ ndepmapalgo		= 'bilinear'
+ stream_fldfilename_ndep		= '/home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/ndepdata/fndep_clm_hist_simyr1849-2006_1.9x2.5_c100428.nc'
+ stream_year_first_ndep		= 1850
+ stream_year_last_ndep		= 1850
+/
+#!--------------------------------------------------------------------------------------------------------------------------
+#! lnd_in:: Comment:
+#! This namelist was created using the following command-line:
+#!     /home/xyk/TropicalWarming/clm4_ornl_cnp/models/lnd/clm/bld/build-namelist -clm_usr_name 1x1pt_CR-Lse -config /home/xyk/TropicalWarming/clm4_ornl_cnp/scripts/test_CR-Lse_I1850CN_ad_spinup/Buildconf/clmconf/config_cache.xml -res 1x1pt_CR-Lse -ignore_ic_year -use_case 1850_control -infile cesm_namelist,/home/xyk/TropicalWarming/clm4_ornl_cnp/scripts/test_CR-Lse_I1850CN_ad_spinup/user_nl_clm -clm_start_type default -glc_nec 0 -rtm off -rtm_res R05 -rtm_tstep 10800 -co2_ppmv 284.7 -datm_presaero clim_1850 -mask navy -namelist &clm_inparm  / -csmdata $DIN_LOC_ROOT -inputdata /home/xyk/TropicalWarming/clm4_ornl_cnp/scripts/test_CR-Lse_I1850CN_ad_spinup/Buildconf/clm.input_data_list
+#! For help on options use: /home/xyk/TropicalWarming/clm4_ornl_cnp/models/lnd/clm/bld/build-namelist -help
+#!--------------------------------------------------------------------------------------------------------------------------
+EOF
+
+    @ lnd_inst_counter = $lnd_inst_counter + 1
+
+end
+

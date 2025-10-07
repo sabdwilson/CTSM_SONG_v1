@@ -1,0 +1,18 @@
+Generating resolved namelist, prestage, and build scripts
+configure done.
+adding clm user file defaults for var fatmgrid with val /home/xyk/DownloadedCCSMData/ccsm_inputdata/lnd/clm2/griddata/griddata_1x1pt_CR-Lse.nc 
+adding use_case 1850_control defaults for var sim_year with val 1850 
+adding use_case 1850_control defaults for var sim_year_range with val constant 
+adding use_case 1850_control defaults for var stream_year_first_ndep with val 1850 
+adding use_case 1850_control defaults for var stream_year_last_ndep with val 1850 
+adding use_case 1850_control defaults for var use_case_desc with val Conditions to simulate 1850 land-use 
+Successfully generated resolved namelist, prestage, and build scripts
+Locking file env_conf.xml
+Generating clean_build script 
+Generating submit script 
+Generating build script 
+Generating run script 
+Locking file env_mach_pes.xml
+Successfully configured the case for generic_linux_pgi
+If an old build exists for this case, you might want to 
+   run the *.clean_build script before building
