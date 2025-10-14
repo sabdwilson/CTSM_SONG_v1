@@ -1,0 +1,427 @@
+Creating batch scripts
+Writing case.run script from input template /home/u8/sdwilson/CTSM_SONG/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /home/u8/sdwilson/CTSM_SONG/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Creating component namelists
+  2024-06-27 09:45:07 atm 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/data_comps_mct/datm/cime_config/buildnml
+  2024-06-27 09:45:08 lnd 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime_config/buildnml
+  2024-06-27 09:45:08 ice 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/sice/cime_config/buildnml
+  2024-06-27 09:45:08 ocn 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/socn/cime_config/buildnml
+  2024-06-27 09:45:08 rof 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/srof/cime_config/buildnml
+  2024-06-27 09:45:08 glc 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/sglc/cime_config/buildnml
+  2024-06-27 09:45:08 wav 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/swav/cime_config/buildnml
+  2024-06-27 09:45:08 iac 
+   Running /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/siac/cime_config/buildnml 
+  2024-06-27 09:45:08 esp 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/sesp/cime_config/buildnml
+  2024-06-27 09:45:08 cpl 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/drivers/mct/cime_config/buildnml
+Checking that inputdata is available as part of case submission
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Loading input file list: 'Buildconf/ctsm.input_data_list'
+Loading input file list: 'Buildconf/cpl.input_data_list'
+Loading input file list: 'Buildconf/datm.input_data_list'
+Model datm missing file file1 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-01.nc'
+Model datm missing file file2 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-02.nc'
+Model datm missing file file3 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-03.nc'
+Model datm missing file file4 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-04.nc'
+Model datm missing file file5 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-05.nc'
+Model datm missing file file6 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-06.nc'
+Model datm missing file file7 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-07.nc'
+Model datm missing file file8 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-08.nc'
+Model datm missing file file9 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-09.nc'
+Model datm missing file file10 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-10.nc'
+Model datm missing file file11 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-11.nc'
+Model datm missing file file12 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-12.nc'
+Model datm missing file file13 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-01.nc'
+Model datm missing file file14 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-02.nc'
+Model datm missing file file15 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-03.nc'
+Model datm missing file file16 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-04.nc'
+Model datm missing file file17 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-05.nc'
+Model datm missing file file18 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-06.nc'
+Model datm missing file file19 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-07.nc'
+Model datm missing file file20 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-08.nc'
+Model datm missing file file21 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-09.nc'
+Model datm missing file file22 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-10.nc'
+Model datm missing file file23 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-11.nc'
+Model datm missing file file24 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-12.nc'
+Model datm missing file file25 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-01.nc'
+Model datm missing file file26 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-02.nc'
+Model datm missing file file27 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-03.nc'
+Model datm missing file file28 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-04.nc'
+Model datm missing file file29 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-05.nc'
+Model datm missing file file30 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-06.nc'
+Model datm missing file file31 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-07.nc'
+Model datm missing file file32 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-08.nc'
+Model datm missing file file33 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-09.nc'
+Model datm missing file file34 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-10.nc'
+Model datm missing file file35 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-11.nc'
+Model datm missing file file36 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-12.nc'
+Model datm missing file file37 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-01.nc'
+Model datm missing file file38 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-02.nc'
+Model datm missing file file39 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-03.nc'
+Model datm missing file file40 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-04.nc'
+Model datm missing file file41 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-05.nc'
+Model datm missing file file42 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-06.nc'
+Model datm missing file file43 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-07.nc'
+Model datm missing file file44 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-08.nc'
+Model datm missing file file45 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-09.nc'
+Model datm missing file file46 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-10.nc'
+Model datm missing file file47 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-11.nc'
+Model datm missing file file48 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-12.nc'
+Model datm missing file file49 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-01.nc'
+Model datm missing file file50 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-02.nc'
+Model datm missing file file51 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-03.nc'
+Model datm missing file file52 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-04.nc'
+Model datm missing file file53 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-05.nc'
+Model datm missing file file54 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-06.nc'
+Model datm missing file file55 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-07.nc'
+Model datm missing file file56 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-08.nc'
+Model datm missing file file57 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-09.nc'
+Model datm missing file file58 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-10.nc'
+Model datm missing file file59 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-11.nc'
+Model datm missing file file60 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-12.nc'
+Model datm missing file file61 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-01.nc'
+Model datm missing file file62 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-02.nc'
+Model datm missing file file63 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-03.nc'
+Model datm missing file file64 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-04.nc'
+Model datm missing file file65 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-05.nc'
+Model datm missing file file66 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-06.nc'
+Model datm missing file file67 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-07.nc'
+Model datm missing file file68 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-08.nc'
+Model datm missing file file69 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-09.nc'
+Model datm missing file file70 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-10.nc'
+Model datm missing file file71 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-11.nc'
+Model datm missing file file72 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-12.nc'
+Client protocol gftp not enabled
+Using protocol wget with user anonymous and passwd user@example.edu
+Trying to download file: '../inputdata_checksum.dat' to path '/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_GUAN/control/control_spinup/run/inputdata_checksum.dat.raw' using WGET protocol.
+SUCCESS
+
+Using protocol ftp with user anonymous and passwd user@example.edu
+server address ftp.cgd.ucar.edu root path cesm/inputdata
+Trying to download file: '../inputdata_checksum.dat' to path '/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_GUAN/control/control_spinup/run/inputdata_checksum.dat.raw' using FTP protocol.
+Client protocol svn not enabled
+Client protocol None not enabled
+Checking server ftp://gridanon.cgd.ucar.edu:2811/cesm/inputdata/ with protocol gftp
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Client protocol gftp not enabled
+Checking server ftp://ftp.cgd.ucar.edu/cesm/inputdata/ with protocol wget
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Using protocol wget with user anonymous and passwd user@example.edu
+Loading input file list: 'Buildconf/ctsm.input_data_list'
+Loading input file list: 'Buildconf/cpl.input_data_list'
+Loading input file list: 'Buildconf/datm.input_data_list'
+Model datm missing file file1 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-01.nc'
+Model datm missing file file2 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-02.nc'
+Model datm missing file file3 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-03.nc'
+Model datm missing file file4 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-04.nc'
+Model datm missing file file5 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-05.nc'
+Model datm missing file file6 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-06.nc'
+Model datm missing file file7 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-07.nc'
+Model datm missing file file8 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-08.nc'
+Model datm missing file file9 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-09.nc'
+Model datm missing file file10 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-10.nc'
+Model datm missing file file11 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-11.nc'
+Model datm missing file file12 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-12.nc'
+Model datm missing file file13 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-01.nc'
+Model datm missing file file14 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-02.nc'
+Model datm missing file file15 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-03.nc'
+Model datm missing file file16 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-04.nc'
+Model datm missing file file17 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-05.nc'
+Model datm missing file file18 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-06.nc'
+Model datm missing file file19 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-07.nc'
+Model datm missing file file20 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-08.nc'
+Model datm missing file file21 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-09.nc'
+Model datm missing file file22 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-10.nc'
+Model datm missing file file23 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-11.nc'
+Model datm missing file file24 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-12.nc'
+Model datm missing file file25 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-01.nc'
+Model datm missing file file26 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-02.nc'
+Model datm missing file file27 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-03.nc'
+Model datm missing file file28 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-04.nc'
+Model datm missing file file29 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-05.nc'
+Model datm missing file file30 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-06.nc'
+Model datm missing file file31 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-07.nc'
+Model datm missing file file32 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-08.nc'
+Model datm missing file file33 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-09.nc'
+Model datm missing file file34 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-10.nc'
+Model datm missing file file35 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-11.nc'
+Model datm missing file file36 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-12.nc'
+Model datm missing file file37 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-01.nc'
+Model datm missing file file38 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-02.nc'
+Model datm missing file file39 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-03.nc'
+Model datm missing file file40 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-04.nc'
+Model datm missing file file41 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-05.nc'
+Model datm missing file file42 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-06.nc'
+Model datm missing file file43 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-07.nc'
+Model datm missing file file44 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-08.nc'
+Model datm missing file file45 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-09.nc'
+Model datm missing file file46 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-10.nc'
+Model datm missing file file47 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-11.nc'
+Model datm missing file file48 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-12.nc'
+Model datm missing file file49 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-01.nc'
+Model datm missing file file50 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-02.nc'
+Model datm missing file file51 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-03.nc'
+Model datm missing file file52 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-04.nc'
+Model datm missing file file53 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-05.nc'
+Model datm missing file file54 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-06.nc'
+Model datm missing file file55 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-07.nc'
+Model datm missing file file56 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-08.nc'
+Model datm missing file file57 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-09.nc'
+Model datm missing file file58 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-10.nc'
+Model datm missing file file59 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-11.nc'
+Model datm missing file file60 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-12.nc'
+Model datm missing file file61 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-01.nc'
+Model datm missing file file62 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-02.nc'
+Model datm missing file file63 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-03.nc'
+Model datm missing file file64 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-04.nc'
+Model datm missing file file65 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-05.nc'
+Model datm missing file file66 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-06.nc'
+Model datm missing file file67 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-07.nc'
+Model datm missing file file68 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-08.nc'
+Model datm missing file file69 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-09.nc'
+Model datm missing file file70 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-10.nc'
+Model datm missing file file71 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-11.nc'
+Model datm missing file file72 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-12.nc'
+Checking server ftp.cgd.ucar.edu/cesm/inputdata with protocol ftp
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Using protocol ftp with user anonymous and passwd user@example.edu
+server address ftp.cgd.ucar.edu root path cesm/inputdata
+Loading input file list: 'Buildconf/ctsm.input_data_list'
+Loading input file list: 'Buildconf/cpl.input_data_list'
+Loading input file list: 'Buildconf/datm.input_data_list'
+Model datm missing file file1 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-01.nc'
+Model datm missing file file2 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-02.nc'
+Model datm missing file file3 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-03.nc'
+Model datm missing file file4 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-04.nc'
+Model datm missing file file5 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-05.nc'
+Model datm missing file file6 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-06.nc'
+Model datm missing file file7 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-07.nc'
+Model datm missing file file8 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-08.nc'
+Model datm missing file file9 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-09.nc'
+Model datm missing file file10 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-10.nc'
+Model datm missing file file11 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-11.nc'
+Model datm missing file file12 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2018-12.nc'
+Model datm missing file file13 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-01.nc'
+Model datm missing file file14 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-02.nc'
+Model datm missing file file15 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-03.nc'
+Model datm missing file file16 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-04.nc'
+Model datm missing file file17 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-05.nc'
+Model datm missing file file18 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-06.nc'
+Model datm missing file file19 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-07.nc'
+Model datm missing file file20 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-08.nc'
+Model datm missing file file21 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-09.nc'
+Model datm missing file file22 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-10.nc'
+Model datm missing file file23 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-11.nc'
+Model datm missing file file24 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2019-12.nc'
+Model datm missing file file25 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-01.nc'
+Model datm missing file file26 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-02.nc'
+Model datm missing file file27 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-03.nc'
+Model datm missing file file28 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-04.nc'
+Model datm missing file file29 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-05.nc'
+Model datm missing file file30 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-06.nc'
+Model datm missing file file31 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-07.nc'
+Model datm missing file file32 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-08.nc'
+Model datm missing file file33 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-09.nc'
+Model datm missing file file34 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-10.nc'
+Model datm missing file file35 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-11.nc'
+Model datm missing file file36 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2020-12.nc'
+Model datm missing file file37 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-01.nc'
+Model datm missing file file38 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-02.nc'
+Model datm missing file file39 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-03.nc'
+Model datm missing file file40 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-04.nc'
+Model datm missing file file41 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-05.nc'
+Model datm missing file file42 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-06.nc'
+Model datm missing file file43 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-07.nc'
+Model datm missing file file44 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-08.nc'
+Model datm missing file file45 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-09.nc'
+Model datm missing file file46 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-10.nc'
+Model datm missing file file47 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-11.nc'
+Model datm missing file file48 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2021-12.nc'
+Model datm missing file file49 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-01.nc'
+Model datm missing file file50 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-02.nc'
+Model datm missing file file51 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-03.nc'
+Model datm missing file file52 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-04.nc'
+Model datm missing file file53 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-05.nc'
+Model datm missing file file54 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-06.nc'
+Model datm missing file file55 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-07.nc'
+Model datm missing file file56 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-08.nc'
+Model datm missing file file57 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-09.nc'
+Model datm missing file file58 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-10.nc'
+Model datm missing file file59 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-11.nc'
+Model datm missing file file60 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2022-12.nc'
+Model datm missing file file61 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-01.nc'
+Model datm missing file file62 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-02.nc'
+Model datm missing file file63 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-03.nc'
+Model datm missing file file64 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-04.nc'
+Model datm missing file file65 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-05.nc'
+Model datm missing file file66 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-06.nc'
+Model datm missing file file67 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-07.nc'
+Model datm missing file file68 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-08.nc'
+Model datm missing file file69 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-09.nc'
+Model datm missing file file70 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-10.nc'
+Model datm missing file file71 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-11.nc'
+Model datm missing file file72 = '/home/u8/sdwilson/data/Omics_bgc/ONAQ/1x1pt_GUAN/CLM1PT_data/2023-12.nc'
+Checking server https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata with protocol svn
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Client protocol svn not enabled
+Checking server None with protocol None
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Client protocol None not enabled

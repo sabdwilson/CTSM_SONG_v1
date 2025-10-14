@@ -1,0 +1,34 @@
+hist_empty_htapes = .true.
+hist_fincl1 = 'GPP:A','SR:A','ER:A','NEE:A','QSOIL:A','QVEGE:A','QVEGT:A','TLAI:A',
+              'TOTVEGC:A','HTOP:A','AGNPP:A','BGNPP:A','ROOTR:A'
+hist_fincl2 = 'GPP:A','TLAI:A'
+hist_fincl3 = 'TSOI:A','H2OSOI:A','SMP:A'
+hist_fincl4 = 'VEGWP:A'
+hist_fincl5 = 'EFLX_LH_TOT:A','QFLX_EVAP_TOT:A','RAIN_FROM_ATM:A','FGEV:A','FCEV:A','FCTR:A',
+              'QDRIP:A','QTOPSOIL:A','QINFL:A','QOVER:A','QDRAI:A','QRUNOFF:A'
+hist_fincl6 = 'LEAFC_LOSS:A','LEAFC_ALLOC:A','FROOTC_ALLOC:A','FROOTC_LOSS:A','LEAFC_XFER_TO_LEAFC:A',
+              'FROOTC_XFER_TO_FROOTC:A','PSNSUN_TO_CPOOL:A','PSNSHADE_TO_CPOOL:A','CPOOL_TO_LEAFC:A',
+              'CPOOL_TO_LEAFC_STORAGE:A','CPOOL_TO_FROOTC:A','CPOOL_TO_FROOTC_STORAGE:A','CPOOL_TO_LIVESTEMC:A',
+              'CPOOL_TO_LIVESTEMC_STORAGE:A','CPOOL_TO_GRESP_STORAGE:A','CPOOL_LEAF_GR:A','CPOOL_LEAF_STORAGE_GR:A',
+              'TRANSFER_LEAF_GR:A','CPOOL_FROOT_GR:A','CPOOL_FROOT_STORAGE_GR:A','TRANSFER_FROOT_GR:A',
+              'LEAFC_STORAGE_TO_XFER:A','FROOTC_STORAGE_TO_XFER:A','GRESP_STORAGE_TO_XFER:A','CURRENT_GR:A',
+              'TRANSFER_GR:A','STORAGE_GR:A','AVAILC:A','PLANT_CALLOC:A',
+              'LEAFC:A','FROOTC:A','LEAFN:A','FROOTN:A'
+hist_fincl7 = 'EFLX_LH_TOT:A','FSH_G:A','TSOI:A','H2OSOI:A','EFLX_SOIL_GRND:A'
+hist_dov2xy = .true.,.false.,.true.,.false.,.true.,.false.,.true.
+hist_type1d_pertape = ' ', 'PFTS', ' ', 'PFTS', ' ', 'PFTS', ' '
+hist_nhtfrq = -24,-24,-1,-1,-24,-1,-1
+hist_mfilt  = 100000,100000,2400000,2400000,100000,2400000,2400000
+use_init_interp = .true.
+use_fertilizer  = .false.
+use_crop        = .false.
+use_hydrstress  = .true.
+use_cn          = .true.
+use_luna        = .false.
+do_harvest         = .false.
+do_transient_crops = .false.
+do_transient_pfts  = .false.
+constrain_stress_deciduous_onset=.false.
+soil_layerstruct_predefined = '10SL_3.5m'
+finidat='/home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test2_hist/'
+fsurdat = '/groups/chopinsong/CTSM_projects/PTCLM/mydatafile/Rainman_srgpft/1x1pt_RainManSR/surfdata_1x1pt_RainManSR_hist_78pfts_CMIP6_simyr2000_c211127.nc'

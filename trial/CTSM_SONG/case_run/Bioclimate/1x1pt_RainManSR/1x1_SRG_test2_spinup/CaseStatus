@@ -1,0 +1,103 @@
+2022-10-15 14:29:18: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test2  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:18: case.setup starting 
+ ---------------------------------------------------
+2022-10-15 14:29:19: case.setup success 
+ ---------------------------------------------------
+2022-10-15 14:29:19: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=00:20:00  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:19: xmlchange success <command> ./xmlchange walltime=00:20:00  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:19: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:19: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:19: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:20: xmlchange success <command> ./xmlchange RUN_STARTDATE=2009-01-01  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:20: xmlchange success <command> ./xmlchange STOP_N=1  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:20: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:20: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:20: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:21: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:21: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:21: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:21: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:21: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:21: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -no-crop  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:22: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=2009  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:22: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2013  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:22: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=2009  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:22: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u32/tianyihu/data/Rainman/S1  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:22: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_projects/PTCLM/mydatafile/Rainman_srgpft/1x1pt_RainManSR  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:23: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_RainManSR_navy.211127.nc  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:23: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_projects/PTCLM/mydatafile/Rainman_srgpft/1x1pt_RainManSR  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:23: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_RainManSR_navy.211127.nc  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:23: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_RainManSR  </command>
+ ---------------------------------------------------
+2022-10-15 14:29:23: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-15 14:34:53: case.build success 
+ ---------------------------------------------------
+2022-10-15 14:34:54: case.submit starting 
+ ---------------------------------------------------
+2022-10-15 14:34:56: case.submit error 
+ERROR: Command: '/usr/local/bin/sbatch --account=chopinsong --partition standard --time=00:20:00 -o %x.out --nodes=1 --ntasks=1 --mem-per-cpu=1gb .case.run' failed with error 'sbatch: unrecognized option '--ntasks-per-cpu=1'
+Try "sbatch --help" for more information' from dir '/home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test2_spinup'
+ ---------------------------------------------------

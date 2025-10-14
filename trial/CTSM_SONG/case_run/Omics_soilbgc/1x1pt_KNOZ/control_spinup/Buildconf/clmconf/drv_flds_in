@@ -1,0 +1,14 @@
+&drydep_inparm
+/
+&megan_emis_nl
+/
+&fire_emis_nl
+/
+&carma_inparm
+/
+!#--------------------------------------------------------------------------------------------------------------------------
+!# drv_flds_in:: Comment:
+!# This namelist was created using the following command-line:
+!#     /home/u8/sdwilson/CTSM_SONG/bld/CLM build-namelist -cimeroot /home/u8/sdwilson/CTSM_SONG/cime/scripts/Tools/../.. -infile /home/u8/sdwilson/CTSM_SONG/case_run/Omics_soilbgc/1x1pt_KNOZ/control_spinup/Buildconf/clmconf/namelist -csmdata /xdisk/chopinsong/chopinsong/CTSM_inputdata -inputdata /home/u8/sdwilson/CTSM_SONG/case_run/Omics_soilbgc/1x1pt_KNOZ/control_spinup/Buildconf/ctsm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=20180101 /  -use_case 2000_control -res 1x1pt_KNOZ -clm_usr_name 1x1pt_KNOZ -clm_start_type default -envxml_dir /home/u8/sdwilson/CTSM_SONG/case_run/Omics_soilbgc/1x1pt_KNOZ/control_spinup -configuration clm -structure standard -lnd_frac /xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KNOZ/1x1pt_KNOZ/domain.lnd.1x1pt_KNOZ_navy.240605.nc -glc_nec 10 -co2_ppmv 367.0 -co2_type constant -config /home/u8/sdwilson/CTSM_SONG/case_run/Omics_soilbgc/1x1pt_KNOZ/control_spinup/Buildconf/clmconf/config_cache.xml -bgc bgc -mask navy -no-crop -clm_accelerated_spinup on -lnd_tuning_mode clm5_0_CRUv7
+!# For help on options use: /home/u8/sdwilson/CTSM_SONG/bld/CLM build-namelist -help
+!#--------------------------------------------------------------------------------------------------------------------------

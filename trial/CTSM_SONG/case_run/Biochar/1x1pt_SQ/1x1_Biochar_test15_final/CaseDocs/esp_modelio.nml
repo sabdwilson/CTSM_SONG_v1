@@ -1,0 +1,13 @@
+&modelio
+  diri = "/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_final/bld/esp"
+  diro = "/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_final/run"
+  logfile = "esp.log.8587573.231118-131648"
+/
+&pio_inparm
+  pio_netcdf_format = ""
+  pio_numiotasks = -99
+  pio_rearranger = -99
+  pio_root = -99
+  pio_stride = -99
+  pio_typename = "nothing"
+/

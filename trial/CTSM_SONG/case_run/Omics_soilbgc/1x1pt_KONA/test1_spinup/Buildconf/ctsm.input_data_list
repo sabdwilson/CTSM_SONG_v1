@@ -1,0 +1,10 @@
+stream_fldfilename_lightng = /xdisk/chopinsong/chopinsong/CTSM_inputdata/atm/datm7/NASA_LIS/clmforc.Li_2012_climo1995-2011.T62.lnfm_Total_c140423.nc
+fsnowaging = /xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+fsnowoptics = /xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc
+fsurdat = /xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KONA/1x1pt_KONA/surfdata_1x1pt_KONA_hist_78pfts_CMIP6_simyr2000_c240920.nc
+finidat = /xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/initdata_map/clmi.I2000Clm50BgcCrop.2011-01-01.1.9x2.5_gx1v7_gl4_simyr2000_c190312.nc
+fatmlndfrc = /xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KONA/1x1pt_KONA/domain.lnd.1x1pt_KONA_navy.240920.nc
+paramfile = /xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/paramdata/clm50_params.c200905.nc
+stream_fldfilename_urbantv = /xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c160923.nc
+stream_fldfilename_ndep = /xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/ndepdata/fndep_clm_hist_b.e21.BWHIST.f09_g17.CMIP6-historical-WACCM.ensmean_1849-2015_monthly_0.9x1.25_c180926.nc
+stream_fldfilename_popdens = /xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/firedata/clmforc.Li_2017_HYDEv3.2_CMIP6_hdm_0.5x0.5_AVHRR_simyr1850-2016_c180202.nc

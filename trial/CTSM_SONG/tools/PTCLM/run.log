@@ -1,0 +1,33 @@
+/home/u8/sdwilson/CTSM_SONG/tools/PTCLM
+Submitted batch job 8405315
+test1:./PTCLMsublist 
+test2:./PTCLMsublist
+test1:./PTCLMsublist --ctsm_root=/home/u8/sdwilson/CTSM_SONG 
+test2:--ctsm_root=/home/u8/sdwilson/CTSM_SONG
+test1:./PTCLMsublist --ctsm_root=/home/u8/sdwilson/CTSM_SONG -l 
+test2:-l
+test1:./PTCLMsublist --ctsm_root=/home/u8/sdwilson/CTSM_SONG -l RIV-IT 
+test2:RIV-IT
+test1:./PTCLMsublist --ctsm_root=/home/u8/sdwilson/CTSM_SONG -l RIV-IT -d 
+test2:-d
+test1:./PTCLMsublist --ctsm_root=/home/u8/sdwilson/CTSM_SONG -l RIV-IT -d /xdisk/chopinsong/chopinsong/CTSM_inputdata 
+test2:/xdisk/chopinsong/chopinsong/CTSM_inputdata
+test1:./PTCLMsublist --ctsm_root=/home/u8/sdwilson/CTSM_SONG -l RIV-IT -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --account=chopinsong 
+test2:--account=chopinsong
+test1:./PTCLMsublist --ctsm_root=/home/u8/sdwilson/CTSM_SONG -l RIV-IT -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --account=chopinsong --mach=UA-puma 
+test2:--mach=UA-puma
+test1:./PTCLMsublist --ctsm_root=/home/u8/sdwilson/CTSM_SONG -l RIV-IT -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --account=chopinsong --mach=UA-puma -o 
+test2:-o
+test1:./PTCLMsublist --ctsm_root=/home/u8/sdwilson/CTSM_SONG -l RIV-IT -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --account=chopinsong --mach=UA-puma -o --map_gdate 231016 --no-crop --pftgrid --soilgrid --mydatadir=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/RIV-IT 
+test2:--map_gdate 231016 --no-crop --pftgrid --soilgrid --mydatadir=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/RIV-IT
+('test3', <optparse.OptionGroup instance at 0x7f03a5e405a8>)
+('test_stdout', <open file 'pwd', mode 'r' at 0x7f03a5e116f0>)
+('test_cwd', '/home/u8/sdwilson/CTSM_SONG/tools/PTCLM')
+('test_clog', <open file '/home/u8/sdwilson/CTSM_SONG/tools/PTCLM/ChangeLog', mode 'r' at 0x7f03a59f4030>)
+('test4', '--map_gdate 231016 --no-crop --pftgrid --soilgrid --mydatadir=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/RIV-IT')
+Submit a list of sites to the batch queue
+
+Submit for site: RIV-IT
+
+./PTCLMmkdata --ctsm_root /home/u8/sdwilson/CTSM_SONG -s RIV-IT -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --map_gdate 231016 --no-crop --pftgrid --soilgrid --mydatadir=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/RIV-IT
+finish running

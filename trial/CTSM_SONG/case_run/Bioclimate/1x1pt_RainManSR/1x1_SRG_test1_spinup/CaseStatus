@@ -1,0 +1,1044 @@
+2022-10-15 11:32:56: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:56: case.setup starting 
+ ---------------------------------------------------
+2022-10-15 11:32:57: case.setup success 
+ ---------------------------------------------------
+2022-10-15 11:32:57: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=00:20:00  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:57: xmlchange success <command> ./xmlchange walltime=00:20:00  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:57: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:58: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:58: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:58: xmlchange success <command> ./xmlchange RUN_STARTDATE=2009-01-01  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:58: xmlchange success <command> ./xmlchange STOP_N=1  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:58: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:59: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:59: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:59: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:59: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2022-10-15 11:32:59: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:00: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:00: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:00: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -no-crop  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:00: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=2009  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:00: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2013  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:01: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=2009  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:01: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u32/tianyihu/data/Rainman/S1  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:01: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_projects/PTCLM/mydatafile/Rainman_srgpft/1x1pt_RainManSR  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:01: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_RainManSR_navy.211127.nc  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:01: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_projects/PTCLM/mydatafile/Rainman_srgpft/1x1pt_RainManSR  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:01: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_RainManSR_navy.211127.nc  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:02: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_RainManSR  </command>
+ ---------------------------------------------------
+2022-10-15 11:33:02: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-15 11:38:38: case.build success 
+ ---------------------------------------------------
+2022-10-15 11:38:38: case.submit starting 
+ ---------------------------------------------------
+2022-10-15 11:38:40: case.submit error 
+ERROR: Command: '/usr/local/bin/sbatch --account=chopinsong --partition standard --time=00:20:00 -o %x.out --ntasks=1 --nodes=1 --mem=1gb --nodes=1 --ntasks=1 --mem-per-cpu=1gb .case.run' failed with error 'sbatch: fatal: --mem, --mem-per-cpu, and --mem-per-gpu are mutually exclusive.' from dir '/home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test1_spinup'
+ ---------------------------------------------------
+2022-10-15 12:34:22: case.submit starting 
+ ---------------------------------------------------
+2022-10-15 12:34:24: case.submit error 
+ERROR: Command: '/usr/local/bin/sbatch --account=chopinsong --partition standard --time=00:20:00 -o %x.out --ntasks=1 --nodes=1 --mem=1gb --nodes=1 --ntasks=1 --mem-per-cpu=1gb .case.run' failed with error 'sbatch: fatal: --mem, --mem-per-cpu, and --mem-per-gpu are mutually exclusive.' from dir '/home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test1_spinup'
+ ---------------------------------------------------
+2022-10-15 12:56:52: case.submit starting 
+ ---------------------------------------------------
+2022-10-15 12:56:54: case.submit error 
+ERROR: Command: '/usr/local/bin/sbatch --account=chopinsong --partition standard --time=00:20:00 -o %x.out --ntasks=1 --nodes=1 --mem=1gb --nodes=1 --ntasks=1 --mem-per-cpu=1gb .case.run' failed with error 'sbatch: fatal: --mem, --mem-per-cpu, and --mem-per-gpu are mutually exclusive.' from dir '/home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test1_spinup'
+ ---------------------------------------------------
+2022-10-15 12:57:24: case.submit starting 
+ ---------------------------------------------------
+2022-10-15 12:57:26: case.submit error 
+ERROR: Command: '/usr/local/bin/sbatch --account=chopinsong --partition standard --time=00:20:00 -o %x.out --ntasks=1 --nodes=1 --mem=1gb .case.run' failed with error 'sbatch: fatal: --mem, --mem-per-cpu, and --mem-per-gpu are mutually exclusive.' from dir '/home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test1_spinup'
+ ---------------------------------------------------
+2022-10-15 12:59:10: case.submit starting 
+ ---------------------------------------------------
+2022-10-15 12:59:12: case.submit error 
+ERROR: Command: '/usr/local/bin/sbatch --account=chopinsong --partition standard --time=00:20:00 -o %x.out --ntasks=1 --nodes=1 --mem=1gb .case.run' failed with error 'sbatch: fatal: --mem, --mem-per-cpu, and --mem-per-gpu are mutually exclusive.' from dir '/home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test1_spinup'
+ ---------------------------------------------------
+2022-10-15 13:41:23: case.submit starting 
+ ---------------------------------------------------
+2022-10-15 13:41:25: case.submit success case.run:4917184, case.st_archive:4917185
+ ---------------------------------------------------
+2022-10-15 13:48:37: case.submit starting 
+ ---------------------------------------------------
+2022-10-15 13:48:39: case.submit success case.run:4917187, case.st_archive:4917188
+ ---------------------------------------------------
+2022-10-15 13:52:36: case.run starting 
+ ---------------------------------------------------
+2022-10-15 13:52:38: model execution starting 
+ ---------------------------------------------------
+2022-10-15 13:53:10: model execution success 
+ ---------------------------------------------------
+2022-10-15 13:53:11: case.run success 
+ ---------------------------------------------------
+2022-10-15 13:57:36: case.run starting 
+ ---------------------------------------------------
+2022-10-15 13:57:37: st_archive starting 
+ ---------------------------------------------------
+2022-10-15 13:57:37: st_archive success 
+ ---------------------------------------------------
+2022-10-15 13:57:38: model execution starting 
+ ---------------------------------------------------
+2022-10-15 13:58:00: model execution success 
+ ---------------------------------------------------
+2022-10-15 13:58:00: case.run success 
+ ---------------------------------------------------
+2022-10-15 14:02:37: st_archive starting 
+ ---------------------------------------------------
+2022-10-15 14:02:37: st_archive success 
+ ---------------------------------------------------
+2022-10-15 14:17:39: build.clean starting 
+ ---------------------------------------------------
+2022-10-15 14:17:42: build.clean success 
+ ---------------------------------------------------
+2022-10-15 14:17:50: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-15 14:23:09: case.build success 
+ ---------------------------------------------------
+2022-10-15 14:23:26: case.submit starting 
+ ---------------------------------------------------
+2022-10-15 14:23:28: case.submit success case.run:4917231, case.st_archive:4917232
+ ---------------------------------------------------
+2022-10-15 14:27:40: case.run starting 
+ ---------------------------------------------------
+2022-10-15 14:27:41: model execution starting 
+ ---------------------------------------------------
+2022-10-15 14:28:13: model execution success 
+ ---------------------------------------------------
+2022-10-15 14:28:13: case.run success 
+ ---------------------------------------------------
+2022-10-15 14:32:40: st_archive starting 
+ ---------------------------------------------------
+2022-10-15 14:32:40: st_archive success 
+ ---------------------------------------------------
+2022-10-16 11:28:13: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 11:28:18: build.clean success 
+ ---------------------------------------------------
+2022-10-16 11:28:23: case.build starting 
+ ---------------------------------------------------
+2022-10-16 11:28:25: case.build error 
+ERROR: /home/u22/chopinsong/CTSM_SONG/cime/src/build_scripts/buildlib.gptl FAILED, cat /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/gptl.bldlog.221016-112823
+ ---------------------------------------------------
+2022-10-16 11:29:56: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 11:29:56: build.clean success 
+ ---------------------------------------------------
+2022-10-16 11:29:59: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 11:36:09: case.build success 
+ ---------------------------------------------------
+2022-10-16 11:37:34: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 11:37:36: case.submit success case.run:4974703, case.st_archive:4974704
+ ---------------------------------------------------
+2022-10-16 11:42:14: case.run starting 
+ ---------------------------------------------------
+2022-10-16 11:42:16: model execution starting 
+ ---------------------------------------------------
+2022-10-16 11:42:25: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 11:42:25: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.4974703.221016-114214
+ ---------------------------------------------------
+2022-10-16 12:08:26: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 12:08:30: build.clean success 
+ ---------------------------------------------------
+2022-10-16 12:08:34: case.build starting 
+ ---------------------------------------------------
+2022-10-16 12:10:01: case.build error 
+ERROR: BUILD FAIL: clm.buildlib failed, cat /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/lnd.bldlog.221016-120834
+ ---------------------------------------------------
+2022-10-16 12:21:14: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 12:21:17: build.clean success 
+ ---------------------------------------------------
+2022-10-16 12:21:27: case.build starting 
+ ---------------------------------------------------
+2022-10-16 12:21:29: case.build error 
+ERROR: /home/u22/chopinsong/CTSM_SONG/cime/src/build_scripts/buildlib.gptl FAILED, cat /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/gptl.bldlog.221016-122127
+ ---------------------------------------------------
+2022-10-16 12:23:28: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 12:23:28: build.clean success 
+ ---------------------------------------------------
+2022-10-16 12:23:32: case.build starting 
+ ---------------------------------------------------
+2022-10-16 12:24:59: case.build error 
+ERROR: BUILD FAIL: clm.buildlib failed, cat /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/lnd.bldlog.221016-122332
+ ---------------------------------------------------
+2022-10-16 12:31:28: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 12:31:31: build.clean success 
+ ---------------------------------------------------
+2022-10-16 12:31:35: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 12:37:44: case.build success 
+ ---------------------------------------------------
+2022-10-16 12:38:46: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 12:38:48: case.submit success case.run:4979325, case.st_archive:4979326
+ ---------------------------------------------------
+2022-10-16 12:42:17: case.run starting 
+ ---------------------------------------------------
+2022-10-16 12:42:20: model execution starting 
+ ---------------------------------------------------
+2022-10-16 12:42:29: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 12:42:29: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.4979325.221016-124217
+ ---------------------------------------------------
+2022-10-16 12:56:58: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 12:57:02: build.clean success 
+ ---------------------------------------------------
+2022-10-16 12:57:18: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 13:02:49: case.build success 
+ ---------------------------------------------------
+2022-10-16 13:04:15: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 13:04:17: case.submit success case.run:4981624, case.st_archive:4981625
+ ---------------------------------------------------
+2022-10-16 13:07:18: case.run starting 
+ ---------------------------------------------------
+2022-10-16 13:07:20: model execution starting 
+ ---------------------------------------------------
+2022-10-16 13:07:22: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 13:07:22: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.4981624.221016-130718
+ ---------------------------------------------------
+2022-10-16 13:39:15: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 13:39:20: build.clean success 
+ ---------------------------------------------------
+2022-10-16 13:39:26: case.build starting 
+ ---------------------------------------------------
+2022-10-16 13:39:28: case.build error 
+ERROR: /home/u22/chopinsong/CTSM_SONG/cime/src/build_scripts/buildlib.gptl FAILED, cat /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/gptl.bldlog.221016-133926
+ ---------------------------------------------------
+2022-10-16 13:41:33: case.build starting 
+ ---------------------------------------------------
+2022-10-16 13:41:35: case.build error 
+ERROR: /home/u22/chopinsong/CTSM_SONG/cime/src/build_scripts/buildlib.gptl FAILED, cat /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/gptl.bldlog.221016-134133
+ ---------------------------------------------------
+2022-10-16 13:42:30: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 13:42:30: build.clean success 
+ ---------------------------------------------------
+2022-10-16 13:42:37: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 13:48:03: case.build success 
+ ---------------------------------------------------
+2022-10-16 13:50:01: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 13:50:04: case.submit success case.run:4985933, case.st_archive:4985934
+ ---------------------------------------------------
+2022-10-16 13:52:22: case.run starting 
+ ---------------------------------------------------
+2022-10-16 13:52:24: model execution starting 
+ ---------------------------------------------------
+2022-10-16 13:52:34: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 13:52:34: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.4985933.221016-135222
+ ---------------------------------------------------
+2022-10-16 14:12:36: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 14:12:41: build.clean success 
+ ---------------------------------------------------
+2022-10-16 14:12:46: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 14:17:57: case.build success 
+ ---------------------------------------------------
+2022-10-16 14:18:51: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 14:18:53: case.submit success case.run:4988204, case.st_archive:4988205
+ ---------------------------------------------------
+2022-10-16 14:22:25: case.run starting 
+ ---------------------------------------------------
+2022-10-16 14:22:27: model execution starting 
+ ---------------------------------------------------
+2022-10-16 14:22:36: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 14:22:36: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.4988204.221016-142225
+ ---------------------------------------------------
+2022-10-16 14:40:37: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 14:40:39: case.submit success case.run:4989885, case.st_archive:4989886
+ ---------------------------------------------------
+2022-10-16 14:42:26: case.run starting 
+ ---------------------------------------------------
+2022-10-16 14:42:28: model execution starting 
+ ---------------------------------------------------
+2022-10-16 14:42:29: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 14:42:29: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.4989885.221016-144226
+ ---------------------------------------------------
+2022-10-16 15:51:21: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 15:51:26: build.clean success 
+ ---------------------------------------------------
+2022-10-16 15:51:49: case.build starting 
+ ---------------------------------------------------
+2022-10-16 15:51:51: case.build error 
+ERROR: /home/u22/chopinsong/CTSM_SONG/cime/src/build_scripts/buildlib.gptl FAILED, cat /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/gptl.bldlog.221016-155149
+ ---------------------------------------------------
+2022-10-16 15:52:44: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 15:52:44: build.clean success 
+ ---------------------------------------------------
+2022-10-16 15:52:47: case.build starting 
+ ---------------------------------------------------
+2022-10-16 15:57:30: case.build error 
+ERROR: BUILD FAIL: clm.buildlib failed, cat /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/lnd.bldlog.221016-155247
+ ---------------------------------------------------
+2022-10-16 15:58:37: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 15:59:10: case.build success 
+ ---------------------------------------------------
+2022-10-16 16:00:52: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 16:00:54: case.submit success case.run:4997466, case.st_archive:4997467
+ ---------------------------------------------------
+2022-10-16 16:02:33: case.run starting 
+ ---------------------------------------------------
+2022-10-16 16:02:35: model execution starting 
+ ---------------------------------------------------
+2022-10-16 16:03:09: model execution success 
+ ---------------------------------------------------
+2022-10-16 16:03:09: case.run success 
+ ---------------------------------------------------
+2022-10-16 16:07:33: st_archive starting 
+ ---------------------------------------------------
+2022-10-16 16:07:33: st_archive success 
+ ---------------------------------------------------
+2022-10-16 17:49:46: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 17:49:50: build.clean success 
+ ---------------------------------------------------
+2022-10-16 17:50:20: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 17:56:24: case.build success 
+ ---------------------------------------------------
+2022-10-16 17:58:21: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 17:58:23: case.submit success case.run:5007845, case.st_archive:5007846
+ ---------------------------------------------------
+2022-10-16 18:02:47: case.run starting 
+ ---------------------------------------------------
+2022-10-16 18:02:50: model execution starting 
+ ---------------------------------------------------
+2022-10-16 18:02:59: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 18:02:59: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.5007845.221016-180247
+ ---------------------------------------------------
+2022-10-16 18:28:42: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 18:28:46: build.clean success 
+ ---------------------------------------------------
+2022-10-16 18:28:50: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 18:34:18: case.build success 
+ ---------------------------------------------------
+2022-10-16 19:34:12: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 19:34:14: case.submit success case.run:5015843, case.st_archive:5015844
+ ---------------------------------------------------
+2022-10-16 19:43:16: case.run starting 
+ ---------------------------------------------------
+2022-10-16 19:43:18: model execution starting 
+ ---------------------------------------------------
+2022-10-16 19:43:27: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 19:43:27: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.5015843.221016-194316
+ ---------------------------------------------------
+2022-10-16 20:35:05: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 20:35:10: build.clean success 
+ ---------------------------------------------------
+2022-10-16 20:35:14: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 20:41:04: case.build success 
+ ---------------------------------------------------
+2022-10-16 20:45:54: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 20:45:55: case.submit success case.run:5022365, case.st_archive:5022366
+ ---------------------------------------------------
+2022-10-16 20:53:23: case.run starting 
+ ---------------------------------------------------
+2022-10-16 20:53:25: model execution starting 
+ ---------------------------------------------------
+2022-10-16 20:53:34: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 20:53:34: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.5022365.221016-205323
+ ---------------------------------------------------
+2022-10-16 21:17:04: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 21:18:36: case.build success 
+ ---------------------------------------------------
+2022-10-16 21:25:02: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 21:25:04: case.submit success case.run:5024388, case.st_archive:5024389
+ ---------------------------------------------------
+2022-10-16 21:28:31: case.run starting 
+ ---------------------------------------------------
+2022-10-16 21:28:33: model execution starting 
+ ---------------------------------------------------
+2022-10-16 21:28:42: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-16 21:28:42: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.5024388.221016-212831
+ ---------------------------------------------------
+2022-10-16 22:33:20: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 22:33:24: build.clean success 
+ ---------------------------------------------------
+2022-10-16 22:33:28: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 22:38:33: case.build success 
+ ---------------------------------------------------
+2022-10-16 22:38:56: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 22:38:58: case.submit success case.run:5026515, case.st_archive:5026516
+ ---------------------------------------------------
+2022-10-16 22:39:22: case.run starting 
+ ---------------------------------------------------
+2022-10-16 22:39:24: model execution starting 
+ ---------------------------------------------------
+2022-10-16 22:39:55: model execution success 
+ ---------------------------------------------------
+2022-10-16 22:39:55: case.run success 
+ ---------------------------------------------------
+2022-10-16 22:40:22: st_archive starting 
+ ---------------------------------------------------
+2022-10-16 22:40:23: st_archive success 
+ ---------------------------------------------------
+2022-10-16 22:47:32: build.clean starting 
+ ---------------------------------------------------
+2022-10-16 22:47:37: build.clean success 
+ ---------------------------------------------------
+2022-10-16 22:47:57: case.build starting 
+ ---------------------------------------------------
+CESM version is ctsm5.1.dev020-1-g0af316e
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, source_cism, cdeps, fox, cmeps, nems/lib/parallelio, nems/lib/genf90, doc-builder, 
+ M  ./cime
+        modified sandbox, on branch_tags/cime5.8.32_a02
+    ./cime/src/drivers/nuopc/
+        clean sandbox, on 76540383e4bd37142814812903fc2eed4a1b39e1
+    ./cime/src/drivers/nuopc/nems/lib/ParallelIO
+        clean sandbox, on pio2_4_4
+    ./cime/src/drivers/nuopc/nems/lib/genf90
+        clean sandbox, on genf90_140121
+    ./components/cdeps
+        clean sandbox, on 45b7a85823da1d187fe500d1be6e96bbcd1dff2e
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cism
+        clean sandbox, on cism2_1_69
+    ./components/cism/source_cism
+        clean sandbox, on f1a88d6bbe3bb5e2e8817f91aed6de87227f4bb7
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_38
+    ./components/rtm
+        clean sandbox, on rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+    ./src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+ M  ./tools/PTCLM
+        modified sandbox, on PTCLM2_20200121
+2022-10-16 22:53:44: case.build success 
+ ---------------------------------------------------
+2022-10-16 22:55:45: case.submit starting 
+ ---------------------------------------------------
+2022-10-16 22:55:47: case.submit success case.run:5026875, case.st_archive:5026876
+ ---------------------------------------------------
+2022-10-16 22:56:24: case.run starting 
+ ---------------------------------------------------
+2022-10-16 22:56:26: model execution starting 
+ ---------------------------------------------------
+2022-10-16 22:56:59: model execution success 
+ ---------------------------------------------------
+2022-10-16 22:56:59: case.run success 
+ ---------------------------------------------------
+2022-10-16 22:57:23: st_archive starting 
+ ---------------------------------------------------
+2022-10-16 22:57:23: st_archive success 
+ ---------------------------------------------------
+2022-10-18 22:11:05: case.submit starting 
+ ---------------------------------------------------
+2022-10-18 22:11:08: case.submit success case.run:5095110, case.st_archive:5095111
+ ---------------------------------------------------
+2022-10-18 22:17:03: case.run starting 
+ ---------------------------------------------------
+2022-10-18 22:17:05: model execution starting 
+ ---------------------------------------------------
+2022-10-18 22:17:05: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run'
+ ---------------------------------------------------
+2022-10-18 22:17:05: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run/cesm.log.5095110.221018-221703
+ ---------------------------------------------------
+2022-10-18 22:50:35: case.submit starting 
+ ---------------------------------------------------
+2022-10-18 22:50:38: case.submit success case.run:5095177, case.st_archive:5095178
+ ---------------------------------------------------
+2022-10-18 22:52:23: case.run starting 
+ ---------------------------------------------------
+2022-10-18 22:52:26: model execution starting 
+ ---------------------------------------------------
+2022-10-18 22:52:58: model execution success 
+ ---------------------------------------------------
+2022-10-18 22:52:58: case.run success 
+ ---------------------------------------------------
+2022-10-18 22:57:26: st_archive starting 
+ ---------------------------------------------------
+2022-10-18 22:57:26: st_archive success 
+ ---------------------------------------------------

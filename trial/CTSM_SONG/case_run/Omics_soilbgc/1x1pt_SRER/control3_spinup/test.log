@@ -1,0 +1,47 @@
+begin: spinup, final, hist
+================== Setting script running options=================
+=================== Setting env variable =====================
+case_revised_src=1
+====source code is from /home/u8/sdwilson/CTSM_SONG/case_run/Biochar/1x1pt_SQ/1x1_Biochar_test15_spinup/SourceMods/src.clm=========
+=================Setting env variable over====================
+
+====================Create Case folder========================
+==============================================================
+==================Creating spinup case===========================
+create_newcase --user-mods-dir /groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ --case /home/u8/sdwilson/CTSM_SONG/case_run/Biochar/1x1pt_SQ/1x1_Biochar_test21_spinup     --compset I1PtClm50SpRs --res CLM_USRDAT --machine UA-puma -q standard
+Compset longname is 2000_DATM%1PT_CLM50%SP_SICE_SOCN_SROF_SGLC_SWAV
+Compset specification file is /home/u8/sdwilson/CTSM_SONG/cime_config/config_compsets.xml
+Automatically adding SIAC to compset
+Automatically adding SESP to compset
+Compset forcing is 1972-2004
+ATM component is  Data driven ATM single point tower site data set 
+LND component is clm5.0:Satellite phenology:
+ICE component is Stub ice component
+OCN component is Stub ocn component
+ROF component is Stub river component
+GLC component is Stub glacier (land ice) component
+WAV component is Stub wave component
+IAC component is Stub iac component
+ESP component is Stub external system processing (ESP) component
+Pes     specification file is /home/u8/sdwilson/CTSM_SONG/cime_config/config_pes.xml
+Compset specific settings: name is RUN_STARTDATE and value is 2000-01-01
+Machine is UA-puma
+Pes setting: grid match    is l%1x1|l%CLM_USRDAT 
+Pes setting: grid          is a%CLM_USRDAT_l%CLM_USRDAT_oi%null_r%null_g%null_w%null_z%null_m%null 
+Pes setting: compset       is 2000_DATM%1PT_CLM50%SP_SICE_SOCN_SROF_SGLC_SWAV_SIAC_SESP 
+Pes setting: tasks       is {'NTASKS_ATM': 1, 'NTASKS_ICE': 1, 'NTASKS_CPL': 1, 'NTASKS_LND': 1, 'NTASKS_WAV': 1, 'NTASKS_ROF': 1, 'NTASKS_OCN': 1, 'NTASKS_GLC': 1} 
+Pes setting: threads     is {'NTHRDS_ICE': 1, 'NTHRDS_ATM': 1, 'NTHRDS_ROF': 1, 'NTHRDS_LND': 1, 'NTHRDS_WAV': 1, 'NTHRDS_OCN': 1, 'NTHRDS_CPL': 1, 'NTHRDS_GLC': 1} 
+Pes setting: rootpe      is {'ROOTPE_OCN': 0, 'ROOTPE_LND': 0, 'ROOTPE_ATM': 0, 'ROOTPE_ICE': 0, 'ROOTPE_WAV': 0, 'ROOTPE_CPL': 0, 'ROOTPE_ROF': 0, 'ROOTPE_GLC': 0} 
+Pes setting: pstrid      is {} 
+Pes other settings: {}
+Pes comments: none
+ Compset is: 2000_DATM%1PT_CLM50%SP_SICE_SOCN_SROF_SGLC_SWAV_SIAC_SESP 
+ Grid is: a%CLM_USRDAT_l%CLM_USRDAT_oi%null_r%null_g%null_w%null_z%null_m%null 
+ Components in compset are: ['datm', 'clm', 'sice', 'socn', 'srof', 'sglc', 'swav', 'siac', 'sesp'] 
+Using project from config_machines.xml: none
+No charge_account info available, using value from PROJECT
+Batch_system_type is slurm
+job is case.run USER_REQUESTED_WALLTIME None USER_REQUESTED_QUEUE standard WALLTIME_FORMAT %HH:%MM:%SS
+job is case.st_archive USER_REQUESTED_WALLTIME None USER_REQUESTED_QUEUE None WALLTIME_FORMAT %HH:%MM:%SS
+ Creating Case directory /home/u8/sdwilson/CTSM_SONG/case_run/Biochar/1x1pt_SQ/1x1_Biochar_test21_spinup
+ERROR: Case could not be created.

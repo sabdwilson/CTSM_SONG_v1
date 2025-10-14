@@ -1,0 +1,13 @@
+&modelio
+  diri = "/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/esp"
+  diro = "/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run"
+  logfile = "esp.log.5095177.221018-225223"
+/
+&pio_inparm
+  pio_netcdf_format = ""
+  pio_numiotasks = -99
+  pio_rearranger = -99
+  pio_root = -99
+  pio_stride = -99
+  pio_typename = "nothing"
+/

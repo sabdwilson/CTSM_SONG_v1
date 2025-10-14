@@ -1,0 +1,5 @@
+! user_nl_clm namelist options written by PTCLMmkdata:
+! /var/spool/slurm/d/job10362260/slurm_script --ctsm_root /home/u8/sdwilson/CTSM_SONG -s ONAQ -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --map_gdate 240904 --crop --mydatadir=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/ONAQ 
+ fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/ONAQ/1x1pt_ONAQ/surfdata_1x1pt_ONAQ_hist_78pfts_CMIP6_simyr2000_c240904.nc'
+ hist_nhtfrq = 0
+ hist_mfilt  = 1200

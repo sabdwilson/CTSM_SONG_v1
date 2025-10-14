@@ -1,0 +1,48 @@
+2024-05-18 17:46:17: ./create_newcase --user-mods-dir /xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site28/1x1pt_site28 --case /home/u8/sdwilson/CTSM_SONG/case_run/EFC/1x1pt_site28/1x1_control_spinup --compset I1PtClm50SpRs --res CLM_USRDAT --machine UA-puma -q standard
+ ---------------------------------------------------
+2024-05-18 17:46:17: Compset longname is 2000_DATM%1PT_CLM50%SP_SICE_SOCN_SROF_SGLC_SWAV_SIAC_SESP
+ ---------------------------------------------------
+2024-05-18 17:46:17: Compset specification file is /home/u8/sdwilson/CTSM_SONG/cime_config/config_compsets.xml
+ ---------------------------------------------------
+2024-05-18 17:46:17: Pes     specification file is /home/u8/sdwilson/CTSM_SONG/cime_config/config_pes.xml
+ ---------------------------------------------------
+2024-05-18 17:46:17: Forcing is 1972-2004
+ ---------------------------------------------------
+2024-05-18 17:46:17: Using None coupler instances
+ ---------------------------------------------------
+2024-05-18 17:46:17: Component ATM is  Data driven ATM single point tower site data set 
+ ---------------------------------------------------
+2024-05-18 17:46:17: ATM_GRID is CLM_USRDAT
+ ---------------------------------------------------
+2024-05-18 17:46:17: Component LND is clm5.0:Satellite phenology:
+ ---------------------------------------------------
+2024-05-18 17:46:17: LND_GRID is CLM_USRDAT
+ ---------------------------------------------------
+2024-05-18 17:46:17: Component ICE is Stub ice component
+ ---------------------------------------------------
+2024-05-18 17:46:17: ICE_GRID is null
+ ---------------------------------------------------
+2024-05-18 17:46:17: Component OCN is Stub ocn component
+ ---------------------------------------------------
+2024-05-18 17:46:17: OCN_GRID is null
+ ---------------------------------------------------
+2024-05-18 17:46:17: Component ROF is Stub river component
+ ---------------------------------------------------
+2024-05-18 17:46:17: ROF_GRID is null
+ ---------------------------------------------------
+2024-05-18 17:46:17: Component GLC is Stub glacier (land ice) component
+ ---------------------------------------------------
+2024-05-18 17:46:17: GLC_GRID is null
+ ---------------------------------------------------
+2024-05-18 17:46:17: Component WAV is Stub wave component
+ ---------------------------------------------------
+2024-05-18 17:46:17: WAV_GRID is null
+ ---------------------------------------------------
+2024-05-18 17:46:17: Component IAC is Stub iac component
+ ---------------------------------------------------
+2024-05-18 17:46:17: IAC_GRID is null
+ ---------------------------------------------------
+2024-05-18 17:46:17: Component ESP is Stub external system processing (ESP) component
+ ---------------------------------------------------
+2024-05-18 17:46:17: ESP_GRID is None
+ ---------------------------------------------------

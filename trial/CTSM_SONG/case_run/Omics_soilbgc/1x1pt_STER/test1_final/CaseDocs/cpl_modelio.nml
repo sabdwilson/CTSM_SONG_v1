@@ -1,0 +1,13 @@
+&modelio
+  diri = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_STER/test1/test1_final/bld/cpl"
+  diro = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_STER/test1/test1_final/run"
+  logfile = "cpl.log.10487229.240920-223104"
+/
+&pio_inparm
+  pio_netcdf_format = "64bit_offset"
+  pio_numiotasks = -99
+  pio_rearranger = 1
+  pio_root = 1
+  pio_stride = 28
+  pio_typename = "netcdf"
+/

@@ -1,0 +1,100 @@
+Building case in directory /home/u8/sdwilson/CTSM_SONG/case_run/EFC/1x1pt_site13/1x1_control_spinup
+sharedlib_only is False
+model_only is False
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Generating component namelists as part of build
+Creating component namelists
+  2024-05-17 21:11:57 atm 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/data_comps_mct/datm/cime_config/buildnml
+  2024-05-17 21:11:57 lnd 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime_config/buildnml
+  2024-05-17 21:11:57 ice 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/sice/cime_config/buildnml
+  2024-05-17 21:11:57 ocn 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/socn/cime_config/buildnml
+  2024-05-17 21:11:57 rof 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/srof/cime_config/buildnml
+  2024-05-17 21:11:57 glc 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/sglc/cime_config/buildnml
+  2024-05-17 21:11:57 wav 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/swav/cime_config/buildnml
+  2024-05-17 21:11:57 iac 
+   Running /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/siac/cime_config/buildnml 
+  2024-05-17 21:11:57 esp 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/sesp/cime_config/buildnml
+  2024-05-17 21:11:57 cpl 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/drivers/mct/cime_config/buildnml
+Building gptl with output to file /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/gptl.bldlog.240517-211157
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/build_scripts/buildlib.gptl
+Component gptl build complete with 18 warnings
+Building mct with output to file /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/mct.bldlog.240517-211157
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/build_scripts/buildlib.mct
+Component mct build complete with 4304 warnings
+Building pio with output to file /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/pio.bldlog.240517-211157
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/build_scripts/buildlib.pio
+Component pio build complete with 505 warnings
+Building csm_share with output to file /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/csm_share.bldlog.240517-211157
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/build_scripts/buildlib.csm_share
+Component csm_share build complete with 254 warnings
+         - Building clm library 
+Building lnd with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/lnd.bldlog.240517-211157
+Component lnd build complete with 2441 warnings
+clm built in 229.696435 seconds
+         - Building atm Library 
+Building atm with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/atm.bldlog.240517-211157
+         - Building ice Library 
+Building ice with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/ice.bldlog.240517-211157
+         - Building ocn Library 
+         - Building rof Library 
+Building ocn with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/ocn.bldlog.240517-211157
+         - Building glc Library 
+Building rof with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/rof.bldlog.240517-211157
+Building glc with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/glc.bldlog.240517-211157
+         - Building wav Library 
+         - Building iac Library 
+Building wav with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/wav.bldlog.240517-211157
+Building iac with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/iac.bldlog.240517-211157
+         - Building esp Library 
+Building esp with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/esp.bldlog.240517-211157
+Component ice build complete with 12 warnings
+sice built in 2.552516 seconds
+Component ocn build complete with 12 warnings
+socn built in 2.633260 seconds
+Component rof build complete with 12 warnings
+srof built in 2.708113 seconds
+Component glc build complete with 12 warnings
+Component wav build complete with 12 warnings
+sglc built in 2.712484 seconds
+swav built in 2.681130 seconds
+Component iac build complete with 12 warnings
+siac built in 2.696700 seconds
+Component esp build complete with 12 warnings
+sesp built in 2.609410 seconds
+Component atm build complete with 6 warnings
+datm built in 4.050817 seconds
+Building cesm from /home/u8/sdwilson/CTSM_SONG/cime/src/drivers/mct/cime_config/buildexe with output to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site13/control/1x1_control_spinup/bld/cesm.bldlog.240517-211157 
+Component cesm exe build complete with 112 warnings
+Time spent not building: 1.539211 sec
+Time spent building: 316.736169 sec
+MODEL BUILD HAS FINISHED SUCCESSFULLY

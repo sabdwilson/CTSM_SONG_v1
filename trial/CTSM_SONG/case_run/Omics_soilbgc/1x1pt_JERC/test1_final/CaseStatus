@@ -1,0 +1,10 @@
+2024-09-20 19:24:29: xmlchange success <command> ./xmlchange --force CLM_USRDAT_NAME=1x1pt_JERC  </command>
+ ---------------------------------------------------
+2024-09-20 19:24:29: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_START=2017  </command>
+ ---------------------------------------------------
+2024-09-20 19:24:29: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_END=2023  </command>
+ ---------------------------------------------------
+2024-09-20 19:24:29: xmlchange success <command> ./xmlchange --force MPILIB=mpi-serial  </command>
+ ---------------------------------------------------
+2024-09-20 19:31:18: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_JERC/test1  </command>
+ ---------------------------------------------------

@@ -1,0 +1,58 @@
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+st_archive starting
+moving /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/lnd.log.9843750.240518-204430.gz to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/logs/lnd.log.9843750.240518-204430.gz
+moving /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/cesm.log.9843750.240518-204430.gz to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/logs/cesm.log.9843750.240518-204430.gz
+moving /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/cpl.log.9843750.240518-204430.gz to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/logs/cpl.log.9843750.240518-204430.gz
+moving /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/atm.log.9843750.240518-204430.gz to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/logs/atm.log.9843750.240518-204430.gz
+-------------------------------------------
+Archiving restarts for date date(2260, 1, 1, 0, 0, 0)
+-------------------------------------------
+Archiving restarts for datm (atm)
+Archiving restarts for clm (lnd)
+copying file /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.r.2260-01-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/rest/2260-01-01-00000/1x1_control_spinup.clm2.r.2260-01-01-00000.nc
+Copying /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.h0.2180-02-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/rest/2260-01-01-00000/1x1_control_spinup.clm2.h0.2180-02-01-00000.nc
+Copying /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.h1.2180-02-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/rest/2260-01-01-00000/1x1_control_spinup.clm2.h1.2180-02-01-00000.nc
+ WARNING: ncdump -v locfnh /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.rh0.2260-01-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.rh0.2260-01-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/rest/2260-01-01-00000/1x1_control_spinup.clm2.rh0.2260-01-01-00000.nc
+ WARNING: ncdump -v locfnh /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.rh1.2260-01-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.rh1.2260-01-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/rest/2260-01-01-00000/1x1_control_spinup.clm2.rh1.2260-01-01-00000.nc
+Archiving restarts for drv (cpl)
+copying file /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.cpl.r.2260-01-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/rest/2260-01-01-00000/1x1_control_spinup.cpl.r.2260-01-01-00000.nc
+Archiving restarts for dart (esp)
+Archiving history files for datm (atm)
+Archiving history files for clm (lnd)
+moving /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.h0.1980-02-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/lnd/hist/1x1_control_spinup.clm2.h0.1980-02-01-00000.nc 
+moving /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.h0.2080-02-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/lnd/hist/1x1_control_spinup.clm2.h0.2080-02-01-00000.nc 
+copying /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.h0.2180-02-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/lnd/hist/1x1_control_spinup.clm2.h0.2180-02-01-00000.nc 
+moving /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.h1.1980-02-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/lnd/hist/1x1_control_spinup.clm2.h1.1980-02-01-00000.nc 
+moving /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.h1.2080-02-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/lnd/hist/1x1_control_spinup.clm2.h1.2080-02-01-00000.nc 
+copying /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/1x1_control_spinup/run/1x1_control_spinup.clm2.h1.2180-02-01-00000.nc to /xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site1/control/archive/1x1_control_spinup/lnd/hist/1x1_control_spinup.clm2.h1.2180-02-01-00000.nc 
+Archiving history files for drv (cpl)
+Archiving history files for dart (esp)
+st_archive completed
+Detailed performance metrics for this job will be available at https://metrics.hpc.arizona.edu/#job_viewer?action=show&realm=SUPREMM&resource_id=73&local_job_id=9843751 by 8am on 2024/05/19.

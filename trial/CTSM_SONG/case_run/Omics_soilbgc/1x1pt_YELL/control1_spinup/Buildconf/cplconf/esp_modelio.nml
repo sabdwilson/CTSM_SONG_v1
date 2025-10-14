@@ -1,0 +1,13 @@
+&modelio
+  diri = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_YELL/control1/control1_spinup/bld/esp"
+  diro = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_YELL/control1/control1_spinup/run"
+  logfile = "esp.log.10250773.240814-204924"
+/
+&pio_inparm
+  pio_netcdf_format = ""
+  pio_numiotasks = -99
+  pio_rearranger = -99
+  pio_root = -99
+  pio_stride = -99
+  pio_typename = "nothing"
+/

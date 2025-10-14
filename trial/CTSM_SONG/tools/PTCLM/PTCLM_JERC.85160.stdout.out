@@ -1,0 +1,5 @@
+/opt/ohpc/pub/apps/ncl_ncarg/6.6.2/bin/ncl
+fatal: No names found, cannot describe anything.
+rm: cannot remove ‘PET*.Log’: No such file or directory
+Sep 20 16:37:58.677936 61017 slurmstepd   0x2b7bf07b8700: error: *** JOB 10486463 ON r1u28n1 CANCELLED AT 2024-09-20T16:37:58 ***
+Detailed performance metrics for this job will be available at https://metrics.hpc.arizona.edu/#job_viewer?action=show&realm=SUPREMM&resource_id=73&local_job_id=10486463 by 8am on 2024/09/21.

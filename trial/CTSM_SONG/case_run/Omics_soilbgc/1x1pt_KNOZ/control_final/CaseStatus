@@ -1,0 +1,239 @@
+2024-06-26 14:55:57: xmlchange success <command> ./xmlchange --force CLM_USRDAT_NAME=1x1pt_KNOZ  </command>
+ ---------------------------------------------------
+2024-06-26 14:55:58: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_START=2017  </command>
+ ---------------------------------------------------
+2024-06-26 14:55:58: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_END=2023  </command>
+ ---------------------------------------------------
+2024-06-26 14:55:58: xmlchange success <command> ./xmlchange --force MPILIB=mpi-serial  </command>
+ ---------------------------------------------------
+2024-06-26 14:55:59: xmlchange success <command> ./xmlchange --force ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KNOZ/1x1pt_KNOZ  </command>
+ ---------------------------------------------------
+2024-06-26 14:55:59: xmlchange success <command> ./xmlchange --force LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KNOZ/1x1pt_KNOZ  </command>
+ ---------------------------------------------------
+2024-06-26 14:55:59: xmlchange success <command> ./xmlchange --force ATM_DOMAIN_FILE=domain.lnd.1x1pt_KNOZ_navy.240605.nc  </command>
+ ---------------------------------------------------
+2024-06-26 14:56:00: xmlchange success <command> ./xmlchange --force LND_DOMAIN_FILE=domain.lnd.1x1pt_KNOZ_navy.240605.nc  </command>
+ ---------------------------------------------------
+2024-06-26 14:56:00: xmlchange success <command> ./xmlchange --force --append CLM_BLDNML_OPTS=-mask navy -crop  </command>
+ ---------------------------------------------------
+2024-06-26 14:56:00: xmlchange success <command> ./xmlchange --force CALENDAR=GREGORIAN  </command>
+ ---------------------------------------------------
+2024-06-26 14:56:00: xmlchange success <command> ./xmlchange --force DOUT_S=FALSE  </command>
+ ---------------------------------------------------
+2024-06-26 14:56:00: xmlchange success <command> ./xmlchange --force ATM_NCPL=48  </command>
+ ---------------------------------------------------
+2024-06-26 14:56:00: xmlchange success <command> ./xmlchange --force RUN_STARTDATE=2017-01-01  </command>
+ ---------------------------------------------------
+2024-06-26 14:56:01: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_ALIGN=2017  </command>
+ ---------------------------------------------------
+2024-06-26 14:56:01: xmlchange success <command> ./xmlchange --force DIN_LOC_ROOT=/xdisk/chopinsong/chopinsong/CTSM_inputdata  </command>
+ ---------------------------------------------------
+2024-06-26 14:56:01: xmlchange success <command> ./xmlchange --force DIN_LOC_ROOT_CLMFORC=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KNOZ  </command>
+ ---------------------------------------------------
+2024-06-26 15:09:58: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:13: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:13: case.setup starting 
+ ---------------------------------------------------
+2024-07-04 07:18:14: case.setup success 
+ ---------------------------------------------------
+2024-07-04 07:18:14: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=04:00:00  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:14: xmlchange success <command> ./xmlchange walltime=04:00:00  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:15: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:15: xmlchange success <command> ./xmlchange RUN_STARTDATE=2018-01-01  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:15: xmlchange success <command> ./xmlchange STOP_N=-999  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:15: xmlchange success <command> ./xmlchange STOP_OPTION=date  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:15: xmlchange success <command> ./xmlchange STOP_DATE=20230630  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:16: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=off  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:16: xmlchange success <command> ./xmlchange ATM_NCPL=48  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:16: xmlchange success <command> ./xmlchange HIST_OPTION=nmonths  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:16: xmlchange success <command> ./xmlchange HIST_N=6  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:16: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nmonths  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:17: xmlchange success <command> ./xmlchange AVGHIST_N=6  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:17: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:17: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:17: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -no-crop  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:17: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=2008  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:17: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2023  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:18: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=2018  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:18: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/Omics_bgc/KNOZ  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:18: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KNOZ/1x1pt_KNOZ  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:18: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_KNOZ_navy.240605.nc  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:18: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KNOZ/1x1pt_KNOZ  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:19: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_KNOZ_navy.240605.nc  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:19: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_KNOZ  </command>
+ ---------------------------------------------------
+2024-07-04 07:18:19: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, cdeps, cmeps, doc-builder, 
+?M  ./cime
+        modified sandbox,  --> 
+?M  ./cime/src/drivers/nuopc/
+        modified sandbox,  --> 
+e-  ./components/cdeps
+        -, not checked out --> 
+e-  ./components/cism
+        -, not checked out --> cism2_1_69
+e-  ./components/mizuRoute
+        -, not checked out --> 
+e-  ./components/mosart
+        -, not checked out --> mosart1_0_38
+e-  ./components/rtm
+        -, not checked out --> rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+?M  ./src/fates
+        modified sandbox,  --> 
+?M  ./tools/PTCLM
+        modified sandbox,  -->
+2024-07-04 07:23:35: case.build success 
+ ---------------------------------------------------
+2024-07-04 07:23:36: case.submit starting 
+ ---------------------------------------------------
+2024-07-04 07:23:40: case.submit error 
+ERROR: Could not find all inputdata on any server
+ ---------------------------------------------------
+2024-07-04 07:43:27: build.clean starting 
+ ---------------------------------------------------
+2024-07-04 07:43:32: build.clean success 
+ ---------------------------------------------------
+2024-07-04 07:43:43: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:43: case.setup starting 
+ ---------------------------------------------------
+2024-07-04 07:43:43: case.setup success 
+ ---------------------------------------------------
+2024-07-04 07:43:43: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=04:00:00  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:44: xmlchange success <command> ./xmlchange walltime=04:00:00  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:44: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:44: xmlchange success <command> ./xmlchange RUN_STARTDATE=2018-01-01  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:44: xmlchange success <command> ./xmlchange STOP_N=-999  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:44: xmlchange success <command> ./xmlchange STOP_OPTION=date  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:45: xmlchange success <command> ./xmlchange STOP_DATE=20230630  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:45: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=off  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:45: xmlchange success <command> ./xmlchange ATM_NCPL=48  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:45: xmlchange success <command> ./xmlchange HIST_OPTION=nmonths  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:45: xmlchange success <command> ./xmlchange HIST_N=6  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:45: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nmonths  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:46: xmlchange success <command> ./xmlchange AVGHIST_N=6  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:46: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:46: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:46: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -no-crop  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:46: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=2018  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:46: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2023  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:46: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=2018  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:47: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/Omics_bgc/KNOZ  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:47: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KNOZ/1x1pt_KNOZ  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:47: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_KNOZ_navy.240605.nc  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:47: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KNOZ/1x1pt_KNOZ  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:47: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_KNOZ_navy.240605.nc  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:47: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_KNOZ  </command>
+ ---------------------------------------------------
+2024-07-04 07:43:48: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, cdeps, cmeps, doc-builder, 
+?M  ./cime
+        modified sandbox,  --> 
+?M  ./cime/src/drivers/nuopc/
+        modified sandbox,  --> 
+e-  ./components/cdeps
+        -, not checked out --> 
+e-  ./components/cism
+        -, not checked out --> cism2_1_69
+e-  ./components/mizuRoute
+        -, not checked out --> 
+e-  ./components/mosart
+        -, not checked out --> mosart1_0_38
+e-  ./components/rtm
+        -, not checked out --> rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+?M  ./src/fates
+        modified sandbox,  --> 
+?M  ./tools/PTCLM
+        modified sandbox,  -->
+2024-07-04 07:49:03: case.build success 
+ ---------------------------------------------------
+2024-07-04 07:49:03: case.submit starting 
+ ---------------------------------------------------
+2024-07-04 07:49:05: case.submit success case.run:10083653
+ ---------------------------------------------------
+2024-07-04 07:52:02: case.run starting 
+ ---------------------------------------------------
+2024-07-04 07:52:03: model execution starting 
+ ---------------------------------------------------
+2024-07-04 07:54:28: model execution success 
+ ---------------------------------------------------
+2024-07-04 07:54:28: case.run success 
+ ---------------------------------------------------
+2024-07-04 10:23:31: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-04 14:50:06: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-04 15:13:12: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-09 11:20:34: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-09 11:58:12: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-09 12:40:05: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-09 12:59:18: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-09 16:50:33: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------
+2024-07-09 21:09:02: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_KNOZ/control  </command>
+ ---------------------------------------------------

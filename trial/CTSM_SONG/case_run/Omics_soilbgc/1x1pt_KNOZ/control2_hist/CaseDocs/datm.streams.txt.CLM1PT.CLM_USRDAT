@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<file id="stream" version="1.0">
+<dataSource>
+   GENERIC
+</dataSource>
+<domainInfo>
+  <variableNames>
+     time    time
+        xc      lon
+        yc      lat
+        area    area
+        mask    mask
+  </variableNames>
+  <filePath>
+     /xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/KNOZ/1x1pt_KNOZ
+  </filePath>
+  <fileNames>
+     domain.lnd.1x1pt_KNOZ_navy.240904.nc
+  </fileNames>
+</domainInfo>
+<fieldInfo>
+   <variableNames>
+     ZBOT     z
+        TBOT     tbot
+        RH       rh
+        WIND     wind
+        PRECTmms precn
+        FSDS     swdn
+        PSRF     pbot
+        FLDS     lwdn
+   </variableNames>
+   <filePath>
+     /home/u8/sdwilson/data/Omics_bgc/KNOZ/1x1pt_KNOZ/CLM1PT_data
+   </filePath>
+   <fileNames>
+    2021-01.nc
+2021-02.nc
+2021-03.nc
+2021-04.nc
+2021-05.nc
+2021-06.nc
+2021-07.nc
+2021-08.nc
+2021-09.nc
+2021-10.nc
+2021-11.nc
+2021-12.nc
+   </fileNames>
+   <offset>
+      0
+   </offset>
+</fieldInfo>
+</file>

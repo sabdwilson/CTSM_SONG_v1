@@ -1,0 +1,1 @@
+./PTCLMmkdata --site=US-UMB -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --mydatadir=pwd/mydatafiles --debug 

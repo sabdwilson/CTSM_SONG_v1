@@ -1,0 +1,7 @@
+# shell commands to execute xmlchange --force commands written by PTCLMmkdata:
+# /var/spool/slurm/d/job10487161/slurm_script --ctsm_root /home/u8/sdwilson/CTSM_SONG -s DCFS -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --map_gdate 240920 --crop --mydatadir=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/DCFS 
+./xmlchange --force CLM_USRDAT_NAME=1x1pt_DCFS
+./xmlchange --force DATM_CLMNCEP_YR_START=2017
+./xmlchange --force DATM_CLMNCEP_YR_END=2023
+# Comment this out if NINST_LND is greater than 1 (see: http://bugs.cgd.ucar.edu/show_bug.cgi?id=2521)
+./xmlchange --force MPILIB=mpi-serial

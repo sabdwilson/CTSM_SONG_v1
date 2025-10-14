@@ -1,0 +1,89 @@
+&comp_inparm 
+
+ fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/STER/1x1pt_STER/surfdata_1x1pt_STER_hist_78pfts_CMIP6_simyr2000_c240920.nc'
+
+ hist_nhtfrq = 0
+
+ hist_mfilt  = 1200
+
+fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/STER/1x1pt_STER/surfdata_1x1pt_STER_hist_78pfts_CMIP6_simyr2000_c240920.nc'
+
+hist_nhtfrq = 0
+
+hist_mfilt  = 1200
+
+use_fertilizer = .false.
+
+use_init_interp = .true.
+
+use_crop = .false.
+
+use_century_decomp = .false.
+
+use_vertsoilc = .false.
+
+use_hydrstress = .true.
+
+use_cn         = .true.
+
+use_luna       = .false.
+
+use_lch4       = .false.
+
+do_harvest = .false.
+
+do_transient_crops = .false.
+
+do_transient_pfts = .false.
+
+hist_fincl1 = 'GPP:A','TWS:A','TOTECOSYSC:A','TOTVEGC:A','TLAI:A','TOTSOMC:A'
+
+hist_dov2xy = .true.
+
+hist_type1d_pertape = ' '
+
+constrain_stress_deciduous_onset=.false.
+
+soil_layerstruct_predefined = '10SL_3.5m'
+
+fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/STER/1x1pt_STER/surfdata_1x1pt_STER_hist_78pfts_CMIP6_simyr2000_c240920.nc'
+
+hist_nhtfrq = 0
+
+hist_mfilt  = 1200
+
+use_fertilizer = .false.
+
+use_init_interp = .true.
+
+use_crop = .false.
+
+use_century_decomp = .false.
+
+use_vertsoilc = .false.
+
+use_hydrstress = .true.
+
+use_cn         = .true.
+
+use_luna       = .false.
+
+use_lch4       = .false.
+
+do_harvest = .false.
+
+do_transient_crops = .false.
+
+do_transient_pfts = .false.
+
+hist_fincl1 = 'GPP:A','TWS:A','TOTECOSYSC:A','TOTVEGC:A','TLAI:A','TOTSOMC:A'
+
+hist_dov2xy = .true.
+
+hist_type1d_pertape = ' '
+
+constrain_stress_deciduous_onset=.false.
+
+soil_layerstruct_predefined = '10SL_3.5m'
+
+/ 

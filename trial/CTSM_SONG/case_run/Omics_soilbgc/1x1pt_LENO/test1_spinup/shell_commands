@@ -1,0 +1,19 @@
+# shell commands to execute xmlchange --force commands written by PTCLMmkdata:
+# /var/spool/slurm/d/job10487191/slurm_script --ctsm_root /home/u8/sdwilson/CTSM_SONG -s LENO -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --map_gdate 240920 --crop --mydatadir=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/LENO 
+./xmlchange --force CLM_USRDAT_NAME=1x1pt_LENO
+./xmlchange --force DATM_CLMNCEP_YR_START=2017
+./xmlchange --force DATM_CLMNCEP_YR_END=2023
+# Comment this out if NINST_LND is greater than 1 (see: http://bugs.cgd.ucar.edu/show_bug.cgi?id=2521)
+./xmlchange --force MPILIB=mpi-serial
+./xmlchange --force ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/LENO/1x1pt_LENO
+./xmlchange --force LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/LENO/1x1pt_LENO
+./xmlchange --force ATM_DOMAIN_FILE=domain.lnd.1x1pt_LENO_navy.240920.nc
+./xmlchange --force LND_DOMAIN_FILE=domain.lnd.1x1pt_LENO_navy.240920.nc
+./xmlchange --force --append CLM_BLDNML_OPTS='-mask navy -crop'
+./xmlchange --force CALENDAR=GREGORIAN
+./xmlchange --force DOUT_S=FALSE
+./xmlchange --force ATM_NCPL=48
+./xmlchange --force RUN_STARTDATE=2017-01-01
+./xmlchange --force DATM_CLMNCEP_YR_ALIGN=2017
+./xmlchange --force DIN_LOC_ROOT=/xdisk/chopinsong/chopinsong/CTSM_inputdata
+./xmlchange --force DIN_LOC_ROOT_CLMFORC=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/LENO

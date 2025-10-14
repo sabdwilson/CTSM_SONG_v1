@@ -1,0 +1,78 @@
+Creating batch scripts
+Writing case.run script from input template /home/u8/sdwilson/CTSM_SONG/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /home/u8/sdwilson/CTSM_SONG/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Creating component namelists
+  2024-08-22 15:12:53 atm 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/data_comps_mct/datm/cime_config/buildnml
+  2024-08-22 15:12:53 lnd 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime_config/buildnml
+  2024-08-22 15:12:53 ice 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/sice/cime_config/buildnml
+  2024-08-22 15:12:53 ocn 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/socn/cime_config/buildnml
+  2024-08-22 15:12:53 rof 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/srof/cime_config/buildnml
+  2024-08-22 15:12:53 glc 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/sglc/cime_config/buildnml
+  2024-08-22 15:12:53 wav 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/swav/cime_config/buildnml
+  2024-08-22 15:12:53 iac 
+   Running /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/siac/cime_config/buildnml 
+  2024-08-22 15:12:53 esp 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/components/stub_comps_mct/sesp/cime_config/buildnml
+  2024-08-22 15:12:53 cpl 
+   Calling /home/u8/sdwilson/CTSM_SONG/cime/src/drivers/mct/cime_config/buildnml
+Checking that inputdata is available as part of case submission
+Setting Environment PNetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_BASE=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0
+Setting Environment PNETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/lib
+Setting Environment PNETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/pnetcdf/1.12.0/include
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment NETCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_C_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NetCDF_FORTRAN_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2
+Setting Environment NETCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NetCDF_PATH=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf/4.7.1
+Setting Environment NETCDF_Fortran_LIBRARY=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/lib
+Setting Environment NETCDF_Fortran_INCLUDE_DIR=/opt/ohpc/pub/libs/gnu8/openmpi3/netcdf-fortran/4.5.2/include
+Setting Environment HDF5_HOME=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment HDF5=/opt/ohpc/pub/libs/gnu8/openmpi3/hdf5/1.10.5
+Setting Environment ESMFBIN_PATH=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/bin/binO/
+Setting Environment ESMFMKFLIE=/home/u22/chopinsong/software/esmf-8.3.0/INSTALL/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Loading input file list: 'Buildconf/ctsm.input_data_list'
+Loading input file list: 'Buildconf/cpl.input_data_list'
+Loading input file list: 'Buildconf/datm.input_data_list'
+Check case OK
+Submitting job script /usr/local/bin/sbatch --account=chopinsong --partition standard --time=00:30:00 -o %x.out --nodes=1 --ntasks=1 --mem-per-cpu=1gb .case.run
+Submitted job id is 10277861
+Submitted job case.run with id 10277861

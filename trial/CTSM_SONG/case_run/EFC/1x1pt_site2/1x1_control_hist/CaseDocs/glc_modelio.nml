@@ -1,0 +1,13 @@
+&modelio
+  diri = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site2/control/1x1_control_hist/bld/glc"
+  diro = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site2/control/1x1_control_hist/run"
+  logfile = "glc.log.10276743.240822-122026"
+/
+&pio_inparm
+  pio_netcdf_format = "64bit_offset"
+  pio_numiotasks = -99
+  pio_rearranger = 1
+  pio_root = 1
+  pio_stride = 28
+  pio_typename = "netcdf"
+/

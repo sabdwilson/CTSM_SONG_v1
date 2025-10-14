@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+ 
+<?xml-stylesheet type="text/xsl" href="namelist_defaults.xsl"?>
+ 
+<namelist_defaults>
+
+<strm_datdir stream="CLM1PT.CLM_USRDAT">/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ/CLM1PT_data</strm_datdir>
+ 
+</namelist_defaults>

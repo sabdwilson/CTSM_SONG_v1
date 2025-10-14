@@ -1,0 +1,6 @@
+! user_nl_clm namelist options written by PTCLMmkdata:
+! /var/spool/slurm/d/job8557614/slurm_script --ctsm_root /home/u8/sdwilson/CTSM_SONG -s SQ -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --map_gdate 231113 --crop --soilgrid --mydatadir=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ --clmnmlusecase=1850-2000_transient 
+ fsurdat = '/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ/surfdata_1x1pt_SQ_hist_78pfts_CMIP6_simyr1850_c231113.nc'
+ flanduse_timeseries = '/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ/landuse.timeseries_1x1pt_SQ_hist_78pfts_CMIP6_simyr1850-2015_c231113.nc'
+ hist_nhtfrq = 0
+ hist_mfilt  = 1200

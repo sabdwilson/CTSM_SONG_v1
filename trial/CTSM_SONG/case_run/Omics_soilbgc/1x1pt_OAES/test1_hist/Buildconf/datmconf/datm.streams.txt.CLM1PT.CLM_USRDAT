@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<file id="stream" version="1.0">
+<dataSource>
+   GENERIC
+</dataSource>
+<domainInfo>
+  <variableNames>
+     time    time
+        xc      lon
+        yc      lat
+        area    area
+        mask    mask
+  </variableNames>
+  <filePath>
+     /xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/OAES/1x1pt_OAES
+  </filePath>
+  <fileNames>
+     domain.lnd.1x1pt_OAES_navy.240920.nc
+  </fileNames>
+</domainInfo>
+<fieldInfo>
+   <variableNames>
+     ZBOT     z
+        TBOT     tbot
+        RH       rh
+        WIND     wind
+        PRECTmms precn
+        FSDS     swdn
+        PSRF     pbot
+        FLDS     lwdn
+   </variableNames>
+   <filePath>
+     /home/u8/sdwilson/data/Omics_bgc/OAES/1x1pt_OAES/CLM1PT_data
+   </filePath>
+   <fileNames>
+    2022-01.nc
+2022-02.nc
+2022-03.nc
+2022-04.nc
+2022-05.nc
+2022-06.nc
+2022-07.nc
+2022-08.nc
+2022-09.nc
+2022-10.nc
+2022-11.nc
+2022-12.nc
+   </fileNames>
+   <offset>
+      0
+   </offset>
+</fieldInfo>
+</file>

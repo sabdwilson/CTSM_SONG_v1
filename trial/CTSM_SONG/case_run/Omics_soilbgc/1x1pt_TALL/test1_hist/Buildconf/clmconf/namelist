@@ -1,0 +1,57 @@
+&comp_inparm 
+
+ fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/TALL/1x1pt_TALL/surfdata_1x1pt_TALL_hist_78pfts_CMIP6_simyr2000_c240920.nc'
+
+ hist_nhtfrq = 0
+
+ hist_mfilt  = 1200
+
+hist_empty_htapes = .true.
+
+hist_fincl1 = 'GPP:A','TOTSOMC:A','TOTSOMN:A','TSOI:A','H2OSOI:A',
+
+              'SR:A'
+
+hist_fincl2 = 'TSOI:A','H2OSOI:A','RAIN:A','SNOW:A',
+
+              'QTOPSOIL:A'
+
+hist_dov2xy = .true.,.true.
+
+hist_type1d_pertape = ' ', ' '
+
+hist_nhtfrq = -1,-1
+
+hist_mfilt  = 365, 365
+
+use_init_interp = .true.
+
+use_fertilizer  = .false.
+
+use_century_decomp = .false.
+
+use_crop        = .false.
+
+use_hydrstress  = .true.
+
+use_cn          = .true.
+
+use_luna        = .false.
+
+do_harvest         = .false.
+
+do_transient_crops = .false.
+
+do_transient_pfts  = .false.
+
+use_vertsoilc = .false.
+
+constrain_stress_deciduous_onset=.false.
+
+soil_layerstruct_predefined = '10SL_3.5m'
+
+finidat='/home/u8/sdwilson/CTSM_SONG/case_run/Omics_soilbgc/1x1pt_TALL/test1_hist/test1_final.clm2.r.2318-01-01-00000.nc'
+
+fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/TALL/1x1pt_TALL/surfdata_1x1pt_TALL_hist_78pfts_CMIP6_simyr2000_c240920.nc'
+
+/ 

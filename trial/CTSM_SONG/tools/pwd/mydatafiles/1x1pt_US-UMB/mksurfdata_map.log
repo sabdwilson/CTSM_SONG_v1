@@ -1,0 +1,65 @@
+CSMDATA is /xdisk/chopinsong/chopinsong/CTSM_inputdata 
+resolution: 1x1pt_US-UMB ssp_rcp=hist sim_year = 2000
+namelist: surfdata_1x1pt_US-UMB_hist_16pfts_Irrig_CMIP6_simyr2000_c210220.namelist
+&clmexp
+ nglcec           = 10
+ mksrf_fgrid      = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.25x0.25_MODIS_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fpft         = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.25x0.25_MODIS_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fglacier     = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_3x3min_GLOBE-Gardner_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fglacierregion = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_10x10min_nomask_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fsoicol      = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.25x0.25_MODIS_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_furban       = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_3x3min_LandScan2004_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fmax         = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_3x3min_USGS_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_forganic     = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_5x5min_ISRIC-WISE_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_flai         = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.25x0.25_MODIS_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fharvest     = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.25x0.25_MODIS_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_flakwat      = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_3x3min_MODIS-wCsp_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fwetlnd      = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.5x0.5_AVHRR_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fvocef       = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.5x0.5_AVHRR_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fsoitex      = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_5x5min_IGBP-GSDP_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_furbtopo     = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_10x10min_nomask_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fgdp         = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.5x0.5_AVHRR_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fpeat        = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.5x0.5_AVHRR_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fsoildepth   = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_5x5min_ORNL-Soil_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ map_fabm         = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_0.5x0.5_AVHRR_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ mksrf_fsoitex    = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_soitex.10level.c010119.nc'
+ mksrf_forganic   = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_organic_10level_5x5min_ISRIC-WISE-NCSCD_nlev7_c120830.nc'
+ mksrf_flakwat    = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_LakePnDepth_3x3min_simyr2004_csplk_c151015.nc'
+ mksrf_fwetlnd    = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_lanwat.050425.nc'
+ mksrf_fmax       = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_fmax_3x3min_USGS_c120911.nc'
+ mksrf_fglacier   = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_glacier_3x3min_simyr2000.c120926.nc'
+ mksrf_fglacierregion = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_GlacierRegion_10x10min_nomask_c170616.nc'
+ mksrf_fvocef     = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_vocef_0.5x0.5_simyr2000.c110531.nc'
+ mksrf_furbtopo   = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_topo.10min.c080912.nc'
+ mksrf_fgdp       = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_gdp_0.5x0.5_AVHRR_simyr2000.c130228.nc'
+ mksrf_fpeat      = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_peatf_0.5x0.5_AVHRR_simyr2000.c130228.nc'
+ mksrf_fsoildepth = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksf_soilthk_5x5min_ORNL-Soil_simyr1900-2015_c170630.nc'
+ mksrf_fabm       = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_abm_0.5x0.5_AVHRR_simyr2000.c130201.nc'
+ outnc_double   = .true.
+ all_urban      = .false.
+ no_inlandwet   = .true.
+ mksrf_furban   = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_urban_0.05x0.05_simyr2000.c170724.nc'
+ gitdescribe    = 'ctsm5.1.dev020
+/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB'
+ map_ftopostats   = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/map_1km-merge-10min_HYDRO1K-merge-nomask_to_1x1pt_US-UMB_nomask_aave_da_c210220.nc'
+ mksrf_ftopostats = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/mksrf_topostats_1km-merge-10min_HYDRO1K-merge-nomask_simyr2000.c130402.nc'
+ soil_clay     = 0.6
+ soil_sand     = 92.6
+ all_veg      = .true.
+ pft_frc      = 100.0
+ pft_idx      = 7
+ mksrf_fvegtyp  = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/pftcftdynharv.0.25x0.25.LUH2.histsimyr1850-2015.c170629/mksrf_landuse_histclm50_LUH2_2000.c170629.nc'
+ mksrf_fhrvtyp  = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/pftcftdynharv.0.25x0.25.LUH2.histsimyr1850-2015.c170629/mksrf_landuse_histclm50_LUH2_2000.c170629.nc'
+ mksrf_fsoicol  = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/pftcftlandusedynharv.0.25x0.25.MODIS.simyr1850-2015.c170412/mksrf_soilcolor_CMIP6_simyr2005.c170623.nc'
+ mksrf_flai     = '/xdisk/chopinsong/chopinsong/CTSM_inputdata/lnd/clm2/rawdata/pftcftlandusedynharv.0.25x0.25.MODIS.simyr1850-2015.c170412/mksrf_lai_78pfts_simyr2005.c170413.nc'
+ fsurdat        = 'surfdata_1x1pt_US-UMB_hist_16pfts_Irrig_CMIP6_simyr2000_c210220.nc'
+ fsurlog        = 'surfdata_1x1pt_US-UMB_hist_16pfts_Irrig_CMIP6_simyr2000_c210220.log'
+ mksrf_fdynuse  = ''
+ fdyndat        = ''
+ numpft = 16
+/
+/home/u22/chopinsong/CTSM_SONG/tools/mksurfdata_map/mksurfdata_map < surfdata_1x1pt_US-UMB_hist_16pfts_Irrig_CMIP6_simyr2000_c210220.namelist
+
+===========================================
+
+Successfully created fsurdat files

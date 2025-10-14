@@ -1,0 +1,141 @@
+&comp_inparm 
+
+ fsurdat = '/groups/chopinsong/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2/surfdata_1x1pt_site2_hist_78pfts_CMIP6_simyr2000_c240516.nc'
+
+ hist_nhtfrq = 0
+
+ hist_mfilt  = 1200
+
+fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2/surfdata_1x1pt_site2_hist_78pfts_CMIP6_simyr2000_c240516.nc'
+
+hist_nhtfrq = 0,0
+
+hist_mfilt  = 1200,1200
+
+use_fertilizer = .false.
+
+use_vertsoilc = .false.
+
+use_century_decomp = .false.
+
+use_init_interp = .true.
+
+use_crop = .true.
+
+use_hydrstress = .true.
+
+use_cn         = .true.
+
+use_luna       = .false.
+
+do_harvest = .false.
+
+do_transient_crops = .false.
+
+do_transient_pfts = .false.
+
+hist_empty_htapes = .true.
+
+hist_fincl1 = 'GPP:A','TWS:A','TOTLITC:A','SMINN:A','TSOI:A'
+
+hist_fincl2 = 'TOTSOMC:A'
+
+hist_dov2xy =.true.,.false.
+
+hist_type1d_pertape =' ','COLS'
+
+
+
+constrain_stress_deciduous_onset=.false.
+
+soil_layerstruct_predefined = '10SL_3.5m'
+
+fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2/surfdata_1x1pt_site2_hist_78pfts_CMIP6_simyr2000_c240516.nc'
+
+hist_nhtfrq = 0,0
+
+hist_mfilt  = 1200,1200
+
+use_fertilizer = .false.
+
+use_vertsoilc = .false.
+
+use_century_decomp = .false.
+
+use_init_interp = .true.
+
+use_crop = .true.
+
+use_hydrstress = .true.
+
+use_cn         = .true.
+
+use_luna       = .false.
+
+do_harvest = .false.
+
+do_transient_crops = .false.
+
+do_transient_pfts = .false.
+
+hist_empty_htapes = .true.
+
+hist_fincl1 = 'GPP:A','TWS:A','TOTLITC:A','SMINN:A','TSOI:A'
+
+hist_fincl2 = 'TOTSOMC:A'
+
+hist_dov2xy =.true.,.false.
+
+hist_type1d_pertape =' ','COLS'
+
+
+
+constrain_stress_deciduous_onset=.false.
+
+soil_layerstruct_predefined = '10SL_3.5m'
+
+fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2/surfdata_1x1pt_site2_hist_78pfts_CMIP6_simyr2000_c240516.nc'
+
+hist_nhtfrq = 0,0
+
+hist_mfilt  = 1200,1200
+
+use_fertilizer = .false.
+
+use_vertsoilc = .false.
+
+use_century_decomp = .false.
+
+use_init_interp = .true.
+
+use_crop = .true.
+
+use_hydrstress = .true.
+
+use_cn         = .true.
+
+use_luna       = .false.
+
+do_harvest = .false.
+
+do_transient_crops = .false.
+
+do_transient_pfts = .false.
+
+hist_empty_htapes = .true.
+
+hist_fincl1 = 'GPP:A','TWS:A','TOTLITC:A','TSOI:A'
+
+hist_fincl2 = 'TOTSOMC:A'
+
+hist_dov2xy =.true.,.false.
+
+hist_type1d_pertape =' ','COLS'
+
+
+
+constrain_stress_deciduous_onset=.false.
+
+soil_layerstruct_predefined = '10SL_3.5m'
+
+/ 

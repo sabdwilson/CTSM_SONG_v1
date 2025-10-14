@@ -1,0 +1,387 @@
+2024-05-16 10:11:59: xmlchange success <command> ./xmlchange --force CLM_USRDAT_NAME=1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:11:59: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_START=2014  </command>
+ ---------------------------------------------------
+2024-05-16 10:11:59: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_END=2014  </command>
+ ---------------------------------------------------
+2024-05-16 10:11:59: xmlchange success <command> ./xmlchange --force MPILIB=mpi-serial  </command>
+ ---------------------------------------------------
+2024-05-16 10:11:59: xmlchange success <command> ./xmlchange --force ATM_DOMAIN_PATH=/groups/chopinsong/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:00: xmlchange success <command> ./xmlchange --force LND_DOMAIN_PATH=/groups/chopinsong/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:00: xmlchange success <command> ./xmlchange --force ATM_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:00: xmlchange success <command> ./xmlchange --force LND_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:00: xmlchange success <command> ./xmlchange --force --append CLM_BLDNML_OPTS=-mask navy -crop  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:00: xmlchange success <command> ./xmlchange --force CALENDAR=GREGORIAN  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:01: xmlchange success <command> ./xmlchange --force DOUT_S=FALSE  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:01: xmlchange success <command> ./xmlchange --force ATM_NCPL=48  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:01: xmlchange success <command> ./xmlchange --force RUN_STARTDATE=2014-01-01  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:01: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_ALIGN=2014  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:01: xmlchange success <command> ./xmlchange --force DIN_LOC_ROOT=/xdisk/chopinsong/chopinsong/CTSM_inputdata  </command>
+ ---------------------------------------------------
+2024-05-16 10:12:01: xmlchange success <command> ./xmlchange --force DIN_LOC_ROOT_CLMFORC=/groups/chopinsong/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:08: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site2/control  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:08: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:09: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:09: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:09: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:09: xmlchange success <command> ./xmlchange STOP_N=30  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:09: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:10: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:10: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=off  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:10: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:10: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:10: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:10: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:11: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:11: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:11: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:11: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:11: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:12: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2014  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:12: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:12: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/EFC/site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:12: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:12: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:13: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:13: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-16 10:19:13: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:02: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site2/control  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:02: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:02: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:02: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:02: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:03: xmlchange success <command> ./xmlchange STOP_N=30  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:03: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:03: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:03: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=off  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:03: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:03: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:04: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:04: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:04: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:04: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:04: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:05: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:05: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:05: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2014  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:05: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:05: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/EFC/site2/  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:05: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:06: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:06: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:06: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-16 10:35:06: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:43: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site2/control  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:43: case.setup starting 
+ ---------------------------------------------------
+2024-05-17 21:48:44: case.setup success 
+ ---------------------------------------------------
+2024-05-17 21:48:44: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:44: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:44: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:44: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:45: xmlchange success <command> ./xmlchange STOP_N=30  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:45: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:45: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:45: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=off  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:45: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:45: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:46: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:46: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:46: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:46: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:46: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:46: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:47: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:47: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2014  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:47: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:47: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/EFC/site2/  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:47: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:47: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:48: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:48: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:48: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-17 21:48:48: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, cdeps, cmeps, doc-builder, 
+?M  ./cime
+        modified sandbox,  --> 
+?M  ./cime/src/drivers/nuopc/
+        modified sandbox,  --> 
+e-  ./components/cdeps
+        -, not checked out --> 
+e-  ./components/cism
+        -, not checked out --> cism2_1_69
+e-  ./components/mizuRoute
+        -, not checked out --> 
+e-  ./components/mosart
+        -, not checked out --> mosart1_0_38
+e-  ./components/rtm
+        -, not checked out --> rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+?M  ./src/fates
+        modified sandbox,  --> 
+?M  ./tools/PTCLM
+        modified sandbox,  -->
+2024-05-17 21:54:04: case.build success 
+ ---------------------------------------------------
+2024-05-17 21:54:04: case.submit starting 
+ ---------------------------------------------------
+2024-05-17 21:54:06: case.submit success case.run:9832163
+ ---------------------------------------------------
+2024-05-17 21:54:33: case.run starting 
+ ---------------------------------------------------
+2024-05-17 21:54:35: model execution starting 
+ ---------------------------------------------------
+2024-05-17 22:02:43: model execution success 
+ ---------------------------------------------------
+2024-05-17 22:02:43: case.run success 
+ ---------------------------------------------------
+2024-05-20 12:43:10: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site2/control  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:11: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:11: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:11: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:11: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:11: xmlchange success <command> ./xmlchange STOP_N=30  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:11: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:12: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:12: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=off  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:12: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:12: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:12: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:12: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:13: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:13: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:13: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:13: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:13: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:13: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2014  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:14: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:14: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/EFC/site2/  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:14: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:14: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:14: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:14: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-05-20 12:43:15: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:00: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site2/control  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:00: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:00: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:00: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:01: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:01: xmlchange success <command> ./xmlchange STOP_N=30  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:01: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:01: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:01: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=off  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:02: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:02: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:02: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:02: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:02: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:03: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:03: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:03: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:03: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:03: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2014  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:03: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:04: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/EFC/site2/  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:04: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:04: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:04: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:04: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-07-31 10:22:04: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:09: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site2/control  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:10: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:10: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:10: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:10: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:10: xmlchange success <command> ./xmlchange STOP_N=30  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:11: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:11: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:11: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=off  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:11: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:11: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:11: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:12: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:12: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:12: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:12: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:12: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:13: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:13: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2014  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:13: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:13: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/EFC/site2/  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:13: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:13: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:14: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site2/1x1pt_site2  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:14: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_site2_navy.240516.nc  </command>
+ ---------------------------------------------------
+2024-08-22 12:11:14: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_site2  </command>
+ ---------------------------------------------------

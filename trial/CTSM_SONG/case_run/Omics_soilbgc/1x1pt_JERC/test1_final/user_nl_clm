@@ -1,0 +1,2 @@
+! user_nl_clm namelist options written by PTCLMmkdata:
+! /var/spool/slurm/d/job10486853/slurm_script --ctsm_root /home/u8/sdwilson/CTSM_SONG -s JERC -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --map_gdate 240920 --crop --mydatadir=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/JERC 

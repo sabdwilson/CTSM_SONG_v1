@@ -1,0 +1,478 @@
+
+Results in group build_component_clm
+	CLM_USE_PETSC: FALSE
+
+Results in group build_component_ctsm
+	LILAC_MODE: off
+
+Results in group build_def
+	CALENDAR: NO_LEAP
+	CIME_OUTPUT_ROOT: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1
+	COMP_INTERFACE: mct
+	DEBUG: TRUE
+	EXEROOT: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld
+	FORCE_BUILD_SMP: FALSE
+	GMAKE: make
+	GMAKE_J: 8
+	SMP_PRESENT: FALSE
+	USE_ALBANY: FALSE
+	USE_ESMF_LIB: FALSE
+	USE_MOAB: FALSE
+	USE_PETSC: FALSE
+	USE_TRILINOS: FALSE
+
+Results in group build_derived
+	INCROOT: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/lib/include
+	LIBROOT: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld/lib
+	OBJROOT: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld
+	PERL5LIB: 
+	SHAREDLIBROOT: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/bld
+
+Results in group build_grid
+	ATM_GRID: CLM_USRDAT
+	ATM_NX: 1
+	ATM_NY: 1
+	GLC_GRID: null
+	GLC_NX: 0
+	GLC_NY: 0
+	GRID: a%CLM_USRDAT_l%CLM_USRDAT_oi%null_r%null_g%null_w%null_z%null_m%null
+	IAC_GRID: null
+	IAC_NX: 0
+	IAC_NY: 0
+	ICE_GRID: null
+	ICE_NCAT: 1
+	ICE_NX: 0
+	ICE_NY: 0
+	LND_GRID: CLM_USRDAT
+	LND_NX: 1
+	LND_NY: 1
+	MASK_GRID: null
+	OCN_GRID: null
+	OCN_NX: 0
+	OCN_NY: 0
+	ROF_GRID: null
+	ROF_NX: 0
+	ROF_NY: 0
+	WAV_GRID: null
+	WAV_NX: 0
+	WAV_NY: 0
+
+Results in group build_macros
+	COMPILER: gnu
+	MPILIB: openmpi
+	OS: LINUX
+	PIO_CONFIG_OPTS: 
+	PIO_VERSION: 1
+
+Results in group build_status
+	BUILD_COMPLETE: TRUE
+	BUILD_STATUS: 0
+	NINST_BUILD: 0
+	NINST_VALUE: c1a1l1i1o1r1g1w1i1e1
+	SMP_BUILD: 0
+	SMP_VALUE: c0a0l0i0o0r0g0w0i0e0
+
+Results in group case.run
+	BATCH_COMMAND_FLAGS: 
+	CHARGE_ACCOUNT: none
+	JOB_QUEUE: standard
+	JOB_WALLCLOCK_TIME: 00:20:00
+	PROJECT: none
+	USER_REQUESTED_QUEUE: standard
+	USER_REQUESTED_WALLTIME: 00:20:00
+	prereq: True and not False
+	template: template.case.run
+
+Results in group case.st_archive
+	BATCH_COMMAND_FLAGS: 
+	CHARGE_ACCOUNT: none
+	JOB_QUEUE: standard
+	JOB_WALLCLOCK_TIME: 00:20:00
+	PROJECT: none
+	USER_REQUESTED_QUEUE: 
+	USER_REQUESTED_WALLTIME: 00:20:00
+	dependency: case.run or case.test
+	prereq: True
+	task_count: 1
+	tasks_per_node: 1
+	template: template.st_archive
+	walltime: 00:20:00
+
+Results in group case_comp
+	COMP_ATM: datm
+	COMP_CLASSES: CPL,ATM,LND,ICE,OCN,ROF,GLC,WAV,IAC,ESP
+	COMP_CPL: cpl
+	COMP_ESP: sesp
+	COMP_GLC: sglc
+	COMP_IAC: siac
+	COMP_ICE: sice
+	COMP_LND: clm
+	COMP_OCN: socn
+	COMP_ROF: srof
+	COMP_WAV: swav
+
+Results in group case_comps
+	COMP_ROOT_DIR_ATM: /home/u22/chopinsong/CTSM_SONG/cime/src/components/data_comps_mct/datm
+	COMP_ROOT_DIR_CPL: /home/u22/chopinsong/CTSM_SONG/cime/src/drivers/mct
+	COMP_ROOT_DIR_ESP: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/sesp
+	COMP_ROOT_DIR_GLC: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/sglc
+	COMP_ROOT_DIR_IAC: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/siac
+	COMP_ROOT_DIR_ICE: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/sice
+	COMP_ROOT_DIR_LND: /home/u22/chopinsong/CTSM_SONG
+	COMP_ROOT_DIR_OCN: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/socn
+	COMP_ROOT_DIR_ROF: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/srof
+	COMP_ROOT_DIR_WAV: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/swav
+
+Results in group case_def
+	CASE: 1x1_SRG_test1_spinup
+	CASEROOT: /home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test1_spinup
+	CIMEROOT: /home/u22/chopinsong/CTSM_SONG/cime
+	EXTRA_MACHDIR: 
+	FILES_CONFIG_SPEC: /home/u22/chopinsong/CTSM_SONG/cime/config_files.xml
+	MACH: UA-puma
+	MACHDIR: /home/u22/chopinsong/CTSM_SONG/cime/config/cesm/machines
+	NONLOCAL: FALSE
+	SRCROOT: /home/u22/chopinsong/CTSM_SONG
+	SUPPORTED_BY: chopinsong@ariozna.edu
+
+Results in group case_der
+	CASEBUILD: /home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test1_spinup/Buildconf
+	CASEFILE_HEADERS: /home/u22/chopinsong/CTSM_SONG/cime/config/config_headers.xml
+	CASETOOLS: /home/u22/chopinsong/CTSM_SONG/case_run/Bioclimate/1x1pt_RainManSR/1x1_SRG_test1_spinup/Tools
+	MODEL: cesm
+	MODEL_VERSION: ctsm5.1.dev020-1-g0af316e
+	SCRIPTSROOT: /home/u22/chopinsong/CTSM_SONG/cime/scripts
+	UTILROOT: /home/u22/chopinsong/CTSM_SONG/cime/scripts/Tools
+
+Results in group case_desc
+	REALUSER: chopinsong
+	USER: chopinsong
+
+Results in group case_last
+	ARCHIVE_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/config/cesm/config_archive.xml
+	BATCH_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/config/cesm/machines/config_batch.xml
+	COMPILERS_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/config/cesm/machines/config_compilers.xml
+	COMPSET: 2000_DATM%1PT_CLM50%SP_SICE_SOCN_SROF_SGLC_SWAV_SIAC_SESP
+	COMPSETS_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime_config/config_compsets.xml
+	CONFIG_ATM_FILE: /home/u22/chopinsong/CTSM_SONG/cime/src/components/data_comps_mct/datm/cime_config/config_component.xml
+	CONFIG_CPL_FILE: /home/u22/chopinsong/CTSM_SONG/cime/src/drivers/mct/cime_config/config_component.xml
+	CONFIG_CPL_FILE_MODEL_SPECIFIC: /home/u22/chopinsong/CTSM_SONG/cime/src/drivers/mct/cime_config/config_component_cesm.xml
+	CONFIG_ESP_FILE: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/sesp/cime_config/config_component.xml
+	CONFIG_GLC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/sglc/cime_config/config_component.xml
+	CONFIG_IAC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/siac/cime_config/config_component.xml
+	CONFIG_ICE_FILE: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/sice/cime_config/config_component.xml
+	CONFIG_LND_FILE: /home/u22/chopinsong/CTSM_SONG/cime_config/config_component.xml
+	CONFIG_OCN_FILE: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/socn/cime_config/config_component.xml
+	CONFIG_ROF_FILE: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/srof/cime_config/config_component.xml
+	CONFIG_WAV_FILE: /home/u22/chopinsong/CTSM_SONG/cime/src/components/stub_comps_mct/swav/cime_config/config_component.xml
+	GRIDS_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/config/cesm/config_grids.xml
+	INPUTDATA_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/config/cesm/config_inputdata.xml
+	MACHINES_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/config/cesm/machines/config_machines.xml
+	NAMELIST_DEFINITION_FILE: unset
+	PES_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime_config/config_pes.xml
+	PIO_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/config/cesm/machines/config_pio.xml
+	TESTS_MODS_DIR: /home/u22/chopinsong/CTSM_SONG/cime_config/testdefs/testmods_dirs
+	TESTS_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime_config/testdefs/testlist_clm.xml
+	USER_MODS_DIR: /home/u22/chopinsong/CTSM_SONG/cime_config/usermods_dirs
+	WORKFLOW_SPEC_FILE: /home/u22/chopinsong/CTSM_SONG/cime/config/cesm/machines/config_workflow.xml
+
+Results in group comparison_to_nuopc
+	COMPARE_TO_NUOPC: FALSE
+
+Results in group config_batch
+	BATCH_SYSTEM: slurm
+
+Results in group external_tools
+	DATA_ASSIMILATION: ['CPL:FALSE', 'ATM:FALSE', 'LND:FALSE', 'ICE:FALSE', 'OCN:FALSE', 'ROF:FALSE', 'GLC:FALSE', 'WAV:FALSE', 'IAC:FALSE']
+	DATA_ASSIMILATION_CYCLES: 1
+	DATA_ASSIMILATION_SCRIPT: 
+	EXTERNAL_WORKFLOW: FALSE
+	POSTRUN_SCRIPT: 
+	PRERUN_SCRIPT: 
+
+Results in group job_submission
+	PROJECT_REQUIRED: FALSE
+
+Results in group mach_pes
+	ALLOCATE_SPARE_NODES: FALSE
+	FORCE_SPARE_NODES: -999
+	MULTI_DRIVER: FALSE
+	NINST: ['ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'IAC:1', 'ESP:1']
+	NINST_LAYOUT: ['ATM:concurrent', 'LND:concurrent', 'ICE:concurrent', 'OCN:concurrent', 'ROF:concurrent', 'GLC:concurrent', 'WAV:concurrent', 'IAC:concurrent', 'ESP:concurrent']
+	NTASKS: ['CPL:1', 'ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'IAC:1', 'ESP:1']
+	NTASKS_PER_INST: ['ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'IAC:1', 'ESP:1']
+	NTHRDS: ['CPL:1', 'ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'IAC:1', 'ESP:1']
+	PSTRID: ['CPL:1', 'ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'IAC:1', 'ESP:1']
+	ROOTPE: ['CPL:0', 'ATM:0', 'LND:0', 'ICE:0', 'OCN:0', 'ROF:0', 'GLC:0', 'WAV:0', 'IAC:0', 'ESP:0']
+
+Results in group mach_pes_last
+	COSTPES_PER_NODE: 28
+	COST_PES: 28
+	MAX_MPITASKS_PER_NODE: 28
+	MAX_TASKS_PER_NODE: 28
+	TOTALPES: 1
+
+Results in group run_begin_stop_restart
+	BARRIER_DATE: -999
+	BARRIER_N: 1
+	BARRIER_OPTION: ndays
+	CONTINUE_RUN: FALSE
+	ESP_RUN_ON_PAUSE: FALSE
+	GET_REFCASE: FALSE
+	JOB_IDS: case.run:5095177, case.st_archive:5095178
+	PAUSE_ACTIVE: ['CPL:FALSE', 'ATM:FALSE', 'LND:FALSE', 'ICE:FALSE', 'OCN:FALSE', 'ROF:FALSE', 'GLC:FALSE', 'WAV:FALSE', 'IAC:FALSE']
+	PAUSE_N: 0
+	PAUSE_OPTION: never
+	REST_DATE: -999
+	REST_N: 1
+	REST_OPTION: nyears
+	RESUBMIT: 0
+	RESUBMIT_SETS_CONTINUE_RUN: TRUE
+	RUN_REFCASE: case.std
+	RUN_REFDATE: 0001-01-01
+	RUN_REFDIR: cesm2_init
+	RUN_REFTOD: 00000
+	RUN_STARTDATE: 2009-01-01
+	RUN_TYPE: startup
+	START_TOD: 0
+	STOP_DATE: -999
+	STOP_N: 1
+	STOP_OPTION: nyears
+
+Results in group run_budgets
+	BUDGETS: FALSE
+
+Results in group run_co2
+	CCSM_CO2_PPMV: 367.0
+
+Results in group run_component_cpl
+	CPL_ALBAV: FALSE
+	CPL_EPBAL: off
+	CPL_USER_MODS: 
+
+Results in group run_component_ctsm
+	CLM_ACCELERATED_SPINUP: on
+	CLM_BLDNML_OPTS: -bgc bgc -mask navy -no-crop
+	CLM_CO2_TYPE: constant
+	CLM_CONFIGURATION: clm
+	CLM_FORCE_COLDSTART: off
+	CLM_NAMELIST_OPTS: 
+	CLM_NML_USE_CASE: 2000_control
+	CLM_PHYSICS_VERSION: clm5_0
+	CLM_STRUCTURE: standard
+	CLM_USER_MODS: 
+	CLM_USRDAT_NAME: 1x1pt_RainManSR
+	LND_TUNING_MODE: clm5_0_CRUv7
+
+Results in group run_component_datm
+	DATM_CLMNCEP_YR_ALIGN: 2009
+	DATM_CLMNCEP_YR_END: 2013
+	DATM_CLMNCEP_YR_START: 2009
+	DATM_CO2_TSERIES: none
+	DATM_CPLHIST_CASE: UNSET
+	DATM_CPLHIST_DIR: UNSET
+	DATM_CPLHIST_DOMAIN_FILE: null
+	DATM_CPLHIST_YR_ALIGN: -999
+	DATM_CPLHIST_YR_END: -999
+	DATM_CPLHIST_YR_START: -999
+	DATM_MODE: CLM1PT
+	DATM_PRESAERO: clim_2000
+	DATM_TOPO: observed
+
+Results in group run_coupling
+	ATM_NCPL: 24
+	CCSM_BGC: none
+	CPL_I2O_PER_CAT: FALSE
+	CPL_SEQ_OPTION: CESM1_MOD
+	GLC_AVG_PERIOD: yearly
+	GLC_NCPL: 24
+	ICE_NCPL: 24
+	LND_NCPL: 24
+	NCPL_BASE_PERIOD: day
+	OCN_NCPL: 24
+	ROF_NCPL: 24
+	WAV_NCPL: 24
+
+Results in group run_data_archive
+	DOUT_S: TRUE
+	DOUT_S_SAVE_INTERIM_RESTART_FILES: FALSE
+	SYSLOG_N: 900
+
+Results in group run_desc
+	CASESTR: UNSET
+	RUNDIR: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/1x1_SRG_test1_spinup/run
+
+Results in group run_din
+	DIN_LOC_ROOT: /xdisk/chopinsong/chopinsong/CTSM_inputdata
+	DIN_LOC_ROOT_CLMFORC: /home/u32/tianyihu/data/Rainman/S1
+	MPIRUN_RETRY_COUNT: 0
+	MPIRUN_RETRY_REGEX: 
+	NODENAME_REGEX: r*u*n*|wentletrap
+	NODE_FAIL_REGEX: 
+	PROXY:  https://howto.get.out 
+	TEST: FALSE
+
+Results in group run_domain
+	ATM2LND_FMAPNAME: idmap
+	ATM2LND_FMAPTYPE: X
+	ATM2LND_SMAPNAME: idmap
+	ATM2LND_SMAPTYPE: X
+	ATM2OCN_FMAPNAME: idmap
+	ATM2OCN_FMAPTYPE: X
+	ATM2OCN_SMAPNAME: idmap
+	ATM2OCN_SMAPTYPE: X
+	ATM2OCN_VMAPNAME: idmap
+	ATM2OCN_VMAPTYPE: X
+	ATM2ROF_FMAPNAME: idmap_ignore
+	ATM2ROF_FMAPTYPE: X
+	ATM2ROF_SMAPNAME: idmap_ignore
+	ATM2ROF_SMAPTYPE: X
+	ATM2WAV_SMAPNAME: idmap
+	ATM2WAV_SMAPTYPE: Y
+	ATM_DOMAIN_FILE: domain.lnd.1x1pt_RainManSR_navy.211127.nc
+	ATM_DOMAIN_PATH: /groups/chopinsong/CTSM_projects/PTCLM/mydatafile/Rainman_srgpft/1x1pt_RainManSR
+	EPS_AAREA: 9e-07
+	EPS_AGRID: 1e-12
+	EPS_AMASK: 1e-13
+	EPS_FRAC: 1.0e-02
+	EPS_OAREA: 0.1
+	EPS_OGRID: 0.1
+	EPS_OMASK: 1e-06
+	GLC2ICE_FMAPNAME: idmap_ignore
+	GLC2ICE_FMAPTYPE: X
+	GLC2ICE_RMAPNAME: idmap_ignore
+	GLC2ICE_RMAPTYPE: Y
+	GLC2ICE_SMAPNAME: idmap_ignore
+	GLC2ICE_SMAPTYPE: X
+	GLC2LND_FMAPNAME: idmap
+	GLC2LND_FMAPTYPE: Y
+	GLC2LND_SMAPNAME: idmap
+	GLC2LND_SMAPTYPE: Y
+	GLC2OCN_FMAPNAME: idmap_ignore
+	GLC2OCN_FMAPTYPE: Y
+	GLC2OCN_ICE_RMAPNAME: idmap_ignore
+	GLC2OCN_ICE_RMAPTYPE: Y
+	GLC2OCN_LIQ_RMAPNAME: idmap_ignore
+	GLC2OCN_LIQ_RMAPTYPE: Y
+	GLC2OCN_SMAPNAME: idmap_ignore
+	GLC2OCN_SMAPTYPE: Y
+	GLC_DOMAIN_FILE: UNSET
+	GLC_DOMAIN_PATH: /xdisk/chopinsong/chopinsong/CTSM_inputdata/share/domains
+	IAC2ATM_FMAPNAME: idmap
+	IAC2ATM_FMAPTYPE: X
+	IAC2ATM_SMAPNAME: idmap
+	IAC2ATM_SMAPTYPE: X
+	IAC2LND_FMAPNAME: idmap
+	IAC2LND_FMAPTYPE: X
+	IAC2LND_SMAPNAME: idmap
+	IAC2LND_SMAPTYPE: X
+	IAC_DOMAIN_FILE: UNSET
+	IAC_DOMAIN_PATH: /xdisk/chopinsong/chopinsong/CTSM_inputdata/share/domains
+	ICE2WAV_SMAPNAME: idmap
+	ICE2WAV_SMAPTYPE: Y
+	ICE_DOMAIN_FILE: UNSET
+	ICE_DOMAIN_PATH: /xdisk/chopinsong/chopinsong/CTSM_inputdata/share/domains
+	IOP_MODE: FALSE
+	LND2ATM_FMAPNAME: idmap
+	LND2ATM_FMAPTYPE: Y
+	LND2ATM_SMAPNAME: idmap
+	LND2ATM_SMAPTYPE: Y
+	LND2GLC_FMAPNAME: idmap
+	LND2GLC_FMAPTYPE: X
+	LND2GLC_SMAPNAME: idmap
+	LND2GLC_SMAPTYPE: X
+	LND2ROF_FMAPNAME: idmap
+	LND2ROF_FMAPTYPE: X
+	LND_DOMAIN_FILE: domain.lnd.1x1pt_RainManSR_navy.211127.nc
+	LND_DOMAIN_PATH: /groups/chopinsong/CTSM_projects/PTCLM/mydatafile/Rainman_srgpft/1x1pt_RainManSR
+	OCN2ATM_FMAPNAME: idmap
+	OCN2ATM_FMAPTYPE: Y
+	OCN2ATM_SMAPNAME: idmap
+	OCN2ATM_SMAPTYPE: Y
+	OCN2GLC_FMAPNAME: idmap_ignore
+	OCN2GLC_FMAPTYPE: Y
+	OCN2GLC_SMAPNAME: idmap_ignore
+	OCN2GLC_SMAPTYPE: Y
+	OCN2WAV_SMAPNAME: idmap
+	OCN2WAV_SMAPTYPE: Y
+	OCN_DOMAIN_FILE: UNSET
+	OCN_DOMAIN_PATH: /xdisk/chopinsong/chopinsong/CTSM_inputdata/share/domains
+	PTS_LAT: -999.99
+	PTS_LON: -999.99
+	PTS_MODE: FALSE
+	ROF2LND_FMAPNAME: idmap
+	ROF2LND_FMAPTYPE: Y
+	ROF2OCN_FMAPNAME: idmap
+	ROF2OCN_FMAPTYPE: Y
+	ROF2OCN_ICE_RMAPNAME: idmap
+	ROF2OCN_ICE_RMAPTYPE: Y
+	ROF2OCN_LIQ_RMAPNAME: idmap
+	ROF2OCN_LIQ_RMAPTYPE: Y
+	ROF_DOMAIN_FILE: UNSET
+	ROF_DOMAIN_PATH: /xdisk/chopinsong/chopinsong/CTSM_inputdata/share/domains
+	VECT_MAP: cart3d
+	WAV2OCN_SMAPNAME: idmap
+	WAV2OCN_SMAPTYPE: X
+	WAV_DOMAIN_FILE: UNSET
+	WAV_DOMAIN_PATH: /xdisk/chopinsong/chopinsong/CTSM_inputdata/share/domains
+
+Results in group run_dout
+	DOUT_S_ROOT: /groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test1/archive/1x1_SRG_test1_spinup
+
+Results in group run_drv_history
+	AVGHIST_DATE: -999
+	AVGHIST_N: 1000
+	AVGHIST_OPTION: nyears
+	HIST_DATE: -999
+	HIST_N: 1000
+	HIST_OPTION: nyears
+
+Results in group run_flags
+	BFBFLAG: FALSE
+	CHECK_TIMING: TRUE
+	COMP_RUN_BARRIERS: FALSE
+	CPL_DECOMP: 0
+	DRV_THREADING: FALSE
+	ESMF_LOGFILE_KIND: ESMF_LOGKIND_NONE
+	FLDS_WISO: FALSE
+	INFO_DBUG: 1
+	INFO_TASKMAP_COMP: 0
+	INFO_TASKMAP_MODEL: 0
+	PROFILE_PAPI_ENABLE: FALSE
+	SAVE_TIMING: FALSE
+	TIMER_DETAIL: 2
+	TIMER_LEVEL: 4
+	TPROF_TOTAL: 0
+
+Results in group run_glc
+	GLC_NEC: 10
+	GLC_TWO_WAY_COUPLING: FALSE
+
+Results in group run_metadata
+	MODEL_DOI_URL: https://doi.org/10.5065/D67H1H0V
+
+Results in group run_mpi
+	MPI_RUN_COMMAND: UNSET
+
+Results in group run_physics
+	TFREEZE_SALTWATER_OPTION: mushy
+
+Results in group run_pio
+	PIO_ASYNC_INTERFACE: FALSE
+	PIO_BLOCKSIZE: -1
+	PIO_BUFFER_SIZE_LIMIT: -1
+	PIO_DEBUG_LEVEL: 0
+	PIO_NETCDF_FORMAT: ['CPL:64bit_offset', 'ATM:64bit_offset', 'LND:64bit_offset', 'ICE:64bit_offset', 'OCN:64bit_offset', 'ROF:64bit_offset', 'GLC:64bit_offset', 'WAV:64bit_offset', 'IAC:64bit_offset', 'ESP:64bit_offset']
+	PIO_NUMTASKS: ['CPL:-99', 'ATM:-99', 'LND:-99', 'ICE:-99', 'OCN:-99', 'ROF:-99', 'GLC:-99', 'WAV:-99', 'IAC:-99', 'ESP:-99']
+	PIO_REARRANGER: ['CPL:1', 'ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'IAC:1', 'ESP:1']
+	PIO_REARR_COMM_ENABLE_HS_COMP2IO: TRUE
+	PIO_REARR_COMM_ENABLE_HS_IO2COMP: FALSE
+	PIO_REARR_COMM_ENABLE_ISEND_COMP2IO: FALSE
+	PIO_REARR_COMM_ENABLE_ISEND_IO2COMP: TRUE
+	PIO_REARR_COMM_FCD: 2denable
+	PIO_REARR_COMM_MAX_PEND_REQ_COMP2IO: 0
+	PIO_REARR_COMM_MAX_PEND_REQ_IO2COMP: 64
+	PIO_REARR_COMM_TYPE: p2p
+	PIO_ROOT: ['CPL:1', 'ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'IAC:1', 'ESP:1']
+	PIO_STRIDE: ['CPL:28', 'ATM:28', 'LND:28', 'ICE:28', 'OCN:28', 'ROF:28', 'GLC:28', 'WAV:28', 'IAC:28', 'ESP:28']
+	PIO_TYPENAME: ['CPL:netcdf', 'ATM:netcdf', 'LND:netcdf', 'ICE:netcdf', 'OCN:netcdf', 'ROF:netcdf', 'GLC:netcdf', 'WAV:netcdf', 'IAC:netcdf', 'ESP:netcdf']

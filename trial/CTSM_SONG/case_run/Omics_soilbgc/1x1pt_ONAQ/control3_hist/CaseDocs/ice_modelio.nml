@@ -1,0 +1,13 @@
+&modelio
+  diri = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_ONAQ/control3/control3_hist/bld/ice"
+  diro = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_ONAQ/control3/control3_hist/run"
+  logfile = "ice.log.10764009.241110-192817"
+/
+&pio_inparm
+  pio_netcdf_format = "64bit_offset"
+  pio_numiotasks = -99
+  pio_rearranger = 1
+  pio_root = 1
+  pio_stride = 28
+  pio_typename = "netcdf"
+/

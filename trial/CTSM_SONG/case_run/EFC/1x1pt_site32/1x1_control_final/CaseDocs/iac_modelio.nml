@@ -1,0 +1,13 @@
+&modelio
+  diri = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site32/control/1x1_control_final/bld/iac"
+  diro = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/EFC/1x1pt_site32/control/1x1_control_final/run"
+  logfile = "iac.log.9845284.240519-093034"
+/
+&pio_inparm
+  pio_netcdf_format = "64bit_offset"
+  pio_numiotasks = -99
+  pio_rearranger = 1
+  pio_root = 1
+  pio_stride = 28
+  pio_typename = "netcdf"
+/

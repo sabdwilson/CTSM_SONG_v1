@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<file id="stream" version="1.0">
+<dataSource>
+   GENERIC
+</dataSource>
+<domainInfo>
+  <variableNames>
+     time    time
+        xc      lon
+        yc      lat
+        area    area
+        mask    mask
+  </variableNames>
+  <filePath>
+     /xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/OSBS/1x1pt_OSBS
+  </filePath>
+  <fileNames>
+     domain.lnd.1x1pt_OSBS_navy.240920.nc
+  </fileNames>
+</domainInfo>
+<fieldInfo>
+   <variableNames>
+     ZBOT     z
+        TBOT     tbot
+        RH       rh
+        WIND     wind
+        PRECTmms precn
+        FSDS     swdn
+        PSRF     pbot
+        FLDS     lwdn
+   </variableNames>
+   <filePath>
+     /home/u8/sdwilson/data/Omics_bgc/OSBS/1x1pt_OSBS/CLM1PT_data
+   </filePath>
+   <fileNames>
+    2018-01.nc
+2018-02.nc
+2018-03.nc
+2018-04.nc
+2018-05.nc
+2018-06.nc
+2018-07.nc
+2018-08.nc
+2018-09.nc
+2018-10.nc
+2018-11.nc
+2018-12.nc
+2019-01.nc
+2019-02.nc
+2019-03.nc
+2019-04.nc
+2019-05.nc
+2019-06.nc
+2019-07.nc
+2019-08.nc
+2019-09.nc
+2019-10.nc
+2019-11.nc
+2019-12.nc
+   </fileNames>
+   <offset>
+      0
+   </offset>
+</fieldInfo>
+</file>

@@ -1,0 +1,22 @@
+! user_nl_clm namelist options written by PTCLMmkdata:
+! /var/spool/slurm/d/job9920097/slurm_script --ctsm_root /home/u8/sdwilson/CTSM_SONG -s ONAQ -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --map_gdate 240605 --crop --mydatadir=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/ONAQ 
+ fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/ONAQ/1x1pt_ONAQ/surfdata_1x1pt_ONAQ_hist_78pfts_CMIP6_simyr2000_c240605.nc'
+ hist_nhtfrq = 0
+ hist_mfilt  = 1200
+fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/ONAQ/1x1pt_ONAQ/surfdata_1x1pt_ONAQ_hist_78pfts_CMIP6_simyr2000_c240605.nc'
+hist_nhtfrq = 0
+hist_mfilt  = 12
+use_fertilizer = .false.
+use_init_interp = .true.
+use_crop = .false.
+use_century_decomp = .false.
+use_vertsoilc = .false.
+use_hydrstress = .true.
+use_cn         = .true.
+use_luna       = .false.
+use_lch4       = .false.
+do_harvest = .false.
+do_transient_crops = .false.
+do_transient_pfts = .false.
+constrain_stress_deciduous_onset=.false.
+soil_layerstruct_predefined = '10SL_3.5m'

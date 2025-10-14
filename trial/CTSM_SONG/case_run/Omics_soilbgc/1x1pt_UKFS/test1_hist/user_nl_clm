@@ -1,0 +1,5 @@
+! user_nl_clm namelist options written by PTCLMmkdata:
+! /var/spool/slurm/d/job10486981/slurm_script --ctsm_root /home/u8/sdwilson/CTSM_SONG -s UKFS -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --map_gdate 240920 --crop --mydatadir=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/UKFS 
+ fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/UKFS/1x1pt_UKFS/surfdata_1x1pt_UKFS_hist_78pfts_CMIP6_simyr2000_c240920.nc'
+ hist_nhtfrq = 0
+ hist_mfilt  = 1200

@@ -1,0 +1,13 @@
+&modelio
+  diri = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_YELL/test_steadyst/test_steadyst_final/bld/wav"
+  diro = "/xdisk/chopinsong/sdwilson/CTSM_sabrina/Omics_soilbgc/1x1pt_YELL/test_steadyst/test_steadyst_final/run"
+  logfile = "wav.log.10755758.241109-094731"
+/
+&pio_inparm
+  pio_netcdf_format = "64bit_offset"
+  pio_numiotasks = -99
+  pio_rearranger = 1
+  pio_root = 1
+  pio_stride = 28
+  pio_typename = "netcdf"
+/

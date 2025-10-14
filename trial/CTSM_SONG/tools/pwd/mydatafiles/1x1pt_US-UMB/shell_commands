@@ -1,0 +1,19 @@
+# shell commands to execute xmlchange commands written by PTCLMmkdata:
+# ./PTCLMmkdata --site=US-UMB -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --mydatadir=pwd/mydatafiles --debug 
+./xmlchange CLM_USRDAT_NAME=1x1pt_US-UMB
+./xmlchange DATM_CLMNCEP_YR_START=1999
+./xmlchange DATM_CLMNCEP_YR_END=2006
+# Comment this out if NINST_LND is greater than 1 (see: http://bugs.cgd.ucar.edu/show_bug.cgi?id=2521)
+./xmlchange MPILIB=mpi-serial
+./xmlchange ATM_DOMAIN_PATH=/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB
+./xmlchange LND_DOMAIN_PATH=/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB
+./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_US-UMB_navy.210220.nc
+./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_US-UMB_navy.210220.nc
+./xmlchange --append CLM_BLDNML_OPTS='-mask navy -no-crop'
+./xmlchange CALENDAR=GREGORIAN
+./xmlchange DOUT_S=FALSE
+./xmlchange ATM_NCPL=24
+./xmlchange RUN_STARTDATE=1999-01-01
+./xmlchange DATM_CLMNCEP_YR_ALIGN=1999
+./xmlchange DIN_LOC_ROOT=/xdisk/chopinsong/chopinsong/CTSM_inputdata
+./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles

@@ -1,0 +1,5 @@
+! user_nl_clm namelist options written by PTCLMmkdata:
+! /var/spool/slurm/d/job10363224/slurm_script --ctsm_root /home/u8/sdwilson/CTSM_SONG -s YELL -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --map_gdate 240904 --crop --mydatadir=/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/YELL 
+ fsurdat = '/xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/YELL/1x1pt_YELL/surfdata_1x1pt_YELL_hist_78pfts_CMIP6_simyr2000_c240904.nc'
+ hist_nhtfrq = 0
+ hist_mfilt  = 1200

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<file id="stream" version="1.0">
+<dataSource>
+   GENERIC
+</dataSource>
+<domainInfo>
+  <variableNames>
+     time    time
+        xc      lon
+        yc      lat
+        area    area
+        mask    mask
+  </variableNames>
+  <filePath>
+     /xdisk/chopinsong/sdwilson/CTSM_sabrina/PTCLM/mydatafile/site22/1x1pt_site22
+  </filePath>
+  <fileNames>
+     domain.lnd.1x1pt_site22_navy.240517.nc
+  </fileNames>
+</domainInfo>
+<fieldInfo>
+   <variableNames>
+     ZBOT     z
+        TBOT     tbot
+        RH       rh
+        WIND     wind
+        PRECTmms precn
+        FSDS     swdn
+        PSRF     pbot
+        FLDS     lwdn
+   </variableNames>
+   <filePath>
+     /home/u8/sdwilson/data/EFC/site22/1x1pt_site22/CLM1PT_data
+   </filePath>
+   <fileNames>
+    2011-01.nc
+2011-02.nc
+2011-03.nc
+2011-04.nc
+2011-05.nc
+2011-06.nc
+2011-07.nc
+2011-08.nc
+2011-09.nc
+2011-10.nc
+2011-11.nc
+2011-12.nc
+2012-01.nc
+2012-02.nc
+2012-03.nc
+2012-04.nc
+2012-05.nc
+2012-06.nc
+2012-07.nc
+2012-08.nc
+2012-09.nc
+2012-10.nc
+2012-11.nc
+2012-12.nc
+   </fileNames>
+   <offset>
+      0
+   </offset>
+</fieldInfo>
+</file>

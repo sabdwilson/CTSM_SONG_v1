@@ -1,0 +1,13 @@
+&modelio
+  diri = "/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_final/bld/atm"
+  diro = "/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_final/run"
+  logfile = "atm.log.8587573.231118-131648"
+/
+&pio_inparm
+  pio_netcdf_format = "64bit_offset"
+  pio_numiotasks = -99
+  pio_rearranger = 1
+  pio_root = 1
+  pio_stride = 28
+  pio_typename = "netcdf"
+/

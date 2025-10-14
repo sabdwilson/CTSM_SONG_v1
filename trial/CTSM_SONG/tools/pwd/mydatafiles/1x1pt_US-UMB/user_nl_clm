@@ -1,0 +1,5 @@
+! user_nl_clm namelist options written by PTCLMmkdata:
+! ./PTCLMmkdata --site=US-UMB -d /xdisk/chopinsong/chopinsong/CTSM_inputdata --mydatadir=pwd/mydatafiles --debug 
+ fsurdat = '/home/u22/chopinsong/CTSM_SONG/tools/PTCLM/pwd/mydatafiles/1x1pt_US-UMB/surfdata_1x1pt_US-UMB210220_simyr2000_210220.nc'
+ hist_nhtfrq = 0
+ hist_mfilt  = 1200

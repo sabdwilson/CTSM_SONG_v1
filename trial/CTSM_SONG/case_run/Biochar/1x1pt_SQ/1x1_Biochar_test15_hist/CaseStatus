@@ -1,0 +1,32 @@
+2023-11-15 09:23:48: xmlchange success <command> ./xmlchange --force CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:48: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:48: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:49: xmlchange success <command> ./xmlchange --force MPILIB=mpi-serial  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:49: xmlchange success <command> ./xmlchange --force ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:49: xmlchange success <command> ./xmlchange --force LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:49: xmlchange success <command> ./xmlchange --force ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:49: xmlchange success <command> ./xmlchange --force LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:50: xmlchange success <command> ./xmlchange --force --append CLM_BLDNML_OPTS=-mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:50: xmlchange success <command> ./xmlchange --force CALENDAR=GREGORIAN  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:50: xmlchange success <command> ./xmlchange --force DOUT_S=FALSE  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:50: xmlchange success <command> ./xmlchange --force ATM_NCPL=48  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:50: xmlchange success <command> ./xmlchange --force RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:51: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:51: xmlchange success <command> ./xmlchange --force DIN_LOC_ROOT=/xdisk/chopinsong/chopinsong/CTSM_inputdata  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:51: xmlchange success <command> ./xmlchange --force DIN_LOC_ROOT_CLMFORC=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ  </command>
+ ---------------------------------------------------

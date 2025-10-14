@@ -1,0 +1,54 @@
+2022-10-15 14:36:01: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_projects/Bioclimate/1x1pt_RainManSR/SRG_test2  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:01: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=00:10:00  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:01: xmlchange success <command> ./xmlchange walltime=00:10:00  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:01: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:02: xmlchange success <command> ./xmlchange RUN_STARTDATE=2009-01-01  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:02: xmlchange success <command> ./xmlchange STOP_N=1  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:02: xmlchange success <command> ./xmlchange STOP_OPTION=nmonths  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:02: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:02: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=off  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:03: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:03: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:03: xmlchange success <command> ./xmlchange HIST_N=13  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:03: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nmonths  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:03: xmlchange success <command> ./xmlchange AVGHIST_N=130  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:04: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:04: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:04: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -no-crop  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:04: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=2009  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:04: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2021  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:04: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=2009  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:05: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u32/tianyihu/data/Rainman/S1  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:05: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_projects/PTCLM/mydatafile/Rainman_srgpft/1x1pt_RainManSR  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:05: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_RainManSR_navy.211127.nc  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:05: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_projects/PTCLM/mydatafile/Rainman_srgpft/1x1pt_RainManSR  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:05: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_RainManSR_navy.211127.nc  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:06: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_RainManSR  </command>
+ ---------------------------------------------------
+2022-10-15 14:36:06: xmlchange success <command> ./xmlchange CCSM_BGC=CO2A,CLM_CO2_TYPE=diagnostic  </command>
+ ---------------------------------------------------

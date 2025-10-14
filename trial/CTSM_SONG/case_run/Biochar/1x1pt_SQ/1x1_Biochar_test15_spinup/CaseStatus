@@ -1,0 +1,899 @@
+2023-11-15 09:23:37: xmlchange success <command> ./xmlchange --force CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:38: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:38: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:38: xmlchange success <command> ./xmlchange --force MPILIB=mpi-serial  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:38: xmlchange success <command> ./xmlchange --force ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:39: xmlchange success <command> ./xmlchange --force LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:39: xmlchange success <command> ./xmlchange --force ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:39: xmlchange success <command> ./xmlchange --force LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:39: xmlchange success <command> ./xmlchange --force --append CLM_BLDNML_OPTS=-mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:39: xmlchange success <command> ./xmlchange --force CALENDAR=GREGORIAN  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:40: xmlchange success <command> ./xmlchange --force DOUT_S=FALSE  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:40: xmlchange success <command> ./xmlchange --force ATM_NCPL=48  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:40: xmlchange success <command> ./xmlchange --force RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:40: xmlchange success <command> ./xmlchange --force DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:40: xmlchange success <command> ./xmlchange --force DIN_LOC_ROOT=/xdisk/chopinsong/chopinsong/CTSM_inputdata  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:41: xmlchange success <command> ./xmlchange --force DIN_LOC_ROOT_CLMFORC=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:51: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:51: case.setup starting 
+ ---------------------------------------------------
+2023-11-15 09:23:52: case.setup success 
+ ---------------------------------------------------
+2023-11-15 09:23:52: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:52: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:53: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:53: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:53: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:53: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:53: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:54: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:54: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:54: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:54: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:54: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:55: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:55: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:55: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:55: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:55: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:56: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:56: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:56: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:56: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:56: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:56: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:57: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:57: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 09:23:57: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, cdeps, cmeps, doc-builder, 
+?M  ./cime
+        modified sandbox,  --> 
+?M  ./cime/src/drivers/nuopc/
+        modified sandbox,  --> 
+e-  ./components/cdeps
+        -, not checked out --> 
+e-  ./components/cism
+        -, not checked out --> cism2_1_69
+e-  ./components/mizuRoute
+        -, not checked out --> 
+e-  ./components/mosart
+        -, not checked out --> mosart1_0_38
+e-  ./components/rtm
+        -, not checked out --> rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+?M  ./src/fates
+        modified sandbox,  --> 
+?M  ./tools/PTCLM
+        modified sandbox,  -->
+2023-11-15 09:29:36: case.build success 
+ ---------------------------------------------------
+2023-11-15 09:29:36: case.submit starting 
+ ---------------------------------------------------
+2023-11-15 09:29:39: case.submit success case.run:8565753
+ ---------------------------------------------------
+2023-11-15 09:33:26: case.run starting 
+ ---------------------------------------------------
+2023-11-15 09:33:28: model execution starting 
+ ---------------------------------------------------
+2023-11-15 09:33:43: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/run'
+ ---------------------------------------------------
+2023-11-15 09:33:43: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/run/cesm.log.8565753.231115-093326
+ ---------------------------------------------------
+2023-11-15 13:24:43: build.clean starting 
+ ---------------------------------------------------
+2023-11-15 13:24:48: build.clean success 
+ ---------------------------------------------------
+2023-11-15 13:25:09: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:10: case.setup starting 
+ ---------------------------------------------------
+2023-11-15 13:25:10: case.setup success 
+ ---------------------------------------------------
+2023-11-15 13:25:11: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:11: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:11: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:11: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:11: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:12: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:12: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:12: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:12: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:12: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:12: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:13: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:13: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:13: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:13: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:13: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:14: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:14: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:14: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:14: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:14: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:15: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:15: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:15: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:15: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 13:25:15: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, cdeps, cmeps, doc-builder, 
+?M  ./cime
+        modified sandbox,  --> 
+?M  ./cime/src/drivers/nuopc/
+        modified sandbox,  --> 
+e-  ./components/cdeps
+        -, not checked out --> 
+e-  ./components/cism
+        -, not checked out --> cism2_1_69
+e-  ./components/mizuRoute
+        -, not checked out --> 
+e-  ./components/mosart
+        -, not checked out --> mosart1_0_38
+e-  ./components/rtm
+        -, not checked out --> rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+?M  ./src/fates
+        modified sandbox,  --> 
+?M  ./tools/PTCLM
+        modified sandbox,  -->
+2023-11-15 13:31:16: case.build success 
+ ---------------------------------------------------
+2023-11-15 13:31:16: case.submit starting 
+ ---------------------------------------------------
+2023-11-15 13:31:18: case.submit success case.run:8567593
+ ---------------------------------------------------
+2023-11-15 13:36:10: case.run starting 
+ ---------------------------------------------------
+2023-11-15 13:36:13: model execution starting 
+ ---------------------------------------------------
+2023-11-15 13:36:30: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/run'
+ ---------------------------------------------------
+2023-11-15 13:36:30: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/run/cesm.log.8567593.231115-133610
+ ---------------------------------------------------
+2023-11-15 13:44:22: build.clean starting 
+ ---------------------------------------------------
+2023-11-15 13:44:28: build.clean success 
+ ---------------------------------------------------
+2023-11-15 13:44:34: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:34: case.setup starting 
+ ---------------------------------------------------
+2023-11-15 13:44:35: case.setup success 
+ ---------------------------------------------------
+2023-11-15 13:44:35: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:35: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:36: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:36: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:36: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:36: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:36: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:37: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:37: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:37: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:37: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:37: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:38: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:38: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:38: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:38: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:38: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:39: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:39: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:39: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:39: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:39: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:39: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:40: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:40: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 13:44:40: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, cdeps, cmeps, doc-builder, 
+?M  ./cime
+        modified sandbox,  --> 
+?M  ./cime/src/drivers/nuopc/
+        modified sandbox,  --> 
+e-  ./components/cdeps
+        -, not checked out --> 
+e-  ./components/cism
+        -, not checked out --> cism2_1_69
+e-  ./components/mizuRoute
+        -, not checked out --> 
+e-  ./components/mosart
+        -, not checked out --> mosart1_0_38
+e-  ./components/rtm
+        -, not checked out --> rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+?M  ./src/fates
+        modified sandbox,  --> 
+?M  ./tools/PTCLM
+        modified sandbox,  -->
+2023-11-15 13:50:38: case.build success 
+ ---------------------------------------------------
+2023-11-15 13:50:38: case.submit starting 
+ ---------------------------------------------------
+2023-11-15 13:50:40: case.submit success case.run:8567613
+ ---------------------------------------------------
+2023-11-15 13:52:52: case.run starting 
+ ---------------------------------------------------
+2023-11-15 13:52:54: model execution starting 
+ ---------------------------------------------------
+2023-11-15 13:53:10: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/run'
+ ---------------------------------------------------
+2023-11-15 13:53:10: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/run/cesm.log.8567613.231115-135252
+ ---------------------------------------------------
+2023-11-15 14:10:11: build.clean starting 
+ ---------------------------------------------------
+2023-11-15 14:10:18: build.clean success 
+ ---------------------------------------------------
+2023-11-15 14:10:25: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:25: case.setup starting 
+ ---------------------------------------------------
+2023-11-15 14:10:26: case.setup success 
+ ---------------------------------------------------
+2023-11-15 14:10:26: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:26: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:27: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:27: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:27: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:27: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:27: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:28: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:28: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:28: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:28: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:29: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:29: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:29: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:29: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:29: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:30: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:30: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:30: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:30: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:30: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:30: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:31: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:31: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:31: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 14:10:31: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, cdeps, cmeps, doc-builder, 
+?M  ./cime
+        modified sandbox,  --> 
+?M  ./cime/src/drivers/nuopc/
+        modified sandbox,  --> 
+e-  ./components/cdeps
+        -, not checked out --> 
+e-  ./components/cism
+        -, not checked out --> cism2_1_69
+e-  ./components/mizuRoute
+        -, not checked out --> 
+e-  ./components/mosart
+        -, not checked out --> mosart1_0_38
+e-  ./components/rtm
+        -, not checked out --> rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+?M  ./src/fates
+        modified sandbox,  --> 
+?M  ./tools/PTCLM
+        modified sandbox,  -->
+2023-11-15 14:16:31: case.build success 
+ ---------------------------------------------------
+2023-11-15 14:16:32: case.submit starting 
+ ---------------------------------------------------
+2023-11-15 14:16:34: case.submit success case.run:8569242
+ ---------------------------------------------------
+2023-11-15 14:20:10: case.run starting 
+ ---------------------------------------------------
+2023-11-15 14:20:13: model execution starting 
+ ---------------------------------------------------
+2023-11-15 14:20:30: model execution error 
+ERROR: Command: '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/run'
+ ---------------------------------------------------
+2023-11-15 14:20:30: case.run error 
+ERROR: RUN FAIL: Command '/usr/bin/time -o mpit_prog.timing mpirun  -np 1 /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15/1x1_Biochar_test15_spinup/run/cesm.log.8569242.231115-142010
+ ---------------------------------------------------
+2023-11-15 15:00:55: build.clean starting 
+ ---------------------------------------------------
+2023-11-15 15:01:00: build.clean success 
+ ---------------------------------------------------
+2023-11-15 15:01:08: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:08: case.setup starting 
+ ---------------------------------------------------
+2023-11-15 15:01:09: case.setup success 
+ ---------------------------------------------------
+2023-11-15 15:01:09: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:09: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:09: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:10: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:10: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:10: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:10: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:10: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:11: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:11: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:11: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:11: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:11: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:12: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:12: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:12: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:12: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:12: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:13: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:13: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:13: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:13: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:13: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:14: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:14: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 15:01:14: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Checking status of externals: clm, fates, ptclm, mosart, mizuroute, cime, rtm, cism, cdeps, cmeps, doc-builder, 
+?M  ./cime
+        modified sandbox,  --> 
+?M  ./cime/src/drivers/nuopc/
+        modified sandbox,  --> 
+e-  ./components/cdeps
+        -, not checked out --> 
+e-  ./components/cism
+        -, not checked out --> cism2_1_69
+e-  ./components/mizuRoute
+        -, not checked out --> 
+e-  ./components/mosart
+        -, not checked out --> mosart1_0_38
+e-  ./components/rtm
+        -, not checked out --> rtm1_0_73
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.5
+?M  ./src/fates
+        modified sandbox,  --> 
+?M  ./tools/PTCLM
+        modified sandbox,  -->
+2023-11-15 15:07:12: case.build success 
+ ---------------------------------------------------
+2023-11-15 15:07:12: case.submit starting 
+ ---------------------------------------------------
+2023-11-15 15:07:14: case.submit success case.run:8569460
+ ---------------------------------------------------
+2023-11-15 15:09:15: case.run starting 
+ ---------------------------------------------------
+2023-11-15 15:09:19: model execution starting 
+ ---------------------------------------------------
+2023-11-15 16:24:39: model execution success 
+ ---------------------------------------------------
+2023-11-15 16:24:39: case.run success 
+ ---------------------------------------------------
+2023-11-15 16:56:25: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:25: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:25: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:25: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:25: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:26: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:26: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:26: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:26: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:26: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:27: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:27: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:27: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:27: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:27: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:28: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:28: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:28: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:28: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:28: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:29: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:29: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:29: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:29: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:29: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 16:56:30: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:29: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:29: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:29: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:29: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:29: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:30: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:30: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:30: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:30: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:30: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:31: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:31: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:31: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:31: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:32: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:32: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:32: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:32: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:32: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:32: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:33: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:33: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:33: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:33: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:33: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-15 17:08:34: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:25: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:26: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:26: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:26: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:26: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:26: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:27: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:27: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:27: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:27: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:27: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:27: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:28: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:28: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:28: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:28: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:28: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:29: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:29: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:29: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:29: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:29: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:29: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:30: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:30: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-16 11:39:30: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:32: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:32: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:32: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:32: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:33: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:33: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:33: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:33: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:33: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:34: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:34: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:34: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:34: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:34: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:35: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:35: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:35: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:35: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:35: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:36: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:36: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:36: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:36: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:36: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:37: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-16 13:32:37: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:47: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:47: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:47: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:47: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:47: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:47: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:48: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:48: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:48: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:48: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:48: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:49: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:49: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:49: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:49: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:49: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:50: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:50: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:50: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:50: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:50: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:51: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:51: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:51: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:51: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-17 11:15:51: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:57: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:58: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:58: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:58: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:58: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:58: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:59: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:59: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:59: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:59: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-18 12:46:59: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:00: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:00: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:00: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:00: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:00: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:01: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:01: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:01: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:01: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:01: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:02: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:02: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:02: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:02: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-18 12:47:02: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:35: xmlchange success <command> ./xmlchange CIME_OUTPUT_ROOT=/groups/chopinsong/CTSM_sabrina/Biochar/1x1pt_SQ/Biochar_test15  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:35: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:36: xmlchange success <command> ./xmlchange walltime=02:30:00  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:36: xmlchange success <command> ./xmlchange CLM_ACCELERATED_SPINUP=on  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:36: xmlchange success <command> ./xmlchange ATM_NCPL=24  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:36: xmlchange success <command> ./xmlchange RUN_TYPE=startup  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:36: xmlchange success <command> ./xmlchange RUN_STARTDATE=1980-01-01  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:37: xmlchange success <command> ./xmlchange STOP_N=280  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:37: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:37: xmlchange success <command> ./xmlchange STOP_DATE=-999  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:37: xmlchange success <command> ./xmlchange HIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:37: xmlchange success <command> ./xmlchange HIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:38: xmlchange success <command> ./xmlchange AVGHIST_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:38: xmlchange success <command> ./xmlchange AVGHIST_N=1000  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:38: xmlchange success <command> ./xmlchange MPILIB=openmpi  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:38: xmlchange success <command> ./xmlchange DEBUG=TRUE  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:38: xmlchange success <command> ./xmlchange CLM_BLDNML_OPTS=-bgc bgc -mask navy -crop  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:39: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=1980  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:39: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2012  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:39: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=1980  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:39: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/home/u8/sdwilson/data/SQ  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:39: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:40: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:40: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/groups/chopinsong/CTSM_sabrina/PTCLM/mydatafile/SQ/1x1pt_SQ  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:40: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_SQ_navy.231113.nc  </command>
+ ---------------------------------------------------
+2023-11-18 13:09:40: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_SQ  </command>
+ ---------------------------------------------------
